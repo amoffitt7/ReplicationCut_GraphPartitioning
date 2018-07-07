@@ -68,6 +68,7 @@ public class MaxFlowMinCut
  
     public int  maxFlowMinCut (int graph[][], int source, int destination)
     {
+        System.err.println("Currently running max flow min cut on " + source + " to " + destination);
         int u, v;
         int maxFlow = 0;
         int pathFlow;
@@ -77,7 +78,7 @@ public class MaxFlowMinCut
         {
             for (int destinationVertex = 1; destinationVertex <= numberOfVertices; destinationVertex++)
             {
-                residualGraph[sourceVertex - 1][destinationVertex - 1] = graph[sourceVertex - 1][destinationVertex - 1];
+                residualGraph[sourceVertex][destinationVertex] = graph[sourceVertex][destinationVertex];
             }
         }
  
@@ -89,6 +90,7 @@ public class MaxFlowMinCut
             {
                 u = parent[v];
                 pathFlow = Math.min(pathFlow,residualGraph[u][v]);
+                //System.out.println("\tPath flow is " + pathFlow);
             }
             for (v = destination; v != source; v = parent[v])
             {
@@ -97,6 +99,7 @@ public class MaxFlowMinCut
                 residualGraph[v][u] += pathFlow;
             }
             maxFlow += pathFlow;	
+            //System.out.println("\tMax flow is " + maxFlow);
         }
  
         /*calculate the cut set*/		
@@ -115,9 +118,10 @@ public class MaxFlowMinCut
         {
             for (int j = 0; j < unreachable.size(); j++)
             {
-                if (graph[reachable.get(i) - 1][unreachable.get(j) - 1] > 0)
+                if (graph[reachable.get(i)][unreachable.get(j)] > 0)
                 {
                     cutSet.add(new Pair(reachable.get(i), unreachable.get(j)));
+                    //System.err.println("\tAdding " + reachable.get(i) + ", " + unreachable.get(j));
                 }
             }
         }

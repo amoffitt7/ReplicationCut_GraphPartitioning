@@ -117,7 +117,7 @@ public class Run_Test {
             }
 
             pw.close();
-            createAdjacencyMatrix(repGraphFileName, s, t, newVertices);
+            createAdjacencyMatrix(repGraphFileName, supersource, supersink, newVertices);
         }
         catch (IOException e) {
             System.out.println("Error reading file");
@@ -129,7 +129,7 @@ public class Run_Test {
     public static void createAdjacencyMatrix(String filename, int s, int t, int numVertices) {
     	System.out.println("In matrix chunk");
     	File file = new File(filename);
-    	int[][] adjMatrix = new int[numVertices][numVertices];
+    	int[][] adjMatrix = new int[numVertices + 1][numVertices + 1];
     	    	
     	try {
     		BufferedReader br = new BufferedReader(new FileReader(file));
@@ -149,8 +149,19 @@ public class Run_Test {
                 int secondVertex = Integer.parseInt(entries[1]);
                 int edgeWeight = Integer.parseInt(entries[2]);
 
-                adjMatrix[firstVertex - 1][secondVertex - 1] = edgeWeight;
+                adjMatrix[firstVertex][secondVertex] = edgeWeight;
             } 		
+
+            /*
+            // Printing the adjacency matrix
+            // Loop through all rows
+            for (int i = 0; i < adjMatrix.length; i++) {
+                // Loop through all elements of current row
+                for (int j = 0; j < adjMatrix[i].length; j++)
+                    System.out.print(adjMatrix[i][j] + " ");
+                System.out.println("");
+            }*/
+
     	} catch(IOException e) {
     		System.err.println("Read ERROR");
     	}
