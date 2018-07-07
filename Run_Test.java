@@ -135,8 +135,8 @@ public class Run_Test {
 		//ADJACENCY LIST(AL)
 		
 		//RUN ALGORITHM ON EACH AL
-		int replaceWithNumberOfVertices = 5;
-		MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(replaceWithNumberOfVertices);
+
+		//MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfNodes);
 
 		//ANALYZE RESULTS FOR EACH GRAPH
 	}
