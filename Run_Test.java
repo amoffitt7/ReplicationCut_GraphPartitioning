@@ -9,7 +9,7 @@ import java.io.*;
 
 public class Run_Test {
 
-		// function to create replication graph for all pairs
+	// function to create replication graph for all pairs
     public static void CreateReplicationGraphAllPairs(File file) {
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -135,7 +135,9 @@ public class Run_Test {
 		//ADJACENCY LIST(AL)
 		
 		//RUN ALGORITHM ON EACH AL
-		
+		int replaceWithNumberOfVertices = 5;
+		MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(replaceWithNumberOfVertices);
+
 		//ANALYZE RESULTS FOR EACH GRAPH
 	}
 }
