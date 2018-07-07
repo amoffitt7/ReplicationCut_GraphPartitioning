@@ -1,8 +1,5 @@
 /*
- * Main file for code
- * 
- * Alisa, feel free to make separate class files if
- * you want
+ * Main file for testing code
  * 
  */
 import java.io.*;
@@ -11,6 +8,7 @@ public class Run_Test {
 
 	// function to create replication graph for all pairs
     public static void CreateReplicationGraphAllPairs(File file) {
+    	System.out.println("In all pairs");
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -24,6 +22,7 @@ public class Run_Test {
 
             if (vertices < 2) {
                 System.err.println("Error: Not enough vertices");
+                br.close();
                 return;
             }
 
@@ -37,11 +36,13 @@ public class Run_Test {
         catch (IOException e) {
             System.out.println("Error reading file");
         }
-        
     }
 
+    
+    
     // function to create replication graph for a specified pair
     public static void CreateReplicationGraph(File file, int s, int t) { 
+    	System.out.println("In single pair");
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -66,11 +67,12 @@ public class Run_Test {
                 // this is the number of vertices in the replication graph; 
                 // all the original vertices duplicated plus super source and super sink
                 newVertices = vertices * 2 + 2; 
-                pw.format("%5d\n", newVertices);
+                pw.format("%5d\r\n", newVertices);
             }
 
             if (vertices < 2) {
                 System.err.println("Error: Not enough vertices");
+                pw.close();
                 return;
             }
 
@@ -88,8 +90,8 @@ public class Run_Test {
                 int newFirstVertex = secondVertex + vertices; 
                 int newSecondVertex = firstVertex + vertices;
 
-                pw.format("%5d   %5d   %5d\n", firstVertex, secondVertex, edgeWeight); // add the original edge
-                pw.format("%5d   %5d   %5d\n", newFirstVertex, newSecondVertex, edgeWeight); // add the new edge
+                pw.format("%5d   %5d   %5d \r\n", firstVertex, secondVertex, edgeWeight); // add the original edge
+                pw.format("%5d   %5d   %5d \r\n", newFirstVertex, newSecondVertex, edgeWeight); // add the new edge
             }
 
             int supersource = newVertices - 1; // the supersource will take the second to last index
@@ -99,45 +101,101 @@ public class Run_Test {
             int tPrime = t + vertices;
 
             // add the edges from supersource (s*) to sources (s and s')
-            pw.format("%5d   %5d   %5d\n", supersource, s, myInf); 
-            pw.format("%5d   %5d   %5d\n", supersource, sPrime, myInf); 
+            pw.format("%5d   %5d   %5d \r\n", supersource, s, myInf); 
+            pw.format("%5d   %5d   %5d \r\n", supersource, sPrime, myInf); 
 
             // add the edges from sinks (t and t') to supersink 
-            pw.format("%5d   %5d   %5d\n", t, supersink, myInf); 
-            pw.format("%5d   %5d   %5d\n", tPrime, supersink, myInf); 
+            pw.format("%5d   %5d   %5d \r\n", t, supersink, myInf); 
+            pw.format("%5d   %5d   %5d \r\n", tPrime, supersink, myInf); 
 
             // for all vertices that are not source and sink, add infinite paths from vertices to their primes
             for (int i = 1; i <= vertices; i++) {
                 if (i != s && i != t) {
                     int iPrime = i + vertices;
-                    pw.format("%5d   %5d   %5d\n", i, iPrime, myInf); 
+                    pw.format("%5d   %5d   %5d \r\n", i, iPrime, myInf); 
                 }
             }
 
             pw.close();
+            createAdjacencyMatrix(repGraphFileName, s, t, newVertices);
         }
         catch (IOException e) {
             System.out.println("Error reading file");
         }
-       
+    }
+    
+    
+    
+    public static void createAdjacencyMatrix(String filename, int s, int t, int numVertices) {
+    	System.out.println("In matrix chunk");
+    	File file = new File(filename);
+    	int[][] adjMatrix = new int[numVertices][numVertices];
+    	    	
+    	try {
+    		BufferedReader br = new BufferedReader(new FileReader(file));
+    		
+    		// get the first line out of the way
+            if ((br.readLine()) == null) {
+            	System.err.println("First Line ERROR");
+            }
+
+            // Grab edge by edge
+            String nextLine;
+            while ((nextLine = br.readLine()) != null) {
+                nextLine = nextLine.trim();
+                String[] entries = nextLine.split("\\s+"); // splits into 3 numbers
+                
+                int firstVertex = Integer.parseInt(entries[0]);
+                int secondVertex = Integer.parseInt(entries[1]);
+                int edgeWeight = Integer.parseInt(entries[2]);
+
+                adjMatrix[firstVertex - 1][secondVertex - 1] = edgeWeight;
+            } 		
+    	} catch(IOException e) {
+    		System.err.println("Read ERROR");
+    	}
+    	
+    	runFlowAlgorithm(adjMatrix, s, t, numVertices);
+    }
+    
+    
+    
+    public static void runFlowAlgorithm(int[][] adjMatrix, int source, int sink, int numVertices) {
+    	int[][] graph;
+        int numberOfNodes;
+        int maxFlow;
+ 
+        numberOfNodes = numVertices;
+        graph = adjMatrix;
+ 
+        MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfNodes);
+        maxFlow = maxFlowMinCut.maxFlowMinCut(graph, source, sink);
+ 
+        System.out.println("The Max Flow is " + maxFlow);
+        System.out.println("The Cut Set is ");
+        maxFlowMinCut.printCutSet();
+        
+        recordResults();
+    }
+    
+    
+    
+    public static void recordResults() {
+    	//ANALYZE RESULTS FOR EACH GRAPH
     }
 	
+    
+    
 	public static void main(String[] args) {
 		//PULL FILES FROM STORED LOCATION
 		File file = new File(args[0]);
-        
-		//BUILD REPLICATION GRAPH FOR EACH FILE
-		//MAKE UNIQUE GRAPH FILE FOR EVERY PAIR
-		//IN EACH GRAPH
+		System.out.println("Argument string = " + args[0]);
+		
 		CreateReplicationGraphAllPairs(file);
-		
-		//CONVERT EACH UNIQUE PAIR FILE INTO ITS 
-		//ADJACENCY LIST(AL)
-		
-		//RUN ALGORITHM ON EACH AL
-
-		//MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfNodes);
-
-		//ANALYZE RESULTS FOR EACH GRAPH
 	}
 }
+
+
+
+
+
