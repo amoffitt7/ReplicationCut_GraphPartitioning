@@ -7,7 +7,6 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
 import java.util.Set;
  
 public class MaxFlowMinCut
@@ -78,7 +77,7 @@ public class MaxFlowMinCut
         {
             for (int destinationVertex = 1; destinationVertex <= numberOfVertices; destinationVertex++)
             {
-                residualGraph[sourceVertex][destinationVertex] = graph[sourceVertex][destinationVertex];
+                residualGraph[sourceVertex - 1][destinationVertex - 1] = graph[sourceVertex - 1][destinationVertex - 1];
             }
         }
  
@@ -116,7 +115,7 @@ public class MaxFlowMinCut
         {
             for (int j = 0; j < unreachable.size(); j++)
             {
-                if (graph[reachable.get(i)][unreachable.get(j)] > 0)
+                if (graph[reachable.get(i) - 1][unreachable.get(j) - 1] > 0)
                 {
                     cutSet.add(new Pair(reachable.get(i), unreachable.get(j)));
                 }
@@ -124,6 +123,8 @@ public class MaxFlowMinCut
         }
         return maxFlow;
     }
+    
+    
  
     public void printCutSet ()
     {
@@ -134,44 +135,10 @@ public class MaxFlowMinCut
             System.out.println(pair.source + "-" + pair.destination);
         }
     }
- 
-    public static void main (String...arg)
-    {
-        int[][] graph;
-        int numberOfNodes;
-        int source;
-        int sink;
-        int maxFlow;
- 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the number of nodes");
-        numberOfNodes = scanner.nextInt();
-        graph = new int[numberOfNodes + 1][numberOfNodes + 1];
- 
-        System.out.println("Enter the graph matrix");
-        for (int sourceVertex = 1; sourceVertex <= numberOfNodes; sourceVertex++)
-        {
-            for (int destinationVertex = 1; destinationVertex <= numberOfNodes ; destinationVertex++)
-            {
-                graph[sourceVertex][destinationVertex] = scanner.nextInt();
-            }
-        }
-        System.out.println("Enter the source of the graph");
-        source= scanner.nextInt();
- 
-        System.out.println("Enter the sink of the graph");
-        sink = scanner.nextInt();
- 
-        MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfNodes);
-        maxFlow = maxFlowMinCut.maxFlowMinCut(graph, source, sink);
- 
-        System.out.println("The Max Flow is " + maxFlow);
-        System.out.println("The Cut Set is ");
-        maxFlowMinCut.printCutSet();
-        scanner.close();
-    }
 }
  
+
+
 class Pair
 {
     public int source;
