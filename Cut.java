@@ -9,12 +9,14 @@ public class Cut {
     public ArrayList<Integer> S;
     public ArrayList<Integer> T;
     public ArrayList<Integer> R;
+    public ArrayList<Integer> pathLengths;
 
-    public Cut(int maxFlow, ArrayList<Integer> S, ArrayList<Integer> T, ArrayList<Integer> R) {
+    public Cut(int maxFlow, ArrayList<Integer> S, ArrayList<Integer> T, ArrayList<Integer> R, ArrayList<Integer> pathLengths) {
         this.maxFlow = maxFlow;
         this.S = S;
         this.T = T;
         this.R = R; 
+        this.pathLengths = pathLengths;
 
         sortSets();
     }
@@ -54,7 +56,16 @@ public class Cut {
             }
         }
         current = current + "}\n";
-        current = current + "Cut weight is " + maxFlow;
+        current = current + "Cut weight is ";
+        for (int i = 0; i < pathLengths.size(); i++) {
+            if (i != pathLengths.size() -1) {
+                current = current + pathLengths.get(i) + "+";
+            }
+            else {
+                current = current + pathLengths.get(i) + "=";
+            }
+        }
+        current = current + maxFlow;
         return current;
     }
 

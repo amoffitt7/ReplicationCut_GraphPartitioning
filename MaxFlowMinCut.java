@@ -1,5 +1,6 @@
 /* Max Flow Min Cut algorithm implementation by Sanfoundry
  * https://www.sanfoundry.com/java-program-implement-max-flow-min-cut-theorem/
+ * with modifications by Alissa Ren and Amanda Moffitt
  */ 
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class MaxFlowMinCut
     private ArrayList<Integer> S;
     private ArrayList<Integer> T;
     private ArrayList<Integer> R;
+    private ArrayList<Integer> pathLengths;
  
     public MaxFlowMinCut (int numberOfVertices)
     {
@@ -36,6 +38,7 @@ public class MaxFlowMinCut
         S = new ArrayList<Integer>();
         T = new ArrayList<Integer>();
         R = new ArrayList<Integer>();
+        pathLengths = new ArrayList<Integer>();
     }
  
     public boolean bfs (int source, int goal, int graph[][])
@@ -98,7 +101,7 @@ public class MaxFlowMinCut
             {
                 u = parent[v];
                 pathFlow = Math.min(pathFlow,residualGraph[u][v]);
-                //System.out.println("\tPath flow is " + pathFlow);
+                
             }
             for (v = destination; v != source; v = parent[v])
             {
@@ -106,7 +109,9 @@ public class MaxFlowMinCut
                 residualGraph[u][v] -= pathFlow;
                 residualGraph[v][u] += pathFlow;
             }
-            maxFlow += pathFlow;	
+            maxFlow += pathFlow;
+            pathLengths.add(new Integer(pathFlow));
+            //System.out.println("\tPath flow is " + pathFlow);	
             //System.out.println("\tMax flow is " + maxFlow);
         }
  
@@ -134,6 +139,8 @@ public class MaxFlowMinCut
             }
         }
         
+        //printCutSet();
+
         // get S, R, and T
         // S is the reachable vertices in the original graph
         for (int i = 0; i < reachable.size(); i++) {
@@ -158,7 +165,7 @@ public class MaxFlowMinCut
             }
         }
 
-        Cut minCut = new Cut(maxFlow, S, T, R);
+        Cut minCut = new Cut(maxFlow, S, T, R, pathLengths);
 
         return minCut;
     }
@@ -167,11 +174,20 @@ public class MaxFlowMinCut
  
     public void printCutSet ()
     {
+        System.out.println("Saturated edges: ");
         Iterator<Pair> iterator = cutSet.iterator();
         while (iterator.hasNext())
         {
             Pair pair = iterator.next();
-            System.out.println(pair.source + "-" + pair.destination);
+            String source = Integer.toString(pair.source);
+            String destination = Integer.toString(pair.destination);
+            if (pair.source > oldNumberOfVertices) {
+                source = Integer.toString(pair.source - oldNumberOfVertices) + "\'";
+            }
+            if (pair.destination > oldNumberOfVertices) {
+                destination = Integer.toString(pair.destination - oldNumberOfVertices) + "\'";
+            }
+            System.out.println(source + "-" + destination);
         }
     }
 }

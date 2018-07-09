@@ -195,8 +195,8 @@ public class ReplicationCutAlgorithm {
         if (minCuts.add(minCut)) {
             System.out.println("\tNew distinct mincut found!");
         }
-
-        System.out.println(minCut + "\n");        
+ 
+        System.out.println(minCut + "\n");  
         
     }
     
@@ -204,16 +204,36 @@ public class ReplicationCutAlgorithm {
     
     public void recordResults() {
         //ANALYZE RESULTS FOR EACH GRAPH
-        numberOfDistinctMinCuts = minCuts.size(); 
+        try {
+            String[] fileNameParts = file.getName().split("\\.");
+            String reportFileName = fileNameParts[0] + "_report.txt";
+            PrintWriter pw = new PrintWriter(new FileWriter(reportFileName));
 
-        System.out.println("****************");
-        System.out.println("FINAL REPORT:");
-        System.out.println("****************");
+            numberOfDistinctMinCuts = minCuts.size(); 
 
-        System.out.println("The file was " + fileName + ".");
-        System.out.println("The graph had " + numberOfVertices + " vertices.");
-        System.out.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
-        System.out.println("Note: The actual number may be lower due to equivalent cuts.");
+            System.out.println("****************");
+            System.out.println("FINAL REPORT:");
+            System.out.println("****************");
+
+            System.out.println("The file was " + fileName + ".");
+            System.out.println("The graph had " + numberOfVertices + " vertices.");
+            System.out.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
+            System.out.println("Note: The actual number may be lower due to equivalent cuts.\n");
+
+            pw.println("****************");
+            pw.println("FINAL REPORT:");
+            pw.println("****************");
+
+            pw.println("The file was " + fileName + ".");
+            pw.println("The graph had " + numberOfVertices + " vertices.");
+            pw.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
+            pw.println("Note: The actual number may be lower due to equivalent cuts.\n");
+
+            pw.close();
+        }
+        catch (IOException e) {
+            System.err.println("ERROR");
+        }
     }
 	
 }
