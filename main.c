@@ -29,23 +29,22 @@ void print_graph(int v,
 	int e,
 	char* out_file,
 	int* adj_matrix,
-	int dir_flag);
-
-int unpicked_vertices_p(int* closed, int n);
-int pick_to(int* closed, int vertices);
+	int dir_flag,
+	char* directory);
 
 
 void random_connected_graph(int v,
 	int e,
 	int max_wgt,
 	int weight_flag,
-	char* out_file);
+	char* out_file,
+	char* directory);
 
 
 void warning(char* message);
 int bogus_file_name(int count);
 void build_graphs(void);
-void process_choice(void);
+void process_choice(char* directory);
 void display_dimensions_menu(int which);
 void display_max_weight_menu(void);
 void display_outfile_menu(int count, int index1, int index2);
@@ -148,28 +147,55 @@ menu_choice;
 #define odd( num )    ( ( num ) % 2 )
 
 
+
+
 int main()
 {
 	sprintf(genericTitle, "%s", "graph");
-	build_more_graphs = True;
-	build_graphs();
+
+	for (int i = 0; i < 1; i++) {
+		build_more_graphs = True;
+		build_graphs();
+
+		numVertices = 3;
+	}
 	return 0;
 }
+
+
 
 void build_graphs(void)
 {
 	display_dimensions_menu(VerticesOnly);
 	display_max_weight_menu();
 
+	char directory[30];
+	sprintf(directory, "%s", "GraphFolder_");
+
+	char maxVertices[4];
+	sprintf(maxVertices, "%d", maxNumberOfVertices);
+	strcat(directory, maxVertices);
+	strcat(directory, "_");
+	char maxWeight[5];
+	sprintf(maxWeight, "%d", menu->parms.max_weight);
+	strcat(directory, maxWeight);
+
+	char command[30];
+	sprintf(command, "%s", "mkdir ");
+	strcat(command, directory);
+
+	system(command);
+
+
 	while (numVertices <= maxNumberOfVertices) {
-		process_choice();
+		process_choice(directory);
 		numVertices++;
 	}
 }
 
 
 
-void process_choice(void)
+void process_choice(char* directory)
 {
 	seed_ran();  /* seed system's random number generator */
 
@@ -197,7 +223,8 @@ void process_choice(void)
 			menu->parms.edge_count,
 			menu->parms.max_weight,
 			menu->props.weighted_p,
-			menu->outfiles.outfile1);
+			menu->outfiles.outfile1,
+			directory);
 }
 
 
@@ -220,12 +247,16 @@ void display_max_weight_menu(void)
 
 void display_outfile_menu(int count, int index1, int index2)
 {	
-	char snum[3];
+	char snum[5];
 	sprintf(snum, "%d", numVertices);
 
-	char combined[20];
+	char combined[30];
 	sprintf(combined, "%s", genericTitle);
 	strcat(combined, snum);
+
+	char extension[5];
+	sprintf(extension, "%s", ".txt");
+	strcat(combined, extension);
 
 	sscanf(combined, "%s", menu->outfiles.outfile1);
 }
@@ -337,9 +368,10 @@ void random_connected_graph(int v,
 	int e,
 	int max_wgt,
 	int weight_flag,
-	char* out_file)
+	char* out_file,
+	char* directory)
 {
-	int i, j, count, index, *adj_matrix, *tree;
+	int i, *adj_matrix, *tree;
 
 	int numPossibleEdges = v * (v - 1);
 
@@ -362,80 +394,90 @@ void random_connected_graph(int v,
 	init_array(tree, v);
 	permute(tree, v);
 
-	/*  Next generate a random spanning tree.
-	The algorithm is:
-
-	Assume that vertices tree[ 0 ],...,tree[ i - 1 ] are in
-	the tree.  Add an edge incident on tree[ i ]
-	and a random vertex in the set {tree[ 0 ],...,tree[ i - 1 ]}.
-	*/
-
-	for (i = 1; i < v; i++) {
-		j = ran(i);
-		adj_matrix[tree[i] * v + tree[j]] =
-			weight_flag ? 1 + ran(max_wgt) : 1;
-		adj_matrix[tree[j] * v + tree[i]] =
-			weight_flag ? 1 + ran(max_wgt) : 1;
+	for (int z = 0; z < v; z++) {
+		printf("Tree at %d index = %d \n \n", z, tree[z]);
 	}
 
-	/* Add additional random edges until achieving at least desired number */
+	/*Generate number of vertices in the base cycle (min = 2)*/
+	int cycleLength = ran(v - 1) + 2;
+	printf("Base cycle length = %d \n", cycleLength);
 
-	for (count = 0; count < ran(2 * (v - 1)); ) {
-		i = ran(v);
-		j = ran(v);
+	printf("CYCLE ENTRIES \n \n");
+	for (i = 0; i < cycleLength - 1; i++) {
+		adj_matrix[tree[i] * v + tree[i + 1]] = ran(max_wgt);
 
-		if (i == j)
-			continue;
+		printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
+	}
+	adj_matrix[tree[cycleLength - 1] * v + tree[0]] = ran(max_wgt);
 
-		if (i > j)
-			swap(&i, &j);
+	printf("AM entry for edge from %d to %d \n", tree[cycleLength - 1], tree[0]);
 
-		index = i * v + j;
-		if (!adj_matrix[index]) {
-			adj_matrix[index] = weight_flag ? 1 + ran(max_wgt) : 1;
-			count++;
+	for (i = 0; i < v; i++) {
+		printf("NOW LOOKING AT %d \n \n", tree[i]);
+		int randomTo;
+		int randomFrom;
+
+		//Check if this vertex is connected already, and if it is we 
+		//randomly decided to or not to add edges
+		if (i < cycleLength) {
+			if (!ran(2)) { continue; }
+		}
+		else {
+			//Have to run all the following once but also want to possibly
+			//add more edges later
+			randomTo = ran(cycleLength);
+			randomFrom = ran(cycleLength);
+
+			while (randomTo == tree[i] || randomFrom == tree[i]) {
+				randomTo = ran(cycleLength);
+				randomFrom = ran(cycleLength);
+			}
+
+			printf("randomTo = %d \n", randomTo);
+			printf("randomFrom = %d \n", randomFrom);
+
+			if (adj_matrix[tree[i] * v + randomTo] == 0) {
+				adj_matrix[tree[i] * v + randomTo] = ran(max_wgt);
+				printf("AM entry for edge from %d to %d (TO)\n", tree[i], randomTo);
+			}
+
+			if (adj_matrix[randomFrom * v + tree[i]] == 0) {
+				adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt);
+				printf("AM entry for edge from %d to %d (FROM)\n", randomFrom, tree[i]);
+			}
+		}
+
+
+		//Tries to randomly add more edges as possible
+		while (ran(2)) {
+			randomTo = ran(v);
+			randomFrom = ran(v);
+
+			while (randomTo == tree[i] || randomFrom == tree[i]) {
+				randomTo = ran(v);
+				randomFrom = ran(v);
+			}
+
+			printf("randomTo = %d \n", randomTo);
+			printf("randomFrom = %d \n", randomFrom);
+
+			if (adj_matrix[tree[i] * v + randomTo] == 0 && ran(2)) {
+				adj_matrix[tree[i] * v + randomTo] = ran(max_wgt);
+				printf("AM entry for edge from %d to %d \n", tree[i], randomTo);
+			}
+			if (adj_matrix[randomFrom * v + tree[i]] == 0 && ran(2)) {
+				adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt);
+				printf("AM entry for edge from %d to %d \n", randomFrom, tree[i]);
+			}
 		}
 	}
 
-	print_graph(v, count, out_file, adj_matrix, Directed);
+	print_graph(v, cycleLength, out_file, adj_matrix, Directed, directory);
 
 	free(tree);
 	free(adj_matrix);
 }
 
-
-
-
-int pick_to(int* closed, int vertices)
-{
-	int  vertex;
-
-	if (closed == NULL)        /* pick any vertex, even if picked before... */
-		do {
-			vertex = ran(vertices);
-		} while (vertex == 0);  /* ...except for start */
-	else {
-		do {
-			vertex = ran(vertices);
-		} while (closed[vertex]);
-		closed[vertex] = True;
-	}
-	return (vertex);
-}
-
-
-
-int unpicked_vertices_p(int* closed, int n)
-{
-	int  i = 1;
-
-	while (i < n)
-		if (!closed[i])
-			return (True);
-		else
-			i++;
-	return (False);
-}
 
 
 /*** ran, etc. ***/
@@ -461,12 +503,18 @@ void print_graph(int v,
 	int e,
 	char* out_file,
 	int* adj_matrix,
-	int dir_flag)
+	int dir_flag,
+	char* directory)
 {
 	int i, j, index;
 	FILE *fp;
 
-	if ((fp = fopen(out_file, "w")) == NULL) {
+	char dirAndFileName[40];
+	sprintf(dirAndFileName, "%s", directory);
+	strcat(dirAndFileName, "/");
+	strcat(dirAndFileName, out_file);
+
+	if ((fp = fopen(dirAndFileName, "w")) == NULL) {
 		printf("Unable to open file %s for writing.\n", out_file);
 		return;
 	}
