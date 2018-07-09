@@ -42,7 +42,7 @@ public class Run_Test {
     
     // function to create replication graph for a specified pair
     public static void CreateReplicationGraph(File file, int s, int t) { 
-    	System.out.println("In single pair");
+    	System.out.println("In single pair. Finding the cut between " + s + " and " + t);
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
 

@@ -14,20 +14,24 @@ public class MaxFlowMinCut
     private int[] parent;
     private Queue<Integer> queue;
     private int numberOfVertices;
+    private int oldNumberOfVertices;
     private boolean[] visited;
     private Set<Pair> cutSet;
     private ArrayList<Integer> reachable;
     private ArrayList<Integer> unreachable;
+    private ArrayList<Integer> sAndT;
  
     public MaxFlowMinCut (int numberOfVertices)
     {
         this.numberOfVertices = numberOfVertices;
+        oldNumberOfVertices = (numberOfVertices - 2) / 2;
         this.queue = new LinkedList<Integer>();
         parent = new int[numberOfVertices + 1];
         visited = new boolean[numberOfVertices + 1];
         cutSet = new HashSet<Pair>();
         reachable = new ArrayList<Integer>();
         unreachable = new ArrayList<Integer>();
+        sAndT = new ArrayList<Integer>();
     }
  
     public boolean bfs (int source, int goal, int graph[][])
@@ -68,7 +72,7 @@ public class MaxFlowMinCut
  
     public int  maxFlowMinCut (int graph[][], int source, int destination)
     {
-        System.err.println("Currently running max flow min cut on " + source + " to " + destination);
+        //System.err.println("Currently running max flow min cut on " + source + " to " + destination);
         int u, v;
         int maxFlow = 0;
         int pathFlow;
@@ -125,6 +129,39 @@ public class MaxFlowMinCut
                 }
             }
         }
+        
+        // return S, R, and T
+        // S is the reachable vertices in the original graph
+        System.out.print("S: {");
+        for (int i = 0; i < reachable.size(); i++) {
+            if (reachable.get(i) <= oldNumberOfVertices) {
+                System.out.print(reachable.get(i) + " ");
+                sAndT.add(reachable.get(i));
+            }
+        }
+        System.out.print("}\n");
+
+        // T is the unreachable vertices in the prime graph
+        System.out.print("T: {");
+        for (int i = 0; i < unreachable.size(); i++) {
+            if (unreachable.get(i) > oldNumberOfVertices && unreachable.get(i) <= (numberOfVertices - 2)) {
+                Integer toAdd = unreachable.get(i) - oldNumberOfVertices;
+                System.out.print(toAdd + " ");
+                sAndT.add(toAdd);
+            }
+        }
+        System.out.print("}\n");
+
+        // R is the vertices not in S or T
+        System.out.print("R: {");
+        for (int i = 1; i <= oldNumberOfVertices; i++) {
+            if (!sAndT.contains(new Integer(i))) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.print("}\n");
+
+
         return maxFlow;
     }
     
