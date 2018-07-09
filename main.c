@@ -153,7 +153,7 @@ int main()
 {
 	sprintf(genericTitle, "%s", "graph");
 
-	for (int i = 0; i < 1; i++) {
+	for (int i = 0; i < 10; i++) {
 		build_more_graphs = True;
 		build_graphs();
 
@@ -395,25 +395,25 @@ void random_connected_graph(int v,
 	permute(tree, v);
 
 	for (int z = 0; z < v; z++) {
-		printf("Tree at %d index = %d \n \n", z, tree[z]);
+		//printf("Tree at %d index = %d \n \n", z, tree[z]);
 	}
 
 	/*Generate number of vertices in the base cycle (min = 2)*/
 	int cycleLength = ran(v - 1) + 2;
-	printf("Base cycle length = %d \n", cycleLength);
+	//printf("Base cycle length = %d \n", cycleLength);
 
-	printf("CYCLE ENTRIES \n \n");
+	//printf("CYCLE ENTRIES \n \n");
 	for (i = 0; i < cycleLength - 1; i++) {
 		adj_matrix[tree[i] * v + tree[i + 1]] = ran(max_wgt);
 
-		printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
+		//printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
 	}
 	adj_matrix[tree[cycleLength - 1] * v + tree[0]] = ran(max_wgt);
 
-	printf("AM entry for edge from %d to %d \n", tree[cycleLength - 1], tree[0]);
+	//printf("AM entry for edge from %d to %d \n", tree[cycleLength - 1], tree[0]);
 
 	for (i = 0; i < v; i++) {
-		printf("NOW LOOKING AT %d \n \n", tree[i]);
+		//printf("NOW LOOKING AT VERTEX %d \n \n", tree[i]);
 		int randomTo;
 		int randomFrom;
 
@@ -433,17 +433,17 @@ void random_connected_graph(int v,
 				randomFrom = ran(cycleLength);
 			}
 
-			printf("randomTo = %d \n", randomTo);
-			printf("randomFrom = %d \n", randomFrom);
+			//printf("randomTo = %d \n", randomTo);
+			//printf("randomFrom = %d \n", randomFrom);
 
 			if (adj_matrix[tree[i] * v + randomTo] == 0) {
 				adj_matrix[tree[i] * v + randomTo] = ran(max_wgt);
-				printf("AM entry for edge from %d to %d (TO)\n", tree[i], randomTo);
+				//printf("AM entry for edge from %d to %d (TO)\n", tree[i], randomTo);
 			}
 
 			if (adj_matrix[randomFrom * v + tree[i]] == 0) {
 				adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt);
-				printf("AM entry for edge from %d to %d (FROM)\n", randomFrom, tree[i]);
+				//printf("AM entry for edge from %d to %d (FROM)\n", randomFrom, tree[i]);
 			}
 		}
 
@@ -458,16 +458,16 @@ void random_connected_graph(int v,
 				randomFrom = ran(v);
 			}
 
-			printf("randomTo = %d \n", randomTo);
-			printf("randomFrom = %d \n", randomFrom);
+			//printf("randomTo = %d \n", randomTo);
+			//printf("randomFrom = %d \n", randomFrom);
 
 			if (adj_matrix[tree[i] * v + randomTo] == 0 && ran(2)) {
 				adj_matrix[tree[i] * v + randomTo] = ran(max_wgt);
-				printf("AM entry for edge from %d to %d \n", tree[i], randomTo);
+				//printf("AM entry for edge from %d to %d \n", tree[i], randomTo);
 			}
 			if (adj_matrix[randomFrom * v + tree[i]] == 0 && ran(2)) {
 				adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt);
-				printf("AM entry for edge from %d to %d \n", randomFrom, tree[i]);
+				//printf("AM entry for edge from %d to %d \n", randomFrom, tree[i]);
 			}
 		}
 	}
