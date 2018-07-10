@@ -262,6 +262,19 @@ public class ReplicationCutAlgorithm {
             file.renameTo(file2); // Rename file
             reportFileName = newReportFileName;
         }
+
+        recordTemp();
+    }
+
+    public void recordTemp() {
+        try {
+            File tempfile = new File("tempfile");
+            PrintWriter temppw = new PrintWriter(new FileWriter(tempfile, true));
+            temppw.println(numberOfDistinctMinCuts);
+            temppw.close();
+        } catch (Exception e) {
+            System.err.println("Error");
+        }
     }
 	
 }
