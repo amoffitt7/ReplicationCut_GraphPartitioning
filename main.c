@@ -459,12 +459,12 @@ void random_connected_graph(int v,
 			//printf("randomFrom = %d \n", randomFrom);
 
 			if (adj_matrix[tree[i] * v + randomTo] == 0) {
-				adj_matrix[tree[i] * v + randomTo] = ran(max_wgt);
+				adj_matrix[tree[i] * v + randomTo] = ran(max_wgt) + 1;
 				//printf("AM entry for edge from %d to %d (TO)\n", tree[i], randomTo);
 			}
 
 			if (adj_matrix[randomFrom * v + tree[i]] == 0) {
-				adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt);
+				adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt) + 1;
 				//printf("AM entry for edge from %d to %d (FROM)\n", randomFrom, tree[i]);
 			}
 		}
