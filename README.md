@@ -49,8 +49,8 @@ http://condor.depaul.edu/rjohnson/source/graph_ge.c
 
 ## Running the java algorithm code  
 Once you have your folders greated via running the c code, you  
-need to first make a new folder in the java utitlity you are using  
-int the same directory/folder that already contains your bin and src  
+need to first make a new folder in the java workspace you are using  
+in the same directory/folder that already contains your bin and src  
 folders. Once you have made the new folder just transfer all of your  
 graph containing folders into this new folder. Once you have done this  
 you can now run the java code where you just need to pass the name of  
