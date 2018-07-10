@@ -13,6 +13,7 @@ public class Run_Test {
 	public static void main(String[] args) {	
 		final File mainFolder = new File(args[0]);
 		for(final File folderEntry: mainFolder.listFiles()) {
+			deleteExistingFiles(folderEntry);
 			for(final File fileEntry: listFilesForFolder(folderEntry)) {
 				System.out.println("Argument string = " + fileEntry);
 				ReplicationCutAlgorithm repCut = new ReplicationCutAlgorithm(fileEntry.getAbsolutePath());
@@ -22,7 +23,42 @@ public class Run_Test {
 		}
 
 	}	
-	
+
+	/* A method to delete existing files
+	 */
+	public static void deleteExistingFiles(File folderEntry) {
+		// delete any existing distribution file
+		String distributionFileName = folderEntry.getAbsolutePath() + "\\distribution.txt";
+		File distributionFile = new File(distributionFileName);
+		if (distributionFile.exists()) {
+			boolean success = distributionFile.delete();
+			if (success) {
+				System.out.println("Deleted " + distributionFile.getName());
+			}
+		}
+
+		File tempfile = new File("tempfile");
+		if (tempfile.exists()) {
+			boolean success = tempfile.delete();
+			if (success) {
+				System.out.println("Deleted tempfile");
+			}
+		}
+
+		for(File fileEntry: listFilesForFolder(folderEntry)) {
+			String fileName = fileEntry.getName();
+			String[] parts = fileName.split("_");
+			String lastPart = parts[parts.length - 1];
+			if (lastPart.equals("report.txt")
+				|| lastPart.equals("GOOD.txt")) {
+					boolean success = fileEntry.delete();
+				if (success) {
+					System.out.println("Deleted " + fileName);
+				}
+			}
+		}
+	}
+
 	/* A method to print the distribution among distinct number of min cuts to file.
 	 */
 	public static void createDistributionFile(File folderEntry) {
