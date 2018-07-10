@@ -143,17 +143,17 @@ public class MaxFlowMinCut
 
         // get S, R, and T
         // S is the reachable vertices in the original graph
-        for (int i = 0; i < reachable.size(); i++) {
-            if (reachable.get(i) <= oldNumberOfVertices) {
-                S.add(reachable.get(i));
+        for (Integer vertex: reachable) {
+            if (vertex <= oldNumberOfVertices) {
+                S.add(vertex);
             }
         }
 
         // T is the unreachable vertices in the prime graph
-        for (int i = 0; i < unreachable.size(); i++) {
-            if (unreachable.get(i) > oldNumberOfVertices && unreachable.get(i) <= (numberOfVertices - 2)) {
+        for (Integer vertex: unreachable) {
+            if (vertex > oldNumberOfVertices && vertex <= (numberOfVertices - 2)) {
                 // the true, original vertex is the prime vertex minus the old number of vertices
-                Integer trueVertex = unreachable.get(i) - oldNumberOfVertices;
+                Integer trueVertex = vertex - oldNumberOfVertices;
                 T.add(trueVertex);
             }
         }

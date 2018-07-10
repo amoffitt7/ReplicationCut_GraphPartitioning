@@ -12,12 +12,17 @@ public class ReplicationCutAlgorithm {
     private int numberOfDistinctMinCuts;
     private int numberOfVertices;
     private String fileName;
+    private String reportFileName;
     private File file;
+    private PrintWriter reportpw;
 
     public ReplicationCutAlgorithm(String fileName) {
         this.fileName = fileName;
         this.file = new File(fileName);
         minCuts = new HashSet<Cut>();
+        String[] fileNameParts = file.getAbsolutePath().split("\\.");
+        reportFileName = fileNameParts[0] + "_report.txt";
+        
     }
 
     public void findDistinctNumberOfMinCuts() {
@@ -26,7 +31,7 @@ public class ReplicationCutAlgorithm {
 
     // function to create replication graph for all pairs
     public void CreateReplicationGraphAllPairs() {
-    	System.out.println("In all pairs");
+    	//System.out.println("In all pairs");
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -56,7 +61,7 @@ public class ReplicationCutAlgorithm {
             br.close();
         }
         catch (IOException e) {
-            System.out.println("Error reading file");
+            System.err.println("Error reading file");
         }
     }
 
@@ -64,8 +69,17 @@ public class ReplicationCutAlgorithm {
     
     // function to create replication graph for a specified pair
     public void CreateReplicationGraph(int s, int t) { 
-    	System.out.println("In single pair. Finding the cut between " + s + " and " + t + ":");
         try {
+            reportpw = new PrintWriter(new FileWriter(reportFileName, true));
+            //System.out.println("In single pair. Finding the cut between " + s + " and " + t + ":");
+            reportpw.println("Finding the cut between " + s + " and " + t + ":");
+            reportpw.close();
+        } catch (IOException e) {
+            System.err.println("Error");
+        }
+        try {
+            
+
             BufferedReader br = new BufferedReader(new FileReader(file));
 
             String[] fileNameParts = file.getAbsolutePath().split("\\.");
@@ -130,14 +144,14 @@ public class ReplicationCutAlgorithm {
             createAdjacencyMatrix(repGraphFileName, supersource, supersink, newVertices);
         }
         catch (IOException e) {
-            System.out.println("Error reading file");
+            System.err.println("Error reading file");
         }
     }
     
     
     
     public void createAdjacencyMatrix(String filename, int s, int t, int numVertices) {
-    	System.out.println("In matrix chunk");
+    	//System.out.println("In matrix chunk");
     	File file = new File(filename);
     	int[][] adjMatrix = new int[numVertices + 1][numVertices + 1];
     	    	
@@ -162,15 +176,6 @@ public class ReplicationCutAlgorithm {
                 adjMatrix[firstVertex][secondVertex] = edgeWeight;
             } 		
 
-            /*
-            // Printing the adjacency matrix
-            // Loop through all rows
-            for (int i = 0; i < adjMatrix.length; i++) {
-                // Loop through all elements of current row
-                for (int j = 0; j < adjMatrix[i].length; j++)
-                    System.out.print(adjMatrix[i][j] + " ");
-                System.out.println("");
-            }*/
             br.close();
 
     	} catch(IOException e) {
@@ -186,25 +191,31 @@ public class ReplicationCutAlgorithm {
     	int[][] graph;
         int numberOfNodes;
         Cut minCut;
-        int maxFlow;
  
         numberOfNodes = numVertices;
         graph = adjMatrix;
  
         MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfNodes);
         minCut = maxFlowMinCut.maxFlowMinCut(graph, source, sink);
-        maxFlow = minCut.maxFlow;
         
         boolean newCut = true;
         for(Cut c: minCuts) {
         	if(c.equals(minCut)) { newCut = false; }
         }
         if (newCut && minCuts.add(minCut)) {
-            System.out.println("\tNew distinct mincut found!");
+            //System.out.println("\tNew distinct mincut found!");
+            reportpw.println("*** New distinct mincut found! ***");
         }
         
- 
-        System.out.println(minCut + "\n");     
+        try {
+            reportpw = new PrintWriter(new FileWriter(reportFileName, true));
+            //System.out.println(minCut + "\n");    
+            reportpw.println(minCut + "\n"); 
+            reportpw.close();
+        } catch (IOException e) {
+            System.err.println("Error");
+        }
+        
     }
     
     
@@ -212,9 +223,7 @@ public class ReplicationCutAlgorithm {
     public void recordResults() {
         //ANALYZE RESULTS FOR EACH GRAPH
         try {
-            String[] fileNameParts = file.getAbsolutePath().split("\\.");
-            String reportFileName = fileNameParts[0] + "_report.txt";
-            PrintWriter pw = new PrintWriter(new FileWriter(reportFileName));
+            reportpw = new PrintWriter(new FileWriter(reportFileName, true));
 
             numberOfDistinctMinCuts = minCuts.size(); 
 
@@ -225,21 +234,33 @@ public class ReplicationCutAlgorithm {
             System.out.println("The file was " + fileName + ".");
             System.out.println("The graph had " + numberOfVertices + " vertices.");
             System.out.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
-            System.out.println("Note: The actual number may be lower due to equivalent cuts.\n");
+            System.out.println("Note: The actual number may be lower due to equivalent cuts.");
+            System.out.println("Check the report file for more information.\n");
 
-            pw.println("****************");
-            pw.println("FINAL REPORT:");
-            pw.println("****************");
+            reportpw.println("****************");
+            reportpw.println("FINAL REPORT:");
+            reportpw.println("****************");
 
-            pw.println("The file was " + fileName + ".");
-            pw.println("The graph had " + numberOfVertices + " vertices.");
-            pw.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
-            pw.println("Note: The actual number may be lower due to equivalent cuts.\n");
+            reportpw.println("The file was " + fileName + ".");
+            reportpw.println("The graph had " + numberOfVertices + " vertices.");
+            reportpw.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
+            reportpw.println("Note: The actual number may be lower due to equivalent cuts.\n");
 
-            pw.close();
+            reportpw.close();
         }
         catch (IOException e) {
             System.err.println("ERROR");
+        }
+
+        // mark if it's n choose 2
+        int nChooseTwo = numberOfVertices * (numberOfVertices - 1) / 2;
+        if (numberOfDistinctMinCuts == nChooseTwo) {
+            File file = new File(reportFileName); // old name
+            String[] fileNameParts = reportFileName.split("\\.");
+            String newReportFileName = fileNameParts[0] + "_GOOD.txt";
+            File file2 = new File(newReportFileName); // new name
+            file.renameTo(file2); // Rename file
+            reportFileName = newReportFileName;
         }
     }
 	

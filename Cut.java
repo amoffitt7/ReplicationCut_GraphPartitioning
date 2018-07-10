@@ -37,7 +37,7 @@ public class Cut {
                 current = current + S.get(i);
             }
         }
-        current = current + "}\nT: {";
+        current = current + "} T: {";
         for (int i = 0; i < T.size(); i++) {
             if (i != T.size() - 1) {
                 current = current + T.get(i) + ", ";
@@ -46,7 +46,7 @@ public class Cut {
                 current = current + T.get(i);
             }
         }
-        current = current + "}\nR: {";
+        current = current + "} R: {";
         for (int i = 0; i < R.size(); i++) {
             if (i != R.size() - 1) {
                 current = current + R.get(i) + ", ";
@@ -55,7 +55,7 @@ public class Cut {
                 current = current + R.get(i);
             }
         }
-        current = current + "}\n";
+        current = current + "} \n";
         current = current + "Cut weight is ";
         for (int i = 0; i < pathLengths.size(); i++) {
             if (i != pathLengths.size() -1) {
