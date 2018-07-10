@@ -3,7 +3,6 @@
  */
 
 import java.io.*;
-import java.util.Collections;
 import java.util.Set;
 import java.util.HashSet;
 
@@ -192,10 +191,15 @@ public class ReplicationCutAlgorithm {
         MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfNodes);
         minCut = maxFlowMinCut.maxFlowMinCut(graph, source, sink);
         maxFlow = minCut.maxFlow;
-        if (minCuts.add(minCut)) {
+        
+        boolean newCut = true;
+        for(Cut c: minCuts) {
+        	if(c.equals(minCut)) { newCut = false; }
+        }
+        if (newCut && minCuts.add(minCut)) {
             System.out.println("\tNew distinct mincut found!");
         }
- 
+        
         System.out.println(minCut + "\n");  
         
     }
