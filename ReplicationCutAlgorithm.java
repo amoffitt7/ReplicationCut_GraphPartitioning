@@ -53,6 +53,7 @@ public class ReplicationCutAlgorithm {
                 }
             }
             recordResults();
+            br.close();
         }
         catch (IOException e) {
             System.out.println("Error reading file");
@@ -67,7 +68,7 @@ public class ReplicationCutAlgorithm {
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
 
-            String[] fileNameParts = file.getName().split("\\.");
+            String[] fileNameParts = file.getAbsolutePath().split("\\.");
             String repGraphFileName = fileNameParts[0] + "_" + s + "_" + t + ".txt";
             //BufferedWriter bw = new BufferedWriter(new FileWriter(repGraphFileName));
             PrintWriter pw = new PrintWriter(new FileWriter(repGraphFileName));
@@ -125,6 +126,7 @@ public class ReplicationCutAlgorithm {
             }
 
             pw.close();
+            br.close();
             createAdjacencyMatrix(repGraphFileName, supersource, supersink, newVertices);
         }
         catch (IOException e) {
@@ -169,6 +171,7 @@ public class ReplicationCutAlgorithm {
                     System.out.print(adjMatrix[i][j] + " ");
                 System.out.println("");
             }*/
+            br.close();
 
     	} catch(IOException e) {
     		System.err.println("Read ERROR");
@@ -200,8 +203,8 @@ public class ReplicationCutAlgorithm {
             System.out.println("\tNew distinct mincut found!");
         }
         
-        System.out.println(minCut + "\n");  
-        
+ 
+        System.out.println(minCut + "\n");     
     }
     
     
@@ -209,7 +212,7 @@ public class ReplicationCutAlgorithm {
     public void recordResults() {
         //ANALYZE RESULTS FOR EACH GRAPH
         try {
-            String[] fileNameParts = file.getName().split("\\.");
+            String[] fileNameParts = file.getAbsolutePath().split("\\.");
             String reportFileName = fileNameParts[0] + "_report.txt";
             PrintWriter pw = new PrintWriter(new FileWriter(reportFileName));
 
