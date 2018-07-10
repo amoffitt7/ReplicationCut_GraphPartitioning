@@ -19,8 +19,25 @@ public class Run_Test {
 		        repCut.findDistinctNumberOfMinCuts();
 			}
 		}
+
+		//createDistributionFile(mainFolder);
 	}	
 	
+	public static createDistributionFile(File mainFolder) {
+		File distributionFileName = mainFolder.getAbsolutePath() + "\\distribution.txt";
+		File distributionFile = new File(distributionFileName);
+		try {
+			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
+
+			dpw.format("Mincut number | Number of graphs");
+			for (int i = )
+			dpw.format ("")
+
+			dpw.close();
+		} catch (IOException e) {
+			System.err.println("Error");
+		}
+	}
 	
 	public static File[] listFilesForFolder(final File folder) {
 		List<File> files = new ArrayList<File>();
