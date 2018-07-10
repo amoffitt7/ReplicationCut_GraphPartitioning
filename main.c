@@ -47,6 +47,7 @@ void build_graphs(void);
 void process_choice(char* directory);
 void display_dimensions_menu(int which);
 void display_max_weight_menu(void);
+void display_numGraphs(void);
 void display_outfile_menu(int count, int index1, int index2);
 void seed_ran(void);
 int illegal_parms(int files);
@@ -87,15 +88,19 @@ static char  *toplevel_prompts[] =
 
 
 #define VerticesOnly      -111
-static char *dimension_prompt = " Max Number of Vertices: ";
-
+static char *dimension_prompt = " Number of Vertices: ";
 
 
 static char *main_file_prompt = " File for graph:  ";
 
 static char genericTitle[128];
 static int maxNumberOfVertices;
-static int numVertices = 3;
+
+//User specified number that tells us how many graphs
+//to make with provided input
+static int numberOfGraphs = 1;
+//Count to keep track of how many we have made
+static int graphCount = 1;
 
 /*** output files ***/
 #define MaxFileName   128
@@ -153,11 +158,13 @@ int main()
 {
 	sprintf(genericTitle, "%s", "graph");
 
+	seed_ran();  /* seed system's random number generator */
+
 	for (int i = 0; i < 10; i++) {
 		build_more_graphs = True;
 		build_graphs();
 
-		numVertices = 3;
+		graphCount = 1;
 	}
 	return 0;
 }
@@ -167,14 +174,15 @@ int main()
 void build_graphs(void)
 {
 	display_dimensions_menu(VerticesOnly);
+	display_numGraphs();
 	display_max_weight_menu();
 
 	char directory[30];
 	sprintf(directory, "%s", "GraphFolder_");
 
-	char maxVertices[4];
-	sprintf(maxVertices, "%d", maxNumberOfVertices);
-	strcat(directory, maxVertices);
+	char numVertices[5];
+	sprintf(numVertices, "%d", menu->parms.vertex_count);
+	strcat(directory, numVertices);
 	strcat(directory, "_");
 	char maxWeight[5];
 	sprintf(maxWeight, "%d", menu->parms.max_weight);
@@ -187,9 +195,9 @@ void build_graphs(void)
 	system(command);
 
 
-	while (numVertices <= maxNumberOfVertices) {
+	while (graphCount <= numberOfGraphs) {
 		process_choice(directory);
-		numVertices++;
+		graphCount++;
 	}
 }
 
@@ -197,8 +205,6 @@ void build_graphs(void)
 
 void process_choice(char* directory)
 {
-	seed_ran();  /* seed system's random number generator */
-
 	menu->props.weighted_p =
 		menu->props.dag_p =
 		menu->props.isomorphic_p =
@@ -212,7 +218,7 @@ void process_choice(char* directory)
 	menu->props.directed_p = True;
 	menu->props.weighted_p = True;
 
-	menu->parms.vertex_count = numVertices;
+	menu->parms.vertex_count = menu->parms.vertex_count;
 	menu->parms.edge_count = menu->parms.vertex_count; //Avoids an error
 
 	display_outfile_menu(1, None, None);
@@ -232,7 +238,15 @@ void process_choice(char* directory)
 void display_dimensions_menu(int which)
 {
 	printf("\n\t\t%s", dimension_prompt);
-	maxNumberOfVertices = get_int("\n\t\t");
+	menu->parms.vertex_count = get_int("\n\t\t");
+}
+
+
+
+void display_numGraphs(void)
+{
+	printf("\n\t\t\tHow many random graphs:  ");
+	numberOfGraphs = get_int("\n\t\t\t");
 }
 
 
@@ -247,12 +261,20 @@ void display_max_weight_menu(void)
 
 void display_outfile_menu(int count, int index1, int index2)
 {	
-	char snum[5];
-	sprintf(snum, "%d", numVertices);
+	char numVertices[5];
+	sprintf(numVertices, "%d", menu->parms.vertex_count);
+	char maxWeight[5];
+	sprintf(maxWeight, "%d", menu->parms.max_weight);
+	char gCount[5];
+	sprintf(gCount, "%d", graphCount);
 
 	char combined[30];
 	sprintf(combined, "%s", genericTitle);
-	strcat(combined, snum);
+	strcat(combined, numVertices);
+	strcat(combined, "_");
+	strcat(combined, maxWeight);
+	strcat(combined, "_");
+	strcat(combined, gCount);
 
 	char extension[5];
 	sprintf(extension, "%s", ".txt");
@@ -404,11 +426,11 @@ void random_connected_graph(int v,
 
 	//printf("CYCLE ENTRIES \n \n");
 	for (i = 0; i < cycleLength - 1; i++) {
-		adj_matrix[tree[i] * v + tree[i + 1]] = ran(max_wgt);
+		adj_matrix[tree[i] * v + tree[i + 1]] = ran(max_wgt) + 1;
 
 		//printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
 	}
-	adj_matrix[tree[cycleLength - 1] * v + tree[0]] = ran(max_wgt);
+	adj_matrix[tree[cycleLength - 1] * v + tree[0]] = ran(max_wgt) + 1;
 
 	//printf("AM entry for edge from %d to %d \n", tree[cycleLength - 1], tree[0]);
 
