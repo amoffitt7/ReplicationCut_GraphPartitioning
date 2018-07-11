@@ -12,6 +12,14 @@ public class Run_Test {
 
 	public static void main(String[] args) {	
 		final File mainFolder = new File(args[0]);
+		if (!mainFolder.exists()) {
+			System.err.println("Please pass in an existing folder.");
+			return;
+		}
+		if (!mainFolder.isDirectory()) {
+			System.err.println("Please pass in a valid folder.");
+			return;
+		}
 		deleteExistingDistributionFiles(mainFolder);
 		for(final File folderEntry: mainFolder.listFiles()) {
 			if(!folderEntry.isDirectory()) {
