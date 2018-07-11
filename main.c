@@ -395,8 +395,6 @@ void random_connected_graph(int v,
 {
 	int i, *adj_matrix, *tree;
 
-	int numPossibleEdges = v * (v - 1);
-
 	if ((adj_matrix = (int *)calloc(v * v, sizeof(int)))
 		== NULL) {
 		printf("Not enough room for this size graph\n");
@@ -434,17 +432,33 @@ void random_connected_graph(int v,
 
 	//printf("AM entry for edge from %d to %d \n", tree[cycleLength - 1], tree[0]);
 
+	int numPossibleEdges = 2 * (v * (v - 1) / 2);
+	//printf("Total number of possible edges = %d \n", numPossibleEdges);
+
+	int numEdgesNotAdded = numPossibleEdges;
+	numEdgesNotAdded -= cycleLength;
+	//printf("Possible edges after cycle edges = %d \n", numEdgesNotAdded);
+
+	int numDisconnected = v - cycleLength;
+	if (numDisconnected != 0) {
+		numEdgesNotAdded -= 2 * numDisconnected;
+		//printf("Possible edges after disconnected vertex fixes = %d \n", numEdgesNotAdded);
+	}
+
+	//printf("CONNECTING ALL VERTICES \n \n");
 	for (i = 0; i < v; i++) {
-		//printf("NOW LOOKING AT VERTEX %d \n \n", tree[i]);
 		int randomTo;
 		int randomFrom;
 
 		//Check if this vertex is connected already, and if it is we 
 		//randomly decided to or not to add edges
 		if (i < cycleLength) {
-			if (!ran(2)) { continue; }
+			//printf("Vertex %d is in the base cycle so we don't \n need to worry about connection!! \n", tree[i]);
+			continue;
 		}
 		else {
+			//printf("Vertex %d is not connected so we are going to connect it \n", tree[i]);
+				
 			//Have to run all the following once but also want to possibly
 			//add more edges later
 			randomTo = ran(cycleLength);
@@ -467,30 +481,23 @@ void random_connected_graph(int v,
 				adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt) + 1;
 				//printf("AM entry for edge from %d to %d (FROM)\n", randomFrom, tree[i]);
 			}
+			cycleLength++;
 		}
+	}
 
+	int randEdgesToAdd = ran(numEdgesNotAdded + 1);
+	//printf("Randomly adding %d randEdges", randEdgesToAdd);
 
-		//Tries to randomly add more edges as possible
-		while (ran(2)) {
-			randomTo = ran(v);
-			randomFrom = ran(v);
+	while (randEdgesToAdd > 0) {
+		int randomTo = ran(v);
+		int randomFrom = ran(v);
 
-			while (randomTo == tree[i] || randomFrom == tree[i]) {
-				randomTo = ran(v);
-				randomFrom = ran(v);
-			}
-
-			//printf("randomTo = %d \n", randomTo);
-			//printf("randomFrom = %d \n", randomFrom);
-
-			if (adj_matrix[tree[i] * v + randomTo] == 0 && ran(2)) {
-				adj_matrix[tree[i] * v + randomTo] = ran(max_wgt);
-				//printf("AM entry for edge from %d to %d \n", tree[i], randomTo);
-			}
-			if (adj_matrix[randomFrom * v + tree[i]] == 0 && ran(2)) {
-				adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt);
-				//printf("AM entry for edge from %d to %d \n", randomFrom, tree[i]);
-			}
+		if (adj_matrix[randomTo * v + randomFrom] == 0) {
+			adj_matrix[randomTo * v + randomFrom] = ran(max_wgt);
+			randEdgesToAdd--;
+		}
+		else {
+			continue;
 		}
 	}
 
