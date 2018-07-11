@@ -161,7 +161,7 @@ public class ReplicationCutAlgorithm {
         }
         if (newCut && minCuts.add(minCut)) {
             //System.out.println("\tNew distinct mincut found!");
-            reportpw.println("*** New distinct mincut found! ***");
+            //reportpw.println("*** New distinct mincut found! ***");
         }
         
         try {

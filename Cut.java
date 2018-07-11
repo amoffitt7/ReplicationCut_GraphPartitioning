@@ -57,14 +57,14 @@ public class Cut {
         }
         current = current + "} \n";
         current = current + "Cut weight is ";
-        for (int i = 0; i < pathLengths.size(); i++) {
+        /*for (int i = 0; i < pathLengths.size(); i++) {
             if (i != pathLengths.size() -1) {
                 current = current + pathLengths.get(i) + "+";
             }
             else {
                 current = current + pathLengths.get(i) + "=";
             }
-        }
+        }*/
         current = current + maxFlow;
         return current;
     }
