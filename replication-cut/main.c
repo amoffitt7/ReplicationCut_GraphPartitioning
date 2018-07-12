@@ -492,7 +492,7 @@ void random_connected_graph(int v,
 		int randomTo = ran(v);
 		int randomFrom = ran(v);
 
-		if (adj_matrix[randomTo * v + randomFrom] == 0) {
+		if (randomTo != randomFrom && adj_matrix[randomTo * v + randomFrom] == 0) {
 			adj_matrix[randomTo * v + randomFrom] = ran(max_wgt);
 			randEdgesToAdd--;
 		}
