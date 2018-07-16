@@ -3,6 +3,8 @@ import java.util.*;
 
 public class InfoCollector {
 
+    private int numberOfVertices; // the number of vertices for this folder of graphs
+    private int nChooseTwo; 
     private File folderEntry; // the folder containing all graph files
     private HashMap<Integer, Integer> distributionOfMinCuts; // keys: # of min cuts, values: # of instances of directed graphs
     private HashMap<Integer, HashMap<Integer,Integer>> distributionOfSSizes; 
@@ -11,6 +13,11 @@ public class InfoCollector {
     public InfoCollector(File folderEntry) {
         this.folderEntry = folderEntry;
         distributionOfMinCuts = new HashMap<Integer, Integer>();
+        distributionOfSSizes = new HashMap<Integer, HashMap<Integer,Integer>>();
+
+        String[] folderNameParts = folderEntry.getName().split("_");
+		numberOfVertices = Integer.parseInt(folderNameParts[1]);
+		nChooseTwo = numberOfVertices * (numberOfVertices - 1) / 2;
     }
 
     public void collectInfo() {
@@ -33,18 +40,44 @@ public class InfoCollector {
             
             // get the corresponding hash map of S sizes
             HashMap<Integer, Integer> sSizeMap = minCutAlgorithm.getSSizeMap();
-            System.err.println(sSizeMap.toString());
 
-            if (!distributionOfSSizes.containsKey(minCutNumber)) {
-                distributionOfSSizes.put(minCutNumber, sSizeMap); // if this is the first time, just store the map as the value
+            if (!distributionOfSSizes.containsKey(minCutNumber)) { // if this is the first time, just store the map as the value
+                distributionOfSSizes.put(minCutNumber, sSizeMap); 
             }
-            else {
-                // otherwise you have to add up previous values
-                HashMap<Integer, Integer> newMap = new HashMap<Integer,Integer>();
+            else { // otherwise you have to add up previous values
+                // from https://stackoverflow.com/questions/4299728/how-can-i-combine-two-hashmap-objects-containing-the-same-types 
+                HashMap<Integer, Integer> newMap = new HashMap<Integer,Integer>(distributionOfSSizes.get(minCutNumber)); 
+                    // new map copies old values
+                // from https://stackoverflow.com/questions/39513941/use-plus-operator-of-integer-as-bifunction 
+                sSizeMap.forEach((k, v) -> newMap.merge(k, v, Integer::sum)); // add new values. If duplicates, add them together
+                distributionOfSSizes.put(minCutNumber, newMap);
             }
         }
     }
 
+    // creates and returns a distribution file
+    public File getDistributionFile() {
+		String distributionFileName = "distribution_" + folderEntry.getName() + ".txt";
+		File distributionFile = new File(distributionFileName);
+		try {
+			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
+
+			dpw.format("MinCut number | Number of graphs\r\n");
+			for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nChooseTwo; minCutNumber++) {
+				int value = 0;
+				if (distributionOfMinCuts.containsKey(minCutNumber)) {
+					value = distributionOfMinCuts.get(new Integer(minCutNumber));
+				}
+				dpw.format("%13d | %15d\r\n", minCutNumber, value);
+			}
+
+			dpw.close();
+		} catch (IOException e) {
+			System.err.println("Error");
+        }
+        
+        return distributionFile;
+    }
 
     /* A method to delete existing files
 	 */

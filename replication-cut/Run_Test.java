@@ -37,6 +37,8 @@ public class Run_Test {
 			// create an info collector object for it
 			InfoCollector folderCollector = new InfoCollector(folderEntry);
 			folderCollector.collectInfo();
+			File distributionFile = folderCollector.getDistributionFile();
+			createDistributionFile(mainFolder, distributionFile);
 		}
 
 	}	
@@ -61,55 +63,12 @@ public class Run_Test {
 
 	/* A method to print the distribution among distinct number of min cuts to file.
 	 */
-	public static void createDistributionFile(File mainFolder, File folderEntry) {
-		String[] folderNameParts = folderEntry.getName().split("_");
-		int numberOfVertices = Integer.parseInt(folderNameParts[1]);
-		int nChooseTwo = numberOfVertices * (numberOfVertices - 1) / 2;
-
-		String distributionFileName = mainFolder.getAbsolutePath() + "\\distribution_" + folderEntry.getName() + ".txt";
-		File distributionFile = new File(distributionFileName);
-		File tempfile = new File("tempfile");
-
-		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-
-		try {
-			BufferedReader br = new BufferedReader(new FileReader(tempfile));
-			String nextLine;
-            while ((nextLine = br.readLine()) != null) {
-				Integer minCutNumber = Integer.parseInt(nextLine);
-				if (!map.containsKey(minCutNumber)) {
-					map.put(minCutNumber, new Integer(1));
-				}
-				else {
-					map.put(minCutNumber, map.get(minCutNumber) + 1);
-				}
-			}
-			br.close();
-		} catch (IOException e) {
-			System.err.println("Error");
-		}
-
-		boolean success = tempfile.delete();
-		if (!success) {
-			System.out.println("FAILURE");
-		}
-
-		try {
-			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
-
-			dpw.format("MinCut number | Number of graphs\r\n");
-			for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nChooseTwo; minCutNumber++) {
-				int value = 0;
-				if (map.containsKey(minCutNumber)) {
-					value = map.get(new Integer(minCutNumber));
-				}
-				dpw.format("%13d | %15d\r\n", minCutNumber, value);
-			}
-
-			dpw.close();
-		} catch (IOException e) {
-			System.err.println("Error");
-		}
+	public static void createDistributionFile(File mainFolder, File distributionFile) {
+		if (distributionFile.exists()) {
+			// move it to outer folder
+			File newLocation = new File(mainFolder.getAbsolutePath() + "\\" + distributionFile.getName());
+			distributionFile.renameTo(newLocation);
+		} 
 	}
 	
 	public static File[] listFilesForFolder(final File folder) {

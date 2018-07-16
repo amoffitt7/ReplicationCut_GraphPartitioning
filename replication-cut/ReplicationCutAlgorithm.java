@@ -205,6 +205,7 @@ public class ReplicationCutAlgorithm {
 
             numberOfDistinctMinCuts = minCuts.size(); 
 
+            /*
             System.out.println("****************");
             System.out.println("FINAL REPORT:");
             System.out.println("****************");
@@ -214,6 +215,7 @@ public class ReplicationCutAlgorithm {
             System.out.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
             System.out.println("Note: The actual number may be lower due to equivalent cuts.");
             System.out.println("Check the report file for more information.\n");
+            */
 
             reportpw.println("****************");
             reportpw.println("FINAL REPORT:");
