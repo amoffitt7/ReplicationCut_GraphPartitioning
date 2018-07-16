@@ -1,3 +1,6 @@
+/* Needs ReplicationCutAlgorithm.java to run
+ */
+
 import java.io.*;
 import java.util.*;
 
@@ -77,6 +80,35 @@ public class InfoCollector {
         }
         
         return distributionFile;
+    }
+
+    public File getSSizeDistributionFile() {
+        String distributionFileName = "distribution_s_" + folderEntry.getName() + ".txt";
+        File distributionFile = new File(distributionFileName);
+        try {
+			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
+
+			dpw.format("MinCut number | SSize | Number of cuts\r\n");
+			for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nChooseTwo; minCutNumber++) {
+                for (int sSize = 1; sSize <= numberOfVertices - 1; sSize++) {
+                    if (distributionOfSSizes.containsKey(minCutNumber)) {
+                        int numberOfCuts = 0;
+                        if (distributionOfSSizes.get(minCutNumber).containsKey(sSize)) {
+                            numberOfCuts = distributionOfSSizes.get(minCutNumber).get(sSize);
+                        }
+                        dpw.format("%13d | %5d | %13d\r\n", minCutNumber, sSize, numberOfCuts);
+                    }
+                }
+				dpw.format("----------------------------------\r\n");
+			}
+
+			dpw.close();
+		} catch (IOException e) {
+			System.err.println("Error");
+        }
+        
+        return distributionFile;
+
     }
 
     /* A method to delete existing files

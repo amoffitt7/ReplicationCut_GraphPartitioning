@@ -1,7 +1,7 @@
 /*
  * Main file for testing code
- * To run this, call "javac MaxFlowMinCut.java Cut.java ReplicationCutAlgorithm.java Run_Test.java"
- * and then call "java Run_Test filename.txt"
+ * To run this, call "javac MaxFlowMinCut.java Cut.java ReplicationCutAlgorithm.java InfoCollector.java Run_Test.java"
+ * and then call "java Run_Test folderName"
  */
 
 import java.io.*;
@@ -38,7 +38,9 @@ public class Run_Test {
 			InfoCollector folderCollector = new InfoCollector(folderEntry);
 			folderCollector.collectInfo();
 			File distributionFile = folderCollector.getDistributionFile();
-			createDistributionFile(mainFolder, distributionFile);
+			File distributionSFile = folderCollector.getSSizeDistributionFile();
+			moveDistributionFile(mainFolder, distributionFile);
+			moveDistributionFile(mainFolder, distributionSFile);
 		}
 
 	}	
@@ -61,9 +63,9 @@ public class Run_Test {
 	}
 	
 
-	/* A method to print the distribution among distinct number of min cuts to file.
+	/* A method to move the distribution file to the outer folder.
 	 */
-	public static void createDistributionFile(File mainFolder, File distributionFile) {
+	public static void moveDistributionFile(File mainFolder, File distributionFile) {
 		if (distributionFile.exists()) {
 			// move it to outer folder
 			File newLocation = new File(mainFolder.getAbsolutePath() + "\\" + distributionFile.getName());
