@@ -63,7 +63,7 @@ static char  *maxEdgeWeight_prompt =      " Maximum edge weight: ";
 static char  *cycleSize_prompt =          " Cycle size: ";
 static char  *numGraphs_prompt =	      " How many graphs would you like generated: ";
 
-static char  *invalidVertices_prompt =    " Invalid Entry! \n\t\t Enter a number greater than 2: ";
+static char  *invalidVertices_prompt =    " Invalid Entry! \n\t\t Enter a number greater than 3: ";
 static char  *invalidEdges_prompt =       " Invalid Entry! \n\t\t Enter a number greater than ";
 static char  *invalidEdgeWeight_prompt =  " Invalid Entry! \n\t\t Enter a weight greater than 0: ";
 static char  *invalidCycleLength_prompt = " Invalid Entry! \n\t\t Enter a length greater than 1: ";
@@ -169,7 +169,7 @@ void display_dimensions_menu()
 	/*** Get # vertices ***/
 	printf("\n\t\t%s", numVertices_prompt);
 	menu->parms.vertex_count = get_int("\n\t\t");
-	while (menu->parms.vertex_count < 2) {
+	while (menu->parms.vertex_count < 3) {
 		printf("\n\t\t%s", invalidVertices_prompt);
 		menu->parms.vertex_count = get_int("\n\t\t");
 	} 
