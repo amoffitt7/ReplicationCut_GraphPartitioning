@@ -87,6 +87,7 @@ for n = 10:14
     
     hold off;
     
+    %9 = k - 1... change this number or comment this line out
     allCounts(:,n-9) = counts;
     
 end
