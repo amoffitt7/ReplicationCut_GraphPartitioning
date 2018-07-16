@@ -3,8 +3,7 @@
  */
 
 import java.io.*;
-import java.util.Set;
-import java.util.HashSet;
+import java.util.*;
 
 public class ReplicationCutAlgorithm {
 
@@ -15,6 +14,8 @@ public class ReplicationCutAlgorithm {
     private String reportFileName;
     private File file;
     private PrintWriter reportpw;
+    private HashMap<Integer, Integer> sSizeMap; // keeps track of the number of nodes in S in each cut
+
 
     public ReplicationCutAlgorithm(String fileName) {
         this.fileName = fileName;
@@ -22,15 +23,27 @@ public class ReplicationCutAlgorithm {
         minCuts = new HashSet<Cut>();
         String[] fileNameParts = file.getAbsolutePath().split("\\.");
         reportFileName = fileNameParts[0] + "_report.txt";
-        
+
+        sSizeMap = new HashMap<Integer, Integer>();
     }
 
-    public void findDistinctNumberOfMinCuts() {
-        CreateReplicationGraphAllPairs();
+    // Has the precondition that runAlgorithm has been called
+    public int getDistinctNumberOfMinCuts() {
+        return numberOfDistinctMinCuts;
+    }
+
+    // has the precondition that runAlgorithm has been called
+    public HashMap<Integer, Integer> getSSizeMap() {
+        return sSizeMap;    
+    }
+
+    public void runAlgorithm() {
+        createReplicationGraphAllPairs();
+        recordResults();
     }
 
     // function to create replication graph for all pairs
-    public void CreateReplicationGraphAllPairs() {
+    private void createReplicationGraphAllPairs() {
     	//System.out.println("In all pairs");
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -54,10 +67,9 @@ public class ReplicationCutAlgorithm {
             // creates replication graph for all C(n,2) pair combinations
             for (int i = 1; i <= numberOfVertices; i++) {
                 for (int j = i+1; j <= numberOfVertices; j++) {
-                    CreateReplicationGraph(i, j);
+                    createReplicationGraph(i, j);
                 }
             }
-            recordResults();
             br.close();
         }
         catch (IOException e) {
@@ -68,7 +80,7 @@ public class ReplicationCutAlgorithm {
     
     
     // function to create replication graph for a specified pair
-    public void CreateReplicationGraph(int s, int t) { 
+    private void createReplicationGraph(int s, int t) { 
     	int newVertices = numberOfVertices * 2 + 2;
     	int[][] adjMatrix = new int[newVertices + 1][newVertices + 1];
     	
@@ -144,7 +156,7 @@ public class ReplicationCutAlgorithm {
     
     
     
-    public void runFlowAlgorithm(int[][] adjMatrix, int source, int sink, int numVertices) {
+    private void runFlowAlgorithm(int[][] adjMatrix, int source, int sink, int numVertices) {
     	int[][] graph;
         int numberOfNodes;
         Cut minCut;
@@ -154,7 +166,17 @@ public class ReplicationCutAlgorithm {
  
         MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfNodes);
         minCut = maxFlowMinCut.maxFlowMinCut(graph, source, sink);
+
+        // store info about the cut's S 
+        Integer sSize = new Integer(minCut.S.size()); // key is the size of s
+		if (!sSizeMap.containsKey(sSize)) {
+			sSizeMap.put(sSize, new Integer(1)); // if key doesn't exist yet, set its value to 1
+		}
+		else {
+			sSizeMap.put(sSize, sSizeMap.get(sSize) + 1); // if key already exists, increment its value
+		}
         
+        // store info about whether this mincut is distinct by adding it to a set which doesn't allow duplicates
         boolean newCut = true;
         for(Cut c: minCuts) {
         	if(c.equals(minCut)) { newCut = false; }
@@ -175,9 +197,8 @@ public class ReplicationCutAlgorithm {
         
     }
     
-    
-    
-    public void recordResults() {
+    // Creates a report file and also sets the number of distinct min cuts (in the future can split these two functions)
+    private void recordResults() {
         //ANALYZE RESULTS FOR EACH GRAPH
         try {
             reportpw = new PrintWriter(new FileWriter(reportFileName, true));
@@ -218,19 +239,6 @@ public class ReplicationCutAlgorithm {
             File file2 = new File(newReportFileName); // new name
             file.renameTo(file2); // Rename file
             reportFileName = newReportFileName;
-        }
-
-        recordTemp();
-    }
-
-    public void recordTemp() {
-        try {
-            File tempfile = new File("tempfile");
-            PrintWriter temppw = new PrintWriter(new FileWriter(tempfile, true));
-            temppw.println(numberOfDistinctMinCuts);
-            temppw.close();
-        } catch (Exception e) {
-            System.err.println("Error");
         }
     }
 	

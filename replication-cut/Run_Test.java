@@ -12,6 +12,8 @@ public class Run_Test {
 
 	public static void main(String[] args) {	
 		final File mainFolder = new File(args[0]);
+
+		// check if main folder passed in is valid
 		if (!mainFolder.exists()) {
 			System.err.println("Please pass in an existing folder.");
 			return;
@@ -20,24 +22,26 @@ public class Run_Test {
 			System.err.println("Please pass in a valid folder.");
 			return;
 		}
+
+		// delete existing distribution files in the main folder
 		deleteExistingDistributionFiles(mainFolder);
+
+		// iterate through each folder in main folder
 		for(final File folderEntry: mainFolder.listFiles()) {
+
+			// if it's not a folder continue
 			if(!folderEntry.isDirectory()) {
 				continue;
 			}
-			deleteExistingFiles(folderEntry);
-			for(final File fileEntry: listFilesForFolder(folderEntry)) {
-				System.out.println("Argument string = " + fileEntry);
-				ReplicationCutAlgorithm repCut = new ReplicationCutAlgorithm(fileEntry.getAbsolutePath());
-		        repCut.findDistinctNumberOfMinCuts();
-			}
-			createDistributionFile(mainFolder,folderEntry);
+			
+			// create an info collector object for it
+			InfoCollector folderCollector = new InfoCollector(folderEntry);
+			folderCollector.collectInfo();
 		}
 
 	}	
 
-	/* A method to delete existing files
-	 */
+	/* A method to delete existing files */
 	public static void deleteExistingDistributionFiles(File mainFolder) {
 		// delete any existing distribution file
 		for (File fileEntry: mainFolder.listFiles()) {
@@ -46,47 +50,14 @@ public class Run_Test {
 			String firstPart = parts[0];
 			if (firstPart.equals("distribution")) {
 					boolean success = fileEntry.delete();
-				if (success) {
+			if (success) {
 					System.out.println("Deleted " + fileName);
 				}
 			}
 		}
+
 	}
-
-	/* A method to delete existing files
-	 */
-	public static void deleteExistingFiles(File folderEntry) {
-		File tempfile = new File("tempfile");
-		if (tempfile.exists()) {
-			boolean success = tempfile.delete();
-			if (success) {
-				System.out.println("Deleted tempfile");
-			}
-		}
-
-		// delete any existing (old) distribution file
-		String distributionFileName = folderEntry.getAbsolutePath() + "\\distribution.txt";
-		File distributionFile = new File(distributionFileName);
-		if (distributionFile.exists()) {
-			boolean success = distributionFile.delete();
-			if (success) {
-				System.out.println("Deleted " + distributionFile.getName());
-			}
-		}
-
-		for(File fileEntry: listFilesForFolder(folderEntry)) {
-			String fileName = fileEntry.getName();
-			String[] parts = fileName.split("_");
-			String lastPart = parts[parts.length - 1];
-			if (lastPart.equals("report.txt")
-				|| lastPart.equals("GOOD.txt")) {
-					boolean success = fileEntry.delete();
-				if (success) {
-					System.out.println("Deleted " + fileName);
-				}
-			}
-		}
-	}
+	
 
 	/* A method to print the distribution among distinct number of min cuts to file.
 	 */
