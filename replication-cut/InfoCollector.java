@@ -61,7 +61,7 @@ public class InfoCollector {
                         newMap.put(sSize, newMap.get(sSize) + sSizeMap.get(sSize));
                     }
                     else {
-                        newMap.put(sSize, 1);
+                        newMap.put(sSize, sSizeMap.get(sSize));
                     }
                 }
                 distributionOfSSizes.put(minCutNumber, newMap);
