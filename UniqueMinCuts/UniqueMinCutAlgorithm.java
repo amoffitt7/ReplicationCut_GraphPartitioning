@@ -3,8 +3,7 @@
  */
 
 import java.io.*;
-import java.util.Set;
-import java.util.HashSet;
+import java.util.*;
 
 public class UniqueMinCutAlgorithm {
 
@@ -15,6 +14,7 @@ public class UniqueMinCutAlgorithm {
     private String reportFileName;
     private File file;
     private PrintWriter reportpw;
+    private HashMap<Integer, Integer> sSizeMap; // keeps track of the number of nodes in S in each cut
 
     public UniqueMinCutAlgorithm(String fileName) {
         this.fileName = fileName;
@@ -22,9 +22,19 @@ public class UniqueMinCutAlgorithm {
         minCuts = new HashSet<Cut>();
         String[] fileNameParts = file.getAbsolutePath().split("\\.");
         reportFileName = fileNameParts[0] + "_report.txt";       
+
+        sSizeMap = new HashMap<Integer, Integer>();
     }
 
-    public void findDistinctNumberOfMinCuts() {
+    public int getDistinctNumberOfMinCuts() {
+        return numberOfDistinctMinCuts;
+    }
+
+    public HashMap<Integer, Integer> getSSizeMap() {
+        return sSizeMap;
+    }
+
+    public void runAlgorithm() {
     	try {
             BufferedReader br = new BufferedReader(new FileReader(file));
             
@@ -91,6 +101,13 @@ public class UniqueMinCutAlgorithm {
         }
         if (newCut && minCuts.add(minCut)) {
             //reportpw.println("*** New distinct mincut found! ***");
+            Integer sSize = new Integer(minCut.S.size()); // key is the size of s
+            if (!sSizeMap.containsKey(sSize)) {
+                sSizeMap.put(sSize, new Integer(1)); // if key doesn't exist yet, set its value to 1
+            }
+            else {
+                sSizeMap.put(sSize, sSizeMap.get(sSize) + 1); // if key already exists, increment its value
+            }
         }
         
         try {
@@ -113,7 +130,7 @@ public class UniqueMinCutAlgorithm {
 
             numberOfDistinctMinCuts = minCuts.size(); 
 
-            System.out.println("****************");
+            /*System.out.println("****************");
             System.out.println("FINAL REPORT:");
             System.out.println("****************");
 
@@ -121,7 +138,7 @@ public class UniqueMinCutAlgorithm {
             System.out.println("The graph had " + numberOfVertices + " vertices.");
             System.out.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
             System.out.println("Note: The actual number may be lower due to equivalent cuts.");
-            System.out.println("Check the report file for more information.\n");
+            System.out.println("Check the report file for more information.\n");*/
 
             reportpw.println("****************");
             reportpw.println("FINAL REPORT:");
@@ -149,20 +166,7 @@ public class UniqueMinCutAlgorithm {
             reportFileName = newReportFileName;
         }*/
 
-        recordTemp();
     }
 
-    
-    
-    public void recordTemp() {
-        try {
-            File tempfile = new File("tempfile");
-            PrintWriter temppw = new PrintWriter(new FileWriter(tempfile, true));
-            temppw.println(numberOfDistinctMinCuts);
-            temppw.close();
-        } catch (Exception e) {
-            System.err.println("Error");
-        }
-    }
 	
 }
