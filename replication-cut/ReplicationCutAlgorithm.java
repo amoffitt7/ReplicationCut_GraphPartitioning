@@ -208,14 +208,7 @@ public class ReplicationCutAlgorithm {
         MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfNodes);
         minCut = maxFlowMinCut.maxFlowMinCut(graph, source, sink);
 
-        // store info about the cut's S 
-        Integer sSize = new Integer(minCut.S.size()); // key is the size of s
-		if (!sSizeMap.containsKey(sSize)) {
-			sSizeMap.put(sSize, new Integer(1)); // if key doesn't exist yet, set its value to 1
-		}
-		else {
-			sSizeMap.put(sSize, sSizeMap.get(sSize) + 1); // if key already exists, increment its value
-		}
+        
         
         // store info about whether this mincut is distinct by adding it to a set which doesn't allow duplicates
         boolean newCut = true;
@@ -225,6 +218,14 @@ public class ReplicationCutAlgorithm {
         if (newCut && minCuts.add(minCut)) {
             //System.out.println("\tNew distinct mincut found!");
             //reportpw.println("*** New distinct mincut found! ***");
+            // if the cut is new, store info about the cut's S 
+            Integer sSize = new Integer(minCut.S.size()); // key is the size of s
+            if (!sSizeMap.containsKey(sSize)) {
+                sSizeMap.put(sSize, new Integer(1)); // if key doesn't exist yet, set its value to 1
+            }
+            else {
+                sSizeMap.put(sSize, sSizeMap.get(sSize) + 1); // if key already exists, increment its value
+            }
         }
         
         try {
