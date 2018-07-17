@@ -1,4 +1,5 @@
 /* Needs ReplicationCutAlgorithm.java to run
+ * FOR REPLICATION CUT 
  */
 
 import java.io.*;
@@ -52,7 +53,17 @@ public class InfoCollector {
                 HashMap<Integer, Integer> newMap = new HashMap<Integer,Integer>(distributionOfSSizes.get(minCutNumber)); 
                     // new map copies old values
                 // from https://stackoverflow.com/questions/39513941/use-plus-operator-of-integer-as-bifunction 
-                sSizeMap.forEach((k, v) -> newMap.merge(k, v, Integer::sum)); // add new values. If duplicates, add them together
+                // the Java 8 version:
+                //sSizeMap.forEach((k, v) -> newMap.merge(k, v, Integer::sum)); // add new values. If duplicates, add them together
+                // the Java 7 version:
+                for (Integer sSize : sSizeMap.keySet()) {
+                    if (newMap.containsKey(sSize)) {
+                        newMap.put(sSize, newMap.get(sSize) + sSizeMap.get(sSize));
+                    }
+                    else {
+                        newMap.put(sSize, 1);
+                    }
+                }
                 distributionOfSSizes.put(minCutNumber, newMap);
             }
         }
