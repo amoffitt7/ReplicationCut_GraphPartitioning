@@ -15,6 +15,11 @@ public class ReplicationCutAlgorithm {
     private File file;
     private PrintWriter reportpw;
     private HashMap<Integer, Integer> sSizeMap; // keeps track of the number of nodes in S in each cut
+    private int[][] adjMatrix;
+    private int newVertices;
+    private static Integer myInf = Integer.MAX_VALUE;
+    private int supersource; 
+    private int supersink;
 
 
     public ReplicationCutAlgorithm(String fileName) {
@@ -63,6 +68,8 @@ public class ReplicationCutAlgorithm {
             }
 
             this.numberOfVertices = vertices;
+            
+            createBaseAdjacenecyMatrix();
 
             // creates replication graph for all C(n,2) pair combinations
             for (int i = 1; i <= numberOfVertices; i++) {
@@ -76,29 +83,17 @@ public class ReplicationCutAlgorithm {
             System.err.println("Error reading file");
         }
     }
-
     
     
-    // function to create replication graph for a specified pair
-    private void createReplicationGraph(int s, int t) { 
-    	int newVertices = numberOfVertices * 2 + 2;
-    	int[][] adjMatrix = new int[newVertices + 1][newVertices + 1];
-    	
-    	
-        try {
-            reportpw = new PrintWriter(new FileWriter(reportFileName, true));
-            //System.out.println("In single pair. Finding the cut between " + s + " and " + t + ":");
-            reportpw.println("Finding the cut between " + s + " and " + t + ":");
-            reportpw.close();
-        } catch (IOException e) {
-            System.err.println("Error");
-        }
-        
+    
+    private void createBaseAdjacenecyMatrix() {
+    	newVertices = numberOfVertices * 2 + 2;
+    	adjMatrix = new int[newVertices + 1][newVertices + 1]; 
+    	supersource = newVertices - 1;  /* the supersource will take the second to last index */
+        supersink = newVertices;        /* supersink will take the last index */
         
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
-
-            Integer myInf = Integer.MAX_VALUE;
 
             // get the header out of the way
             if ((br.readLine()) == null) {
@@ -122,35 +117,81 @@ public class ReplicationCutAlgorithm {
                 adjMatrix[firstVertex][secondVertex] = edgeWeight;
                 adjMatrix[newFirstVertex][newSecondVertex] = edgeWeight;
             }
-
-            int supersource = newVertices - 1; // the supersource will take the second to last index
-            int supersink = newVertices; // supersink will take the last index
-
-            int sPrime = s + numberOfVertices;
-            int tPrime = t + numberOfVertices;
-
-            // add the edges from supersource (s*) to sources (s and s')
-            adjMatrix[supersource][s] = myInf;
-            adjMatrix[supersource][sPrime] = myInf;
-           
-
-            // add the edges from sinks (t and t') to supersink 
-            adjMatrix[t][supersink] = myInf;
-            adjMatrix[tPrime][supersink] = myInf; 
-
-            // for all vertices that are not source and sink, add infinite paths from vertices to their primes
-            for (int i = 1; i <= numberOfVertices; i++) {
-                if (i != s && i != t) {
-                    int iPrime = i + numberOfVertices;
-                    adjMatrix[i][iPrime] = myInf; 
-                }
-            }
-
+            
             br.close();
-            runFlowAlgorithm(adjMatrix, supersource, supersink, newVertices);
         }
         catch (IOException e) {
             System.err.println("Error reading file");
+        }
+    }
+
+    
+    
+    // function to create replication graph for a specified pair
+    private void createReplicationGraph(int s, int t) { 
+    	try {
+            reportpw = new PrintWriter(new FileWriter(reportFileName, true));
+            //System.out.println("In single pair. Finding the cut between " + s + " and " + t + ":");
+            reportpw.println("Finding the cut between " + s + " and " + t + ":");
+            reportpw.close();
+        } catch (IOException e) {
+            System.err.println("Error");
+        }
+        
+        setSupers(s, t);
+        setMiddleNodes(s, t);
+
+        runFlowAlgorithm(adjMatrix, supersource, supersink, newVertices);
+        
+        unSetSupers(s, t);
+        unSetMiddleNodes(s, t);
+    }
+    
+    
+    
+    void setSupers(int s, int t) {
+    	//add the edges from supersource (s*) to sources (s and s')
+        adjMatrix[supersource][s] = myInf;
+        adjMatrix[supersource][s + numberOfVertices] = myInf;
+        
+        //add the edges from sinks (t and t') to supersink 
+        adjMatrix[t][supersink] = myInf;
+        adjMatrix[t + numberOfVertices][supersink] = myInf; 
+    }
+    
+    
+    
+    void setMiddleNodes(int s, int t) {
+    	// for all vertices that are not source and sink, add infinite paths from vertices to their primes
+        for (int i = 1; i <= numberOfVertices; i++) {
+            if (i != s && i != t) {
+                int iPrime = i + numberOfVertices;
+                adjMatrix[i][iPrime] = myInf; 
+            }
+        }
+    }
+    
+    
+    
+    void unSetSupers(int s, int t) {
+    	//remove the edges from supersource (s*) to sources (s and s')
+        adjMatrix[supersource][s] = 0;
+        adjMatrix[supersource][s + numberOfVertices] = 0;
+        
+        //remove the edges from sinks (t and t') to supersink 
+        adjMatrix[t][supersink] = 0;
+        adjMatrix[t + numberOfVertices][supersink] = 0; 
+    }
+    
+    
+    
+    void unSetMiddleNodes(int s, int t) {
+    	// for all vertices that are not source and sink, add infinite paths from vertices to their primes
+        for (int i = 1; i <= numberOfVertices; i++) {
+            if (i != s && i != t) {
+                int iPrime = i + numberOfVertices;
+                adjMatrix[i][iPrime] = 0; 
+            }
         }
     }
     
