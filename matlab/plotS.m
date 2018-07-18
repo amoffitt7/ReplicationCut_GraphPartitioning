@@ -2,15 +2,14 @@
 clc
 
 % number of vertices. Change this number!
-n = 15;
+n = 20;
 
 % file name. Change this file!
-sFilename = 'distribution_s_GraphFolder_15_200_1000.txt';
+sFilename = 'distribution_s_GraphFolder_20_20_1000.txt';
 
 sFileID = fopen(fullfile(folder, sFilename), 'rt');
 
 S_text = textscan(sFileID,formatSpec,3,'Delimiter','|');
-
 
 %gets info from the S file
 figure;
@@ -34,5 +33,7 @@ surf(Z);
 xlabel('# of Min Cuts');
 ylabel('# of nodes on left side of cut');
 zlabel('Percentage of instances');
+theTitle = sprintf('S Sizes');
+title(theTitle);
     
 fclose(sFileID);
