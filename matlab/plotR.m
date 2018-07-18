@@ -14,7 +14,7 @@ R_text = textscan(rFileID,formatSpec,3,'Delimiter','|');
 %gets info from the R file
 figure;
 numberOfColumns = n * (n-1) / 2;
-numberOfRows = (n-1) - 1 + 1;
+numberOfRows = n + 1;
 Z = zeros(numberOfRows, numberOfColumns);
 while (~feof(rFileID))  
     R_T = textscan(rFileID, '%d %d %d','Delimiter','|');
@@ -29,7 +29,8 @@ while (~feof(rFileID))
     end
     eob = textscan(rFileID,'%s',1,'Delimiter','\n'); 
 end
-surf(Z);
+r = surf(Z);
+r.FaceAlpha = 0;
 xlabel('# of Min Cuts');
 ylabel('# of nodes in R');
 zlabel('Percentage of instances');

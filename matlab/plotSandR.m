@@ -38,7 +38,8 @@ while (~feof(sFileID))
     end
     eob = textscan(sFileID,'%s',1,'Delimiter','\n'); 
 end
-surf(Z);
+s = surf(Z);
+s.FaceAlpha = 0;
 xlabel('# of Min Cuts');
 ylabel('# of nodes on left side of cut');
 zlabel('Percentage of instances');
@@ -52,23 +53,24 @@ R_text = textscan(rFileID,formatSpec,3,'Delimiter','|');
 
 %gets info from the R file
 subplot('Position', [0.6 0.2 0.45 0.55]);
-numberOfColumns = n * (n-1) / 2;
-numberOfRows = (n-1) - 1 + 1;
-Z = zeros(numberOfRows, numberOfColumns);
+RnumberOfColumns = n * (n-1) / 2;
+RnumberOfRows = n + 1;
+RZ = zeros(RnumberOfRows, RnumberOfColumns);
 while (~feof(rFileID))  
     R_T = textscan(rFileID, '%d %d %d','Delimiter','|');
-    MinCutNumber = double(R_T{1});
+    RMinCutNumber = double(R_T{1});
     RSize = double(R_T{2});
-    NumberOfCuts = double(R_T{3});
-    if isempty(MinCutNumber) == 0
-        x = MinCutNumber(1);
+    RNumberOfCuts = double(R_T{3});
+    if isempty(RMinCutNumber) == 0
+        Rx = RMinCutNumber(1);
         %normalize number of cuts
-        V = NumberOfCuts/sum(NumberOfCuts);
-        Z(:,x) = V;
+        RV = RNumberOfCuts/sum(RNumberOfCuts);
+        RZ(:,Rx) = RV;
     end
     eob = textscan(rFileID,'%s',1,'Delimiter','\n'); 
 end
-surf(Z);
+r = surf(RZ);
+r.FaceAlpha = 0;
 xlabel('# of Min Cuts');
 ylabel('# of nodes in R');
 zlabel('Percentage of instances');

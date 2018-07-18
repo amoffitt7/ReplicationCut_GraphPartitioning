@@ -29,7 +29,8 @@ while (~feof(sFileID))
     end
     eob = textscan(sFileID,'%s',1,'Delimiter','\n'); 
 end
-surf(Z);
+s = surf(Z);
+s.FaceAlpha = 0;
 xlabel('# of Min Cuts');
 ylabel('# of nodes on left side of cut');
 zlabel('Percentage of instances');
