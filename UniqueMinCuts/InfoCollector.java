@@ -71,7 +71,7 @@ public class InfoCollector {
 
     // creates and returns a distribution file
     public File getDistributionFile() {
-		String distributionFileName = "distribution_" + folderEntry.getName() + ".txt";
+		String distributionFileName = "distribution_flowcut_" + folderEntry.getName() + ".txt";
 		File distributionFile = new File(distributionFileName);
 		try {
 			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
@@ -94,7 +94,7 @@ public class InfoCollector {
     }
 
     public File getSSizeDistributionFile() {
-        String distributionFileName = "distribution_s_" + folderEntry.getName() + ".txt";
+        String distributionFileName = "distribution_flowcut_s_" + folderEntry.getName() + ".txt";
         File distributionFile = new File(distributionFileName);
         try {
 			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
@@ -127,7 +127,7 @@ public class InfoCollector {
 	public void deleteExistingFiles() {
 
 		// delete any existing (old) distribution file
-		String distributionFileName = folderEntry.getAbsolutePath() + "\\distribution.txt";
+		String distributionFileName = folderEntry.getAbsolutePath() + "/distribution.txt";
 		File distributionFile = new File(distributionFileName);
 		if (distributionFile.exists()) {
 			boolean success = distributionFile.delete();

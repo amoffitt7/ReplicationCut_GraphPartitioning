@@ -15,6 +15,7 @@ public class ReplicationCutAlgorithm {
     private File file;
     private PrintWriter reportpw;
     private HashMap<Integer, Integer> sSizeMap; // keeps track of the number of nodes in S in each cut
+    private HashMap<Integer, Integer> rSizeMap; // keeps track of number of nodes in R in each cut
     private int[][] adjMatrix;
     private int newVertices;
     private static Integer myInf = Integer.MAX_VALUE;
@@ -30,6 +31,7 @@ public class ReplicationCutAlgorithm {
         reportFileName = fileNameParts[0] + "_report.txt";
 
         sSizeMap = new HashMap<Integer, Integer>();
+        rSizeMap = new HashMap<Integer, Integer>();
     }
 
     // Has the precondition that runAlgorithm has been called
@@ -40,6 +42,11 @@ public class ReplicationCutAlgorithm {
     // has the precondition that runAlgorithm has been called
     public HashMap<Integer, Integer> getSSizeMap() {
         return sSizeMap;    
+    }
+
+    // has the precondition that runAlgorithm has been called
+    public HashMap<Integer, Integer> getRSizeMap() {
+        return rSizeMap;    
     }
 
     public void runAlgorithm() {
@@ -225,6 +232,14 @@ public class ReplicationCutAlgorithm {
             }
             else {
                 sSizeMap.put(sSize, sSizeMap.get(sSize) + 1); // if key already exists, increment its value
+            }
+            // store info about the cut's R
+            Integer rSize = new Integer(minCut.R.size()); // key is the size of s
+            if (!rSizeMap.containsKey(rSize)) {
+                rSizeMap.put(rSize, new Integer(1)); // if key doesn't exist yet, set its value to 1
+            }
+            else {
+                rSizeMap.put(rSize, rSizeMap.get(rSize) + 1); // if key already exists, increment its value
             }
         }
         
