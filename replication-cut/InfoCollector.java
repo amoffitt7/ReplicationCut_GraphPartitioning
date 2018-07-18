@@ -12,12 +12,14 @@ public class InfoCollector {
     private File folderEntry; // the folder containing all graph files
     private HashMap<Integer, Integer> distributionOfMinCuts; // keys: # of min cuts, values: # of instances of directed graphs
     private HashMap<Integer, HashMap<Integer,Integer>> distributionOfSSizes; 
+    private HashMap<Integer, HashMap<Integer,Integer>> distributionOfRSizes; 
         // keys: # of min cuts, values: maps (keys: S size, values: # of instances of cuts)
 
     public InfoCollector(File folderEntry) {
         this.folderEntry = folderEntry;
         distributionOfMinCuts = new HashMap<Integer, Integer>();
         distributionOfSSizes = new HashMap<Integer, HashMap<Integer,Integer>>();
+        distributionOfRSizes = new HashMap<Integer, HashMap<Integer,Integer>>();
 
         String[] folderNameParts = folderEntry.getName().split("_");
 		numberOfVertices = Integer.parseInt(folderNameParts[1]);
@@ -66,6 +68,31 @@ public class InfoCollector {
                 }
                 distributionOfSSizes.put(minCutNumber, newMap);
             }
+
+            // get the corresponding hash map of R sizes
+            HashMap<Integer, Integer> rSizeMap = minCutAlgorithm.getRSizeMap();
+
+            if (!distributionOfRSizes.containsKey(minCutNumber)) { // if this is the first time, just store the map as the value
+                distributionOfRSizes.put(minCutNumber, rSizeMap); 
+            }
+            else { // otherwise you have to add up previous values
+                // from https://stackoverflow.com/questions/4299728/how-can-i-combine-two-hashmap-objects-containing-the-same-types 
+                HashMap<Integer, Integer> newMap = new HashMap<Integer,Integer>(distributionOfRSizes.get(minCutNumber)); 
+                    // new map copies old values
+                // from https://stackoverflow.com/questions/39513941/use-plus-operator-of-integer-as-bifunction 
+                // the Java 8 version:
+                //sSizeMap.forEach((k, v) -> newMap.merge(k, v, Integer::sum)); // add new values. If duplicates, add them together
+                // the Java 7 version:
+                for (Integer rSize : rSizeMap.keySet()) {
+                    if (newMap.containsKey(rSize)) {
+                        newMap.put(rSize, newMap.get(rSize) + rSizeMap.get(rSize));
+                    }
+                    else {
+                        newMap.put(rSize, rSizeMap.get(rSize));
+                    }
+                }
+                distributionOfRSizes.put(minCutNumber, newMap);
+            }
         }
     }
 
@@ -108,6 +135,35 @@ public class InfoCollector {
                             numberOfCuts = distributionOfSSizes.get(minCutNumber).get(sSize);
                         }
                         dpw.format("%13d | %5d | %13d\r\n", minCutNumber, sSize, numberOfCuts);
+                    }
+                }
+				dpw.format("----------------------------------\r\n");
+			}
+
+			dpw.close();
+		} catch (IOException e) {
+			System.err.println("Error");
+        }
+        
+        return distributionFile;
+
+    }
+
+    public File getRSizeDistributionFile() {
+        String distributionFileName = "distribution_r_" + folderEntry.getName() + ".txt";
+        File distributionFile = new File(distributionFileName);
+        try {
+			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
+
+			dpw.format("MinCut number | RSize | Number of cuts\r\n");
+			for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nChooseTwo; minCutNumber++) {
+                for (int rSize = 1; rSize <= numberOfVertices - 1; rSize++) {
+                    if (distributionOfRSizes.containsKey(minCutNumber)) {
+                        int numberOfCuts = 0;
+                        if (distributionOfRSizes.get(minCutNumber).containsKey(rSize)) {
+                            numberOfCuts = distributionOfRSizes.get(minCutNumber).get(rSize);
+                        }
+                        dpw.format("%13d | %5d | %13d\r\n", minCutNumber, rSize, numberOfCuts);
                     }
                 }
 				dpw.format("----------------------------------\r\n");
