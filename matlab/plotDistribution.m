@@ -6,10 +6,12 @@ folder = cd;
 
 % the number of vertices. Change this number!
 n = 20;
+% the number of edges. Change this number!
+edges = 23;
 
-%Extract the data. Change this file name!
-textFilename = 'distribution_GraphFolder_20_70_1000.txt';
-flowTextFilename = 'distribution_flowcut_GraphFolder_20_70_1000.txt';
+%Extract the data.
+textFilename = sprintf('distribution_GraphFolder_%d_%d_1000.txt', n, edges);
+flowTextFilename = sprintf('distribution_flowcut_GraphFolder_%d_%d_1000.txt', n, edges);
     
 fileID = fopen(fullfile(folder, textFilename), 'rt');
 flowFileID = fopen(fullfile(folder, flowTextFilename), 'rt');
@@ -85,7 +87,7 @@ xlim([n-1, maxX])
 xlabel('Number of distinct min cuts');
 ylabel('Percent of directed graphs');
 legend('Replication Cut','Flow Cut','Logistic');
-plotTitle = sprintf('%d vertices', n);
+plotTitle = sprintf('%d vertices, %d edges', n, edges);
 title(plotTitle);
     
 hold off;
