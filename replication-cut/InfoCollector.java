@@ -157,7 +157,7 @@ public class InfoCollector {
 
 			dpw.format("MinCut number | RSize | Number of cuts\r\n");
 			for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nChooseTwo; minCutNumber++) {
-                for (int rSize = 1; rSize <= numberOfVertices - 1; rSize++) {
+                for (int rSize = 0; rSize <= numberOfVertices; rSize++) {
                     if (distributionOfRSizes.containsKey(minCutNumber)) {
                         int numberOfCuts = 0;
                         if (distributionOfRSizes.get(minCutNumber).containsKey(rSize)) {
