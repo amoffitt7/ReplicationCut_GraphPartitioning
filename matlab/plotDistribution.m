@@ -55,6 +55,7 @@ realstd = std(counts);
 %poissonmle = mle(counts,'distribution','Poisson');
 %normalmle = mle(counts);
 logisticmle = mle(counts, 'distribution','Logistic');
+flowmle = mle(flowCounts, 'distribution', 'Logistic');
     
 %allMle = [];
 %allMle = [[realmean realstd]; allMle; [poissonmle 0]; normalmle; logisticmle];

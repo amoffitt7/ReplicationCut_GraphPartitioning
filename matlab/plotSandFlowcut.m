@@ -5,14 +5,14 @@ close all; clc
 n = 20;
 
 % edges to iterate through
-for i = 2:7;
+for i = 2:7
 
 % increment
 edges = i * 10;
     
 % file names. Change these files!
 sFilename = sprintf('distribution_s_GraphFolder_20_%d_1000.txt', edges);
-rFilename = sprintf('distribution_r_GraphFolder_20_%d_1000.txt', edges);
+rFilename = sprintf('distribution_flowcut_s_GraphFolder_20_%d_1000.txt', edges);
 
 sFileID = fopen(fullfile(folder, sFilename), 'rt');
 
@@ -43,7 +43,7 @@ s.FaceAlpha = 0;
 xlabel('# of Min Cuts');
 ylabel('# of nodes on left side of cut');
 zlabel('Percentage of instances');
-title('S Sizes');
+title('S Sizes for Replication Cut');
     
 fclose(sFileID);
 
@@ -54,7 +54,7 @@ R_text = textscan(rFileID,formatSpec,3,'Delimiter','|');
 %gets info from the R file
 subplot('Position', [0.6 0.2 0.45 0.55]);
 RnumberOfColumns = n * (n-1) / 2;
-RnumberOfRows = n + 1;
+RnumberOfRows = n - 1;
 RZ = zeros(RnumberOfRows, RnumberOfColumns);
 while (~feof(rFileID))  
     R_T = textscan(rFileID, '%d %d %d','Delimiter','|');
@@ -69,12 +69,12 @@ while (~feof(rFileID))
     end
     eob = textscan(rFileID,'%s',1,'Delimiter','\n'); 
 end
-r = surf(RZ);
-r.FaceAlpha = 0;
+s2 = surf(RZ);
+s2.FaceAlpha = 0;
 xlabel('# of Min Cuts');
-ylabel('# of nodes in R');
+ylabel('# of nodes on left side of cut');
 zlabel('Percentage of instances');
-title('R Sizes');
+title('S Sizes for Flow Cuts');
     
 fclose(rFileID);
 
