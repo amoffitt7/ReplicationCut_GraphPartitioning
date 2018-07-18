@@ -71,7 +71,7 @@ public class Run_Tests {
 	public static void moveDistributionFile(File mainFolder, File distributionFile) {
 		if (distributionFile.exists()) {
 			// move it to outer folder
-			File newLocation = new File(mainFolder.getAbsolutePath() + "\\" + distributionFile.getName());
+			File newLocation = new File(mainFolder.getAbsolutePath() + "/" + distributionFile.getName());
 			distributionFile.renameTo(newLocation);
 		} 
 	}
