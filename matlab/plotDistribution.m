@@ -84,7 +84,7 @@ maxX = max([max(counts) max(flowCounts)]);
 xlim([n-1, maxX])
 xlabel('Number of distinct min cuts');
 ylabel('Percent of directed graphs');
-legend('Replication Cut','Logistic');
+legend('Replication Cut','Flow Cut','Logistic');
 plotTitle = sprintf('%d vertices', n);
 title(plotTitle);
     
