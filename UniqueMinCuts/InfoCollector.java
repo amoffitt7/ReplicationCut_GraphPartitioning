@@ -8,7 +8,7 @@ import java.util.*;
 public class InfoCollector {
 
     private int numberOfVertices; // the number of vertices for this folder of graphs
-    private int nChooseTwo; 
+    private int nPermTwo; 
     private File folderEntry; // the folder containing all graph files
     private HashMap<Integer, Integer> distributionOfMinCuts; // keys: # of min cuts, values: # of instances of directed graphs
     private HashMap<Integer, HashMap<Integer,Integer>> distributionOfSSizes; 
@@ -21,7 +21,7 @@ public class InfoCollector {
 
         String[] folderNameParts = folderEntry.getName().split("_");
 		numberOfVertices = Integer.parseInt(folderNameParts[1]);
-		nChooseTwo = numberOfVertices * (numberOfVertices - 1) / 2;
+		nPermTwo = numberOfVertices * (numberOfVertices - 1);
     }
 
     public void collectInfo() {
@@ -77,7 +77,7 @@ public class InfoCollector {
 			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
 
 			dpw.format("MinCut number | Number of graphs\r\n");
-			for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nChooseTwo; minCutNumber++) {
+			for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nPermTwo; minCutNumber++) {
 				int value = 0;
 				if (distributionOfMinCuts.containsKey(minCutNumber)) {
 					value = distributionOfMinCuts.get(new Integer(minCutNumber));
@@ -100,7 +100,7 @@ public class InfoCollector {
 			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
 
 			dpw.format("MinCut number | SSize | Number of cuts\r\n");
-			for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nChooseTwo; minCutNumber++) {
+			for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nPermTwo; minCutNumber++) {
                 for (int sSize = 1; sSize <= numberOfVertices - 1; sSize++) {
                     if (distributionOfSSizes.containsKey(minCutNumber)) {
                         int numberOfCuts = 0;
