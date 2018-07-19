@@ -3,9 +3,11 @@ clc
 
 % number of vertices. Change this number!
 n = 20;
+% the number of edges. Change this number!
+edges = 23;
 
 % file name. Change this file!
-rFilename = 'distribution_r_GraphFolder_20_20_1000.txt';
+rFilename = sprintf('distribution_r_GraphFolder_%d_%d_1000.txt', n, edges);
 
 rFileID = fopen(fullfile(folder, rFilename), 'rt');
 
@@ -34,6 +36,7 @@ r.FaceAlpha = 0;
 xlabel('# of Min Cuts');
 ylabel('# of nodes in R');
 zlabel('Percentage of instances');
-title('R Sizes');
+theTitle = sprintf('R sizes, %d vertices, %d edges', n, edges);
+title(theTitle);
     
 fclose(rFileID);
