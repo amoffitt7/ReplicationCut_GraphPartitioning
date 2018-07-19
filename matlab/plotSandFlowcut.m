@@ -16,6 +16,7 @@ rFilename = sprintf('distribution_flowcut_s_GraphFolder_20_%d_1000.txt', edges);
 
 sFileID = fopen(fullfile(folder, sFilename), 'rt');
 
+formatSpec = '%s';
 S_text = textscan(sFileID,formatSpec,3,'Delimiter','|');
 
 %gets info from the S file

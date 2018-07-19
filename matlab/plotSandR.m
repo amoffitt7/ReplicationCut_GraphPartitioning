@@ -5,10 +5,10 @@ close all; clc
 n = 20;
 
 % edges to iterate through
-for i = 2:7;
+for i = 21:29;
 
 % increment
-edges = i * 10;
+edges = i;% * 10;
     
 % file names. Change these files!
 sFilename = sprintf('distribution_s_GraphFolder_20_%d_1000.txt', edges);
@@ -16,6 +16,7 @@ rFilename = sprintf('distribution_r_GraphFolder_20_%d_1000.txt', edges);
 
 sFileID = fopen(fullfile(folder, sFilename), 'rt');
 
+formatSpec = '%s';
 S_text = textscan(sFileID,formatSpec,3,'Delimiter','|');
 
 %gets info from the S file
