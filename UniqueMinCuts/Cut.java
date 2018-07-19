@@ -57,9 +57,6 @@ public class Cut {
             if (this.S.equals(other.S) && this.T.equals(other.T) && (this.maxFlow == other.maxFlow)) {
                 return true;
             }
-            else if (this.S.equals(other.T) && this.T.equals(other.S) && (this.maxFlow == other.maxFlow)) {
-                return true;
-            }
             else {
                 return false;
             }

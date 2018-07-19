@@ -64,6 +64,7 @@ public class UniqueMinCutAlgorithm {
             for (int i = 1; i <= numberOfVertices; i++) {
                 for (int j = i+1; j <= numberOfVertices; j++) {
                     runFlowAlgorithm(adjMatrix, i, j);
+                    runFlowAlgorithm(adjMatrix, j, i);
                 }
             }
             

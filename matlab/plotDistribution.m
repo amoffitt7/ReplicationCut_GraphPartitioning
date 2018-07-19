@@ -7,7 +7,7 @@ folder = cd;
 % the number of vertices. Change this number!
 n = 20;
 % the number of edges. Change this number!
-edges = 23;
+edges = 70;
 
 %Extract the data.
 textFilename = sprintf('distribution_GraphFolder_%d_%d_1000.txt', n, edges);
@@ -55,7 +55,8 @@ logisticfit = fitdist(counts, 'Logistic');
 realmean = mean(counts);
 realstd = std(counts);
 %poissonmle = mle(counts,'distribution','Poisson');
-%normalmle = mle(counts);
+normalmle = mle(counts);
+normalflowmle = mle(flowCounts);
 logisticmle = mle(counts, 'distribution','Logistic');
 flowmle = mle(flowCounts, 'distribution', 'Logistic');
     
@@ -85,7 +86,7 @@ maxX = max(counts);
 maxX = max([max(counts) max(flowCounts)]);
 xlim([n-1, maxX])
 xlabel('Number of distinct min cuts');
-ylabel('Percent of directed graphs');
+ylabel('NOT percent of directed graphs');
 legend('Replication Cut','Flow Cut','Logistic');
 plotTitle = sprintf('%d vertices, %d edges', n, edges);
 title(plotTitle);

@@ -11,6 +11,7 @@ rFilename = sprintf('distribution_r_GraphFolder_%d_%d_1000.txt', n, edges);
 
 rFileID = fopen(fullfile(folder, rFilename), 'rt');
 
+formatSpec = '%s';
 R_text = textscan(rFileID,formatSpec,3,'Delimiter','|');
 
 %gets info from the R file
