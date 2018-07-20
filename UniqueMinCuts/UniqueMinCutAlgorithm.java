@@ -21,7 +21,10 @@ public class UniqueMinCutAlgorithm {
         this.file = new File(fileName);
         minCuts = new HashSet<Cut>();
         String[] fileNameParts = file.getAbsolutePath().split("\\.");
-        reportFileName = fileNameParts[0] + "_report.txt";       
+        reportFileName = fileNameParts[0] + "_report.txt";
+        if (fileNameParts.length > 2) {
+            reportFileName = "." + fileNameParts[1] + "_report.txt";
+        }
 
         sSizeMap = new HashMap<Integer, Integer>();
     }
