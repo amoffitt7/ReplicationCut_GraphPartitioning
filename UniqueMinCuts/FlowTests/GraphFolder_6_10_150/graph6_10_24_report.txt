@@ -1,0 +1,128 @@
+Finding the cut between 1 and 2:
+S: {1, 3} T: {2, 4, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 2 and 1:
+S: {2} T: {1, 3, 4, 5, 6} 
+Cut weight is 1149
+
+Finding the cut between 1 and 3:
+S: {1} T: {2, 3, 4, 5, 6} 
+Cut weight is 481
+
+Finding the cut between 3 and 1:
+S: {3} T: {1, 2, 4, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 1 and 4:
+S: {1, 3} T: {2, 4, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 4 and 1:
+S: {4} T: {1, 2, 3, 5, 6} 
+Cut weight is 974
+
+Finding the cut between 1 and 5:
+S: {1, 3} T: {2, 4, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 5 and 1:
+S: {5} T: {1, 2, 3, 4, 6} 
+Cut weight is 586
+
+Finding the cut between 1 and 6:
+S: {1, 3} T: {2, 4, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 6 and 1:
+S: {3, 6} T: {1, 2, 4, 5} 
+Cut weight is 1260
+
+Finding the cut between 2 and 3:
+S: {1, 2} T: {3, 4, 5, 6} 
+Cut weight is 1148
+
+Finding the cut between 3 and 2:
+S: {3} T: {1, 2, 4, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 2 and 4:
+S: {1, 2, 3, 6} T: {4, 5} 
+Cut weight is 568
+
+Finding the cut between 4 and 2:
+S: {1, 3, 4} T: {2, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 2 and 5:
+S: {1, 2, 3, 6} T: {4, 5} 
+Cut weight is 568
+
+Finding the cut between 5 and 2:
+S: {1, 3, 4, 5} T: {2, 6} 
+Cut weight is 184
+
+Finding the cut between 2 and 6:
+S: {1, 2, 3} T: {4, 5, 6} 
+Cut weight is 667
+
+Finding the cut between 6 and 2:
+S: {1, 3, 4, 5, 6} T: {2} 
+Cut weight is 257
+
+Finding the cut between 3 and 4:
+S: {3} T: {1, 2, 4, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 4 and 3:
+S: {1, 4} T: {2, 3, 5, 6} 
+Cut weight is 481
+
+Finding the cut between 3 and 5:
+S: {3} T: {1, 2, 4, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 5 and 3:
+S: {1, 4, 5} T: {2, 3, 6} 
+Cut weight is 481
+
+Finding the cut between 3 and 6:
+S: {3} T: {1, 2, 4, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 6 and 3:
+S: {1, 2, 4, 5, 6} T: {3} 
+Cut weight is 1260
+
+Finding the cut between 4 and 5:
+S: {1, 3, 4} T: {2, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 5 and 4:
+S: {5} T: {1, 2, 3, 4, 6} 
+Cut weight is 586
+
+Finding the cut between 4 and 6:
+S: {1, 3, 4} T: {2, 5, 6} 
+Cut weight is 184
+
+Finding the cut between 6 and 4:
+S: {1, 2, 3, 6} T: {4, 5} 
+Cut weight is 568
+
+Finding the cut between 5 and 6:
+S: {1, 3, 4, 5} T: {2, 6} 
+Cut weight is 184
+
+Finding the cut between 6 and 5:
+S: {1, 2, 3, 6} T: {4, 5} 
+Cut weight is 568
+
+****************
+FINAL REPORT:
+****************
+The file was C:\Users\Alisa Ren\GitHub\ReplicationCut_GraphPartitioning\UniqueMinCuts\FlowTests\GraphFolder_6_10_150\graph6_10_24.txt.
+The graph had 6 vertices.
+The number of distinct min cuts is 16.
+Note: The actual number may be lower due to equivalent cuts.
+

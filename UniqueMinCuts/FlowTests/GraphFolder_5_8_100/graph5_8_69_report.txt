@@ -1,0 +1,88 @@
+Finding the cut between 1 and 2:
+S: {1} T: {2, 3, 4, 5} 
+Cut weight is 473
+
+Finding the cut between 2 and 1:
+S: {2, 3, 4, 5} T: {1} 
+Cut weight is 843
+
+Finding the cut between 1 and 3:
+S: {1, 2, 5} T: {3, 4} 
+Cut weight is 381
+
+Finding the cut between 3 and 1:
+S: {3, 4, 5} T: {1, 2} 
+Cut weight is 297
+
+Finding the cut between 1 and 4:
+S: {1, 2, 3, 5} T: {4} 
+Cut weight is 250
+
+Finding the cut between 4 and 1:
+S: {4, 5} T: {1, 2, 3} 
+Cut weight is 171
+
+Finding the cut between 1 and 5:
+S: {1} T: {2, 3, 4, 5} 
+Cut weight is 473
+
+Finding the cut between 5 and 1:
+S: {5} T: {1, 2, 3, 4} 
+Cut weight is 171
+
+Finding the cut between 2 and 3:
+S: {1, 2, 5} T: {3, 4} 
+Cut weight is 381
+
+Finding the cut between 3 and 2:
+S: {3, 4, 5} T: {1, 2} 
+Cut weight is 297
+
+Finding the cut between 2 and 4:
+S: {1, 2, 3, 5} T: {4} 
+Cut weight is 250
+
+Finding the cut between 4 and 2:
+S: {4, 5} T: {1, 2, 3} 
+Cut weight is 171
+
+Finding the cut between 2 and 5:
+S: {1, 2, 3} T: {4, 5} 
+Cut weight is 1086
+
+Finding the cut between 5 and 2:
+S: {5} T: {1, 2, 3, 4} 
+Cut weight is 171
+
+Finding the cut between 3 and 4:
+S: {1, 2, 3, 5} T: {4} 
+Cut weight is 250
+
+Finding the cut between 4 and 3:
+S: {4, 5} T: {1, 2, 3} 
+Cut weight is 171
+
+Finding the cut between 3 and 5:
+S: {3} T: {1, 2, 4, 5} 
+Cut weight is 376
+
+Finding the cut between 5 and 3:
+S: {5} T: {1, 2, 3, 4} 
+Cut weight is 171
+
+Finding the cut between 4 and 5:
+S: {4} T: {1, 2, 3, 5} 
+Cut weight is 713
+
+Finding the cut between 5 and 4:
+S: {5} T: {1, 2, 3, 4} 
+Cut weight is 171
+
+****************
+FINAL REPORT:
+****************
+The file was C:\Users\Alisa Ren\GitHub\ReplicationCut_GraphPartitioning\UniqueMinCuts\FlowTests\GraphFolder_5_8_100\graph5_8_69.txt.
+The graph had 5 vertices.
+The number of distinct min cuts is 10.
+Note: The actual number may be lower due to equivalent cuts.
+

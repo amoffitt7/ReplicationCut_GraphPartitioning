@@ -1,0 +1,176 @@
+Finding the cut between 1 and 2:
+S: {1} T: {2, 3, 4, 5, 6, 7} 
+Cut weight is 491
+
+Finding the cut between 2 and 1:
+S: {2} T: {1, 3, 4, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 1 and 3:
+S: {1, 2, 4, 5, 6, 7} T: {3} 
+Cut weight is 49
+
+Finding the cut between 3 and 1:
+S: {3} T: {1, 2, 4, 5, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 1 and 4:
+S: {1, 2} T: {3, 4, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 4 and 1:
+S: {2, 4} T: {1, 3, 5, 6, 7} 
+Cut weight is 519
+
+Finding the cut between 1 and 5:
+S: {1, 2} T: {3, 4, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 5 and 1:
+S: {3, 5} T: {1, 2, 4, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 1 and 6:
+S: {1, 2} T: {3, 4, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 6 and 1:
+S: {3, 5, 6} T: {1, 2, 4, 7} 
+Cut weight is 356
+
+Finding the cut between 1 and 7:
+S: {1, 2} T: {3, 4, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 7 and 1:
+S: {2, 3, 4, 5, 6, 7} T: {1} 
+Cut weight is 774
+
+Finding the cut between 2 and 3:
+S: {1, 2, 4, 5, 6, 7} T: {3} 
+Cut weight is 49
+
+Finding the cut between 3 and 2:
+S: {3} T: {1, 2, 4, 5, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 2 and 4:
+S: {2} T: {1, 3, 4, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 4 and 2:
+S: {4} T: {1, 2, 3, 5, 6, 7} 
+Cut weight is 1196
+
+Finding the cut between 2 and 5:
+S: {2} T: {1, 3, 4, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 5 and 2:
+S: {3, 5} T: {1, 2, 4, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 2 and 6:
+S: {2} T: {1, 3, 4, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 6 and 2:
+S: {3, 5, 6} T: {1, 2, 4, 7} 
+Cut weight is 356
+
+Finding the cut between 2 and 7:
+S: {2} T: {1, 3, 4, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 7 and 2:
+S: {3, 5, 6, 7} T: {1, 2, 4} 
+Cut weight is 821
+
+Finding the cut between 3 and 4:
+S: {3} T: {1, 2, 4, 5, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 4 and 3:
+S: {1, 2, 4, 5, 6, 7} T: {3} 
+Cut weight is 49
+
+Finding the cut between 3 and 5:
+S: {3} T: {1, 2, 4, 5, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 5 and 3:
+S: {5} T: {1, 2, 3, 4, 6, 7} 
+Cut weight is 49
+
+Finding the cut between 3 and 6:
+S: {3} T: {1, 2, 4, 5, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 6 and 3:
+S: {1, 2, 4, 5, 6, 7} T: {3} 
+Cut weight is 49
+
+Finding the cut between 3 and 7:
+S: {3} T: {1, 2, 4, 5, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 7 and 3:
+S: {1, 2, 4, 5, 6, 7} T: {3} 
+Cut weight is 49
+
+Finding the cut between 4 and 5:
+S: {1, 2, 4} T: {3, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 5 and 4:
+S: {3, 5} T: {1, 2, 4, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 4 and 6:
+S: {1, 2, 4} T: {3, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 6 and 4:
+S: {3, 5, 6} T: {1, 2, 4, 7} 
+Cut weight is 356
+
+Finding the cut between 4 and 7:
+S: {1, 2, 4} T: {3, 5, 6, 7} 
+Cut weight is 210
+
+Finding the cut between 7 and 4:
+S: {1, 2, 3, 5, 6, 7} T: {4} 
+Cut weight is 356
+
+Finding the cut between 5 and 6:
+S: {3, 5} T: {1, 2, 4, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 6 and 5:
+S: {1, 2, 4, 6, 7} T: {3, 5} 
+Cut weight is 410
+
+Finding the cut between 5 and 7:
+S: {3, 5} T: {1, 2, 4, 6, 7} 
+Cut weight is 46
+
+Finding the cut between 7 and 5:
+S: {1, 2, 4, 6, 7} T: {3, 5} 
+Cut weight is 410
+
+Finding the cut between 6 and 7:
+S: {1, 2, 3, 4, 5, 6} T: {7} 
+Cut weight is 210
+
+Finding the cut between 7 and 6:
+S: {1, 2, 7} T: {3, 4, 5, 6} 
+Cut weight is 557
+
+****************
+FINAL REPORT:
+****************
+The file was C:\Users\Alisa Ren\GitHub\ReplicationCut_GraphPartitioning\UniqueMinCuts\FlowTests\GraphFolder_7_10_150\graph7_10_55.txt.
+The graph had 7 vertices.
+The number of distinct min cuts is 17.
+Note: The actual number may be lower due to equivalent cuts.
+
