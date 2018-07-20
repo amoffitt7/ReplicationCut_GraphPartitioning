@@ -9,19 +9,24 @@ public class InfoCollector {
 
     private int numberOfVertices; // the number of vertices for this folder of graphs
     private int nPermTwo; 
+    private File mainFolder; // the outer folder (kept here for naming purposes)
     private File folderEntry; // the folder containing all graph files
     private HashMap<Integer, Integer> distributionOfMinCuts; // keys: # of min cuts, values: # of instances of directed graphs
     private HashMap<Integer, HashMap<Integer,Integer>> distributionOfSSizes; 
         // keys: # of min cuts, values: maps (keys: S size, values: # of instances of cuts)
+    private HashMap<Integer, HashMap<File, HashMap<Integer,Integer>>> newSSizes;
+    //private File newSFile; // new S file (7/20/18) that separates data by graphs
 
-    public InfoCollector(File folderEntry) {
+    public InfoCollector(File mainFolder, File folderEntry) {
+        this.mainFolder = mainFolder;
         this.folderEntry = folderEntry;
         distributionOfMinCuts = new HashMap<Integer, Integer>();
         distributionOfSSizes = new HashMap<Integer, HashMap<Integer,Integer>>();
 
         String[] folderNameParts = folderEntry.getName().split("_");
 		numberOfVertices = Integer.parseInt(folderNameParts[1]);
-		nPermTwo = numberOfVertices * (numberOfVertices - 1);
+        nPermTwo = numberOfVertices * (numberOfVertices - 1);
+        newSSizes = new HashMap<Integer, HashMap<File, HashMap<Integer, Integer>>>();
     }
 
     public void collectInfo() {
@@ -66,12 +71,57 @@ public class InfoCollector {
                 }
                 distributionOfSSizes.put(minCutNumber, newMap);
             }
+
+            if (!newSSizes.containsKey(minCutNumber)) {
+                HashMap<File, HashMap<Integer,Integer>> listToPut = new HashMap<File, HashMap<Integer,Integer>>();
+                listToPut.put(fileEntry, sSizeMap);
+                newSSizes.put(minCutNumber, listToPut);
+            }
+            else {
+                HashMap<File, HashMap<Integer,Integer>> listToPut = newSSizes.get(minCutNumber);
+                listToPut.put(fileEntry, sSizeMap);
+                newSSizes.put(minCutNumber, listToPut);
+            }
+            //writeToSFile(fileEntry, minCutNumber, sSizeMap);
         }
+    }
+
+    public File getNewSFile() {
+        File newSFile = new File(mainFolder.getAbsolutePath() + "/new_s_" + folderEntry.getName() + ".txt");
+        try {
+            PrintWriter spw = new PrintWriter(new FileWriter(newSFile, true)); // appends to S file
+
+            for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nPermTwo; minCutNumber++) {
+                if (newSSizes.containsKey(minCutNumber)) {
+                    for (File fileEntry : newSSizes.get(minCutNumber).keySet()) {
+                        HashMap<Integer,Integer> sSizeMap = newSSizes.get(minCutNumber).get(fileEntry);
+                        String graphFileName = fileEntry.getName();
+                        spw.format("%s: \r\n", graphFileName);
+                        spw.format("Min Cuts: %d \r\n", minCutNumber);
+                        spw.format("S Size | Number of Cuts\r\n");
+                        for (int sSize = 1; sSize <= numberOfVertices - 1; sSize++) {
+                            int numberOfCuts = 0;
+                            if (sSizeMap.containsKey(sSize)) {
+                                numberOfCuts = sSizeMap.get(sSize);
+                            }
+                            spw.format("%6d | %13d\r\n", sSize, numberOfCuts);
+                        }
+                        spw.format("\r\n");
+                    }
+                }
+            }
+            
+            spw.close();
+        } catch (IOException e) {
+			System.err.println("Error");
+        }
+
+        return newSFile;
     }
 
     // creates and returns a distribution file
     public File getDistributionFile() {
-		String distributionFileName = "distribution_flowcut_" + folderEntry.getName() + ".txt";
+		String distributionFileName = mainFolder.getAbsolutePath() + "/distribution_flowcut_" + folderEntry.getName() + ".txt";
 		File distributionFile = new File(distributionFileName);
 		try {
 			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
@@ -94,7 +144,7 @@ public class InfoCollector {
     }
 
     public File getSSizeDistributionFile() {
-        String distributionFileName = "distribution_flowcut_s_" + folderEntry.getName() + ".txt";
+        String distributionFileName = mainFolder.getAbsolutePath() + "/distribution_flowcut_s_" + folderEntry.getName() + ".txt";
         File distributionFile = new File(distributionFileName);
         try {
 			PrintWriter dpw = new PrintWriter(new FileWriter(distributionFile));
@@ -140,9 +190,10 @@ public class InfoCollector {
 		for(File fileEntry: listFilesForFolder(folderEntry)) {
 			String fileName = fileEntry.getName();
 			String[] parts = fileName.split("_");
-			String lastPart = parts[parts.length - 1];
+            String lastPart = parts[parts.length - 1];
+            String secondToLastPart = parts[parts.length - 2];
 			if (lastPart.equals("report.txt")
-				|| lastPart.equals("GOOD.txt")) {
+				|| secondToLastPart.equals("report")) {
 					boolean success = fileEntry.delete();
 				if (success) {
 					System.out.println("Deleted " + fileName);

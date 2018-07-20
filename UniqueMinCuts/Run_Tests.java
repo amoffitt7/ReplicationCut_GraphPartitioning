@@ -35,12 +35,14 @@ public class Run_Tests {
 			}
 			
 			// create an info collector object for it
-			InfoCollector folderCollector = new InfoCollector(folderEntry);
+			InfoCollector folderCollector = new InfoCollector(mainFolder, folderEntry);
 			folderCollector.collectInfo();
 			File distributionFile = folderCollector.getDistributionFile();
 			File distributionSFile = folderCollector.getSSizeDistributionFile();
+			File newSFile = folderCollector.getNewSFile();
 			moveDistributionFile(mainFolder, distributionFile);
 			moveDistributionFile(mainFolder, distributionSFile);
+			moveDistributionFile(mainFolder, newSFile);
 		}
 
 	}
@@ -55,8 +57,14 @@ public class Run_Tests {
 			String[] parts = fileName.split("_");
 			String firstPart = parts[0];
 			if (firstPart.equals("distribution")) {
-					boolean success = fileEntry.delete();
-			if (success) {
+				boolean success = fileEntry.delete();
+				if (success) {
+					System.out.println("Deleted " + fileName);
+				}
+			}
+			if (firstPart.equals("new")) {
+				boolean success = fileEntry.delete();
+				if (success) {
 					System.out.println("Deleted " + fileName);
 				}
 			}
