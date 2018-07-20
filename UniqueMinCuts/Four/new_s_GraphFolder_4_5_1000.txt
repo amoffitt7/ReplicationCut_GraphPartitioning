@@ -1,0 +1,7000 @@
+graph4_5_540.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_387.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_328.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_508.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_607.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_930.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_797.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_582.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_846.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_636.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_114.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_335.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_343.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_334.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_67.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_595.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_412.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_413.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             0
+     3 |             2
+
+graph4_5_476.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_591.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_180.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_193.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_35.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_241.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_371.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_3.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_145.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_365.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_987.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_789.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_999.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_37.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_247.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_108.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_500.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_435.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_176.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_537.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_39.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_281.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_559.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             0
+     3 |             2
+
+graph4_5_153.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_293.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_800.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_305.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_162.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_279.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_873.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_195.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_38.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_851.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_244.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_57.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_128.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_388.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_459.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_822.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_570.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_940.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_424.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_315.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_216.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_546.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_985.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_218.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_619.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_253.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_909.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_767.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_237.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_671.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_42.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_447.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_428.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_860.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             0
+     3 |             2
+
+graph4_5_867.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_233.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_552.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_857.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_389.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_764.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_765.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_947.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_472.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_32.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_144.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_943.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_260.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_264.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_904.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_769.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_643.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_147.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_679.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_199.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_781.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_450.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_374.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_196.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_780.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_988.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_810.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_454.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             0
+     3 |             2
+
+graph4_5_630.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_9.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_222.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_85.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_391.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_330.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_250.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_736.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_188.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_366.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_376.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_72.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_282.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_983.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_432.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_107.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_456.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_955.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_56.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_545.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_663.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_641.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_480.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_13.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_868.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_368.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_647.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_289.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_886.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_11.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             0
+     3 |             2
+
+graph4_5_741.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_204.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_839.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_299.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_992.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_928.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_394.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_776.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_347.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_344.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_263.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_566.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_6.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_402.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_384.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_316.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_974.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_359.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_352.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_680.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_593.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_801.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_269.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_112.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_982.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_215.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_167.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_606.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_746.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_434.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_187.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_455.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             0
+     3 |             2
+
+graph4_5_36.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_290.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_383.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_562.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_62.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_355.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_601.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_885.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             0
+     3 |             2
+
+graph4_5_509.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_862.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_815.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_255.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_528.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_745.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_324.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_123.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_918.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_406.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_362.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_379.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_616.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_681.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_487.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_353.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_461.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_906.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             0
+     3 |             2
+
+graph4_5_515.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_512.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_665.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_270.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_871.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             1
+
+graph4_5_600.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_298.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_74.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_624.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_494.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_768.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_70.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_158.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_473.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_729.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             2
+
+graph4_5_183.txt: 
+Min Cuts: 6 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             1
+
+graph4_5_602.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_932.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_396.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_97.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_322.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_340.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_634.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_235.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_10.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_4.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_998.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_945.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_378.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_407.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_161.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_415.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_314.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_687.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_177.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_272.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_262.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_662.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_908.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_646.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_720.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_648.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_749.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_132.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_753.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_511.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_889.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_77.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_842.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_522.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_81.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_598.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_572.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_98.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_504.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_239.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_16.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_302.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_221.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_138.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_949.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_722.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_502.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_707.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_757.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_649.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_491.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_349.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_954.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_372.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_670.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_82.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_48.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_535.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_590.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_232.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_452.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_615.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_629.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_124.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_339.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_892.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_84.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_399.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_498.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_46.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_588.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_878.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_541.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_653.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_734.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_567.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_939.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_445.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_160.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_752.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_531.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_190.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_966.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_934.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_825.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_19.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_828.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_813.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_773.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_898.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_666.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_102.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_217.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_285.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_101.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_608.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_462.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_475.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_551.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_743.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_278.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_941.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_539.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_312.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_117.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_638.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_981.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_847.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_156.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_655.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_408.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_24.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_796.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_212.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_276.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_8.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_441.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_178.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_980.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_418.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_887.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_958.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_554.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_134.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_843.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_996.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_890.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_206.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_460.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_234.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_715.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_568.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_519.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_172.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_927.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_479.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_952.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_486.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_788.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_613.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_650.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_50.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_706.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_301.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_448.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_311.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_989.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_950.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_956.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_876.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_724.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_786.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_742.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_257.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_346.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_659.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_307.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_95.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_246.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_530.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_332.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_224.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_827.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_791.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_140.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_901.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_772.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_267.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_92.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_437.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_22.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_182.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_356.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_249.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_806.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_763.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_529.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_439.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_962.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_726.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_673.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_754.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_275.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_488.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_814.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_29.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_297.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_104.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_442.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_489.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_865.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_296.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_965.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_875.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_252.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_481.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_560.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_419.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_73.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_818.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_583.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_919.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_238.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_53.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_660.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_808.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_585.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_677.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_812.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_751.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_739.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_444.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_280.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_27.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_200.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_968.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_993.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_185.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_370.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_911.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_171.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_51.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_686.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_910.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_899.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_25.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_569.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_654.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_626.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_119.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_292.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_227.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_803.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_467.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_453.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_169.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_689.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_594.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_728.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_903.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_565.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_30.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_397.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_579.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_713.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_957.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_625.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_705.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_186.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_194.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_364.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_631.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_859.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_692.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_990.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_550.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_592.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_116.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_712.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_99.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_946.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_259.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_837.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_350.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_433.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_750.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_603.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_265.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_907.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_300.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_740.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_226.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_798.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_854.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_587.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_211.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_979.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_310.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_283.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_256.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_973.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_697.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_977.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_89.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_794.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_75.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_774.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_556.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_17.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_611.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_691.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_661.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_210.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_863.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_490.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_474.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_90.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_571.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_832.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_840.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_357.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_963.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_345.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_916.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_321.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_83.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_54.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_295.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_468.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_893.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_198.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_63.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_422.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_802.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_313.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_695.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_416.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_304.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_45.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_14.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_423.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_617.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_470.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_164.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_91.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_929.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_163.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_341.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_834.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_261.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_165.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_214.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_604.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_971.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_80.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_844.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_795.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_710.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_503.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_732.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_627.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_375.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_440.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_484.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_807.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_354.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_429.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_174.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_542.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_126.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_852.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_483.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_696.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_400.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_614.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_675.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_44.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_756.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_403.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_76.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_640.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_896.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_377.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_431.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_770.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_853.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_848.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_436.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_23.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_338.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_229.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_88.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_960.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_146.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_103.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_179.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_881.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_820.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_306.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_879.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_443.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_242.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_287.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_337.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_58.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_18.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_219.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_829.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_534.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_236.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_819.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_804.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_197.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_243.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_682.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_155.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_652.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_917.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_131.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_549.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_683.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_401.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_392.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_191.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_471.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_667.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_96.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_157.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_555.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_363.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_189.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_369.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_783.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_40.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_209.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_557.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_139.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_501.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_703.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_580.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_799.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_514.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_381.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_271.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_41.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_336.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_730.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_318.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_913.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_258.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_240.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_386.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_672.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_151.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_967.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_361.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_656.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_830.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_787.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_100.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_618.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_835.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_669.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_970.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_52.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_700.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_526.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_633.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_181.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_937.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_148.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_320.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_168.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_520.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_425.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_578.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_492.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_521.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_493.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             2
+
+graph4_5_426.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_581.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             1
+
+graph4_5_921.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_21.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
+     3 |             3
+
+graph4_5_137.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             1
+
+graph4_5_524.txt: 
+Min Cuts: 7 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             2
+
+graph4_5_836.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_121.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_599.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_202.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_111.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_914.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_961.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_805.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_589.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_777.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_784.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_308.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_430.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_991.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_142.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_610.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_693.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_323.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_65.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_994.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_883.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_457.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_55.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_972.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_538.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_532.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_925.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_136.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_129.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_685.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_203.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_779.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_900.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_208.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_59.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_884.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_969.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_105.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_948.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_748.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_170.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_358.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_2.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_79.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_464.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_150.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_644.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_609.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_110.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_251.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_499.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_790.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_118.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_976.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_284.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_477.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_15.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_469.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_60.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_716.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_109.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_506.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_291.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_66.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_393.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_915.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_694.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_553.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_632.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_577.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_698.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_573.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_34.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_533.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_367.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_398.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_816.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_924.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_395.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_597.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_273.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_605.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_701.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_574.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_130.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_811.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_733.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_175.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_228.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_637.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_33.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_5.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_658.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_714.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_926.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_897.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_684.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_141.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_809.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_231.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_184.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_122.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_207.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_858.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_866.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_420.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_410.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_331.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_205.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_923.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_735.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_771.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_895.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_505.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_635.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_621.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_548.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_64.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_309.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_478.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_159.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_861.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_841.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_953.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_922.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_390.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_173.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_737.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_446.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_326.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_855.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_106.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_576.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_254.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_127.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_497.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_657.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_288.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_877.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_758.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_223.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_942.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_245.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_325.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_496.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_544.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_133.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_759.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_86.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_717.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_558.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_920.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_708.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_964.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_711.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_782.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_405.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_294.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_1.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_547.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_12.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_61.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_380.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_690.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_864.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_317.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_870.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_513.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_975.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_154.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_26.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_135.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_449.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_342.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_510.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_414.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_149.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_845.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_824.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_120.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_451.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_931.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_874.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_115.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_409.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_731.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_49.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_793.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_586.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_905.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_507.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_28.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_902.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             1
+
+graph4_5_303.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_47.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_143.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_676.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_838.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_872.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_564.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_525.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_738.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_465.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_360.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_31.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+     3 |             3
+
+graph4_5_192.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_523.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_727.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_43.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_642.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_458.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_20.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_869.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_623.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             2
+
+graph4_5_959.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_463.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             2
+
+graph4_5_674.txt: 
+Min Cuts: 8 
+S Size | Number of Cuts
+     1 |             4
+     2 |             1
+     3 |             3
+
+graph4_5_482.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_645.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_938.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_628.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_688.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_678.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_760.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_880.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_268.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_891.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_333.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_744.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_93.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_596.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_71.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_986.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_888.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_761.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_277.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_651.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_166.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_411.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_747.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_984.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_944.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_152.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_826.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_849.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_286.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_213.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_699.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_778.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_319.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_427.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_517.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_718.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_230.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_527.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_125.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_719.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_327.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_373.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_792.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_622.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_329.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_225.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_348.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_766.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_725.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_385.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_668.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_951.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_466.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_723.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_113.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_248.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_438.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_266.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_721.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_404.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_274.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_1000.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_612.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_702.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_485.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_351.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_935.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_882.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_755.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_856.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_495.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_831.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_664.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_639.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_417.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_823.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_87.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_833.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_912.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_785.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_978.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_575.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_821.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_563.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_817.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_421.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_997.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_620.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_933.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_94.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_775.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_762.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_850.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_543.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_584.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_561.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_995.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_69.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_382.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_536.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             3
+     3 |             2
+
+graph4_5_68.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_78.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_894.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_201.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_518.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_516.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_704.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_220.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_709.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             4
+     2 |             2
+     3 |             3
+
+graph4_5_7.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
+graph4_5_936.txt: 
+Min Cuts: 9 
+S Size | Number of Cuts
+     1 |             3
+     2 |             3
+     3 |             3
+
