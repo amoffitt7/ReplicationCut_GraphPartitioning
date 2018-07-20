@@ -1,82 +1,4 @@
-graph3_4_22.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             3
-     2 |             1
-
-graph3_4_46.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_27.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_30.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_16.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_41.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_13.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_43.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_24.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_37.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_50.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_21.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_40.txt: 
-Min Cuts: 4 
-S Size | Number of Cuts
-     1 |             2
-     2 |             2
-
-graph3_4_17.txt: 
+graph3_4_18.txt: 
 Min Cuts: 4 
 S Size | Number of Cuts
      1 |             2
@@ -88,7 +10,43 @@ S Size | Number of Cuts
      1 |             2
      2 |             2
 
+graph3_4_50.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_41.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
 graph3_4_42.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_46.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_1.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_16.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_24.txt: 
 Min Cuts: 4 
 S Size | Number of Cuts
      1 |             2
@@ -99,6 +57,30 @@ Min Cuts: 4
 S Size | Number of Cuts
      1 |             2
      2 |             2
+
+graph3_4_17.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_43.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_13.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_22.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             3
+     2 |             1
 
 graph3_4_5.txt: 
 Min Cuts: 4 
@@ -112,49 +94,43 @@ S Size | Number of Cuts
      1 |             2
      2 |             2
 
-graph3_4_18.txt: 
+graph3_4_27.txt: 
 Min Cuts: 4 
 S Size | Number of Cuts
      1 |             2
      2 |             2
 
-graph3_4_1.txt: 
+graph3_4_40.txt: 
 Min Cuts: 4 
 S Size | Number of Cuts
      1 |             2
      2 |             2
 
-graph3_4_33.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
-graph3_4_3.txt: 
-Min Cuts: 5 
+graph3_4_30.txt: 
+Min Cuts: 4 
 S Size | Number of Cuts
      1 |             2
-     2 |             3
+     2 |             2
 
-graph3_4_8.txt: 
+graph3_4_21.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_37.txt: 
+Min Cuts: 4 
+S Size | Number of Cuts
+     1 |             2
+     2 |             2
+
+graph3_4_38.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
      1 |             3
      2 |             2
 
-graph3_4_20.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
-graph3_4_2.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
-graph3_4_11.txt: 
+graph3_4_26.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
      1 |             3
@@ -166,67 +142,19 @@ S Size | Number of Cuts
      1 |             3
      2 |             2
 
-graph3_4_4.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             2
-     2 |             3
-
-graph3_4_39.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
-graph3_4_7.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
 graph3_4_29.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
      1 |             3
      2 |             2
 
-graph3_4_12.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
-graph3_4_38.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
-graph3_4_25.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
-graph3_4_14.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
-graph3_4_19.txt: 
+graph3_4_28.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
      1 |             2
      2 |             3
 
-graph3_4_44.txt: 
-Min Cuts: 5 
-S Size | Number of Cuts
-     1 |             3
-     2 |             2
-
-graph3_4_48.txt: 
+graph3_4_12.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
      1 |             3
@@ -238,37 +166,43 @@ S Size | Number of Cuts
      1 |             3
      2 |             2
 
-graph3_4_31.txt: 
+graph3_4_49.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
      1 |             2
      2 |             3
 
-graph3_4_26.txt: 
+graph3_4_48.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
      1 |             3
      2 |             2
 
-graph3_4_35.txt: 
+graph3_4_14.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
-     1 |             2
-     2 |             3
+     1 |             3
+     2 |             2
 
-graph3_4_28.txt: 
+graph3_4_44.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
-     1 |             2
-     2 |             3
+     1 |             3
+     2 |             2
 
-graph3_4_15.txt: 
+graph3_4_8.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
-     1 |             2
-     2 |             3
+     1 |             3
+     2 |             2
 
-graph3_4_9.txt: 
+graph3_4_33.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+
+graph3_4_7.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
      1 |             3
@@ -280,11 +214,17 @@ S Size | Number of Cuts
      1 |             2
      2 |             3
 
-graph3_4_49.txt: 
+graph3_4_11.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
-     1 |             2
-     2 |             3
+     1 |             3
+     2 |             2
+
+graph3_4_25.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
 
 graph3_4_10.txt: 
 Min Cuts: 5 
@@ -292,7 +232,67 @@ S Size | Number of Cuts
      1 |             2
      2 |             3
 
+graph3_4_3.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             2
+     2 |             3
+
+graph3_4_35.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             2
+     2 |             3
+
+graph3_4_19.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             2
+     2 |             3
+
+graph3_4_2.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+
+graph3_4_39.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+
+graph3_4_20.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+
+graph3_4_31.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             2
+     2 |             3
+
+graph3_4_15.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             2
+     2 |             3
+
 graph3_4_23.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             2
+     2 |             3
+
+graph3_4_9.txt: 
+Min Cuts: 5 
+S Size | Number of Cuts
+     1 |             3
+     2 |             2
+
+graph3_4_4.txt: 
 Min Cuts: 5 
 S Size | Number of Cuts
      1 |             2
