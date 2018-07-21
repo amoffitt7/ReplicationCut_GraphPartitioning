@@ -174,9 +174,7 @@ void display_dimensions_menu()
 		menu->parms.vertex_count = get_int("\n\t\t");
 	} 
 
-
 	/*** Get base cycle size ***/
-	/*
 	printf("\n\t\t%s", cycleSize_prompt);
 	menu->parms.base_cycle_size = get_int("\n\t\t");
 
@@ -186,12 +184,15 @@ void display_dimensions_menu()
 	menu->parms.base_cycle_size = get_int("\n\t\t");
 	}
 
-	*/
-	menu->parms.base_cycle_size = menu->parms.vertex_count;
+	//menu->parms.base_cycle_size = menu->parms.vertex_count;
 
 
 	/*** Get # edges ***/
-	int numEdgesRequired = 2 * (menu->parms.vertex_count - menu->parms.base_cycle_size);
+	int numEdgesRequired = (menu->parms.vertex_count - menu->parms.base_cycle_size) + 1;
+	if (numEdgesRequired == 1) {
+		numEdgesRequired = 0;
+	}
+
 	int numPossibleEdges = menu->parms.vertex_count * (menu->parms.vertex_count - 1);
 
 	printf("\n\t\t Enter a number greater than or equal to %d, and less than %d", 
@@ -309,6 +310,7 @@ void random_connected_graph(int v,
 
 	/*Generate number of vertices in the base cycle (min = 2)*/
 	int cycleLength = menu->parms.base_cycle_size;
+	int baseCycleLength = cycleLength;
 	//printf("Base cycle length = %d \n", cycleLength);
 
 	//printf("CYCLE ENTRIES \n \n");
@@ -318,7 +320,6 @@ void random_connected_graph(int v,
 		//printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
 	}
 	adj_matrix[tree[cycleLength - 1] * v + tree[0]] = ran(max_wgt) + 1;
-
 	//printf("AM entry for edge from %d to %d \n", tree[cycleLength - 1], tree[0]);
 
 
@@ -327,48 +328,123 @@ void random_connected_graph(int v,
 
 	int numDisconnected = v - cycleLength;
 
+	int numInEndCycle = 0;
+	int temp1 = numDisconnected;
+	int temp2 = numEdgesNotAdded;
+	while (temp2 > temp1 + 1 && temp1  > 0) {
+		temp2 -= 2;
+		temp1 -= 1;
+	}
+	numInEndCycle = temp1;
+
+	int cycleTheRest = False;
+
+
 	//printf("CONNECTING ALL DISCONNECTED VERTICES \n \n");
-	for (i = cycleLength; i < v; i++) {
-		int randomTo;
-		int randomFrom;
+	if (numEdgesNotAdded <= numDisconnected + 1) {     // Base Case 
+		int startFrom = ran(cycleLength);
+		//printf("randomStartFrom = %d \n", tree[startFrom]);
 
-		//printf("Vertex %d is not connected so we are going to connect it \n", tree[i]);
+		adj_matrix[tree[startFrom] * v + tree[cycleLength]] = ran(max_wgt) + 1;
+		//printf("AM entry for edge from %d to %d \n", tree[startFrom], tree[cycleLength]);
 
-		//Have to run all the following once but also want to possibly
-		//add more edges later
-		randomTo = ran(cycleLength);
-		randomFrom = ran(cycleLength);
-
-		while (randomTo == tree[i] || randomFrom == tree[i]) {
-			randomTo = ran(cycleLength);
-			randomFrom = ran(cycleLength);
+		for (i = cycleLength; i < v - 1; i++) {
+			adj_matrix[tree[i] * v + tree[i + 1]] = ran(max_wgt) + 1;
+			//printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
 		}
 
-		//printf("randomFrom = %d \n", randomFrom);
-		//printf("randomTo = %d \n", randomTo);
+		int endTo = ran(cycleLength);
+		//printf("randomEndTo = %d \n", tree[endTo]);
 
-		if (adj_matrix[tree[i] * v + randomTo] == 0) {
-			adj_matrix[tree[i] * v + randomTo] = ran(max_wgt) + 1;
-			//printf("AM entry for edge from %d to %d (TO)\n", tree[i], randomTo);
-		}
+		adj_matrix[tree[v - 1] * v + tree[endTo]] = ran(max_wgt) + 1;
+		//printf("AM entry for edge from %d to %d \n", tree[v - 1], tree[endTo]);
+		numEdgesNotAdded -= numDisconnected + 1;
+	}	
+	else {
+		for (i = cycleLength; i < v; i++) {
+			int randomTo;
+			int randomFrom;
 
-		if (adj_matrix[randomFrom * v + tree[i]] == 0) {
+			//printf("Vertex %d is not connected so we are going to connect it \n", tree[i]);
+
+			randomFrom = tree[ran(cycleLength)];
+			//printf("randomFrom = %d \n", randomFrom);
+
 			adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt) + 1;
 			//printf("AM entry for edge from %d to %d (FROM)\n", randomFrom, tree[i]);
+			numEdgesNotAdded--;
+			numDisconnected--;
+
+
+			if (numEdgesNotAdded > numDisconnected + 1) {
+				if (ran(2) == 0 && numInEndCycle > 0) {
+					randomTo = tree[ran(numInEndCycle) + (v - numInEndCycle)];
+				}
+				else {
+					randomTo = tree[ran(cycleLength)];
+				}
+
+				while (randomTo == tree[i]) {
+					if (ran(2) == 0 && numInEndCycle > 0) {
+						randomTo = tree[ran(numInEndCycle) + (v - numInEndCycle)];
+					}
+					else {
+						randomTo = tree[ran(cycleLength)];
+					}
+				}
+
+				//printf("randomTo = %d \n", randomTo);
+
+				if (adj_matrix[tree[i] * v + randomTo] == 0) {
+					adj_matrix[tree[i] * v + randomTo] = ran(max_wgt) + 1;
+					//printf("AM entry for edge from %d to %d (TO)\n", tree[i], randomTo);
+					numEdgesNotAdded--;
+				}
+
+				cycleLength++;
+			}
+
+			if(numEdgesNotAdded <= numDisconnected + 1 && numDisconnected != 0) {
+				cycleTheRest = True;
+				break;
+			}
 		}
-		cycleLength++;
 	}
 
-	if (numDisconnected != 0) {
-		numEdgesNotAdded -= 2 * numDisconnected;
-		//printf("Edges left to add after connection step = %d \n", numEdgesNotAdded);
+
+
+	if (cycleTheRest && numEdgesNotAdded > 0) {
+		//printf("Edges left before end Cycle = %d \n", numEdgesNotAdded);
+		//printf("\n CYCLING THE REST \n");
+
+		//Add EXCEPTION
+
+		int startFrom = ran(cycleLength);
+		//printf("randomStartFrom = %d \n", tree[startFrom]);
+
+		adj_matrix[tree[startFrom] * v + tree[cycleLength]] = ran(max_wgt) + 1;
+		//printf("AM entry for edge from %d to %d \n", tree[startFrom], tree[cycleLength]);
+
+		for (i = cycleLength; i < v - 1; i++) {
+			adj_matrix[tree[i] * v + tree[i + 1]] = ran(max_wgt) + 1;
+			//printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
+		}
+
+		int endTo = ran(baseCycleLength);
+		//printf("randomEndTo = %d \n", tree[endTo]);
+
+		adj_matrix[tree[v - 1] * v + tree[endTo]] = ran(max_wgt) + 1;
+		//printf("AM entry for edge from %d to %d \n", tree[v - 1], tree[endTo]);
+		numEdgesNotAdded -= numDisconnected + 1;
 	}
+
+	//printf("Edges left to add after CONNECTION PHASE = %d \n", numEdgesNotAdded);
+	
 
 	//printf("Randomly adding %d more edges \n", numEdgesNotAdded);
-
 	while (numEdgesNotAdded > 0) {
-		int randomTo = ran(v);
-		int randomFrom = ran(v);
+		int randomTo = tree[ran(v)];
+		int randomFrom = tree[ran(v)];
 
 		//printf("randomFrom = %d \n", randomFrom);
 		//printf("randomTo = %d \n", randomTo);
