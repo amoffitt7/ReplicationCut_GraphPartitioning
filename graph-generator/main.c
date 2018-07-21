@@ -341,7 +341,7 @@ void random_connected_graph(int v,
 
 
 	//printf("CONNECTING ALL DISCONNECTED VERTICES \n \n");
-	if (numEdgesNotAdded <= numDisconnected + 1) {     // Base Case 
+	if (numEdgesNotAdded <= numDisconnected + 1 && numDisconnected > 0) {     // Base Case 
 		int startFrom = ran(cycleLength);
 		//printf("randomStartFrom = %d \n", tree[startFrom]);
 
