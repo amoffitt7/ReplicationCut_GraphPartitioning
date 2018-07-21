@@ -139,6 +139,12 @@ void build_graphs(void)
 
 	strcat(directory, "_");
 
+	char cycleSize[5];
+	sprintf(cycleSize, "%d", menu->parms.base_cycle_size);
+	strcat(directory, cycleSize);
+
+	strcat(directory, "_");
+
 	char edgeCount[5];
 	sprintf(edgeCount, "%d", menu->parms.edge_count);
 	strcat(directory, edgeCount);
@@ -149,7 +155,7 @@ void build_graphs(void)
 	sprintf(numGraphs, "%d", numberOfGraphs);
 	strcat(directory, numGraphs);
 
-	char command[30];
+	char command[50];
 	sprintf(command, "%s", "mkdir ");
 	strcat(command, directory);
 
@@ -242,14 +248,18 @@ void create_outfile_name()
 {	
 	char numVertices[5];
 	sprintf(numVertices, "%d", menu->parms.vertex_count);
+	char cycleSize[5];
+	sprintf(cycleSize, "%d", menu->parms.base_cycle_size);
 	char numEdges[5];
 	sprintf(numEdges, "%d", menu->parms.edge_count);
 	char gCount[7];
 	sprintf(gCount, "%d", graphCount);
 
-	char combined[30];
+	char combined[40];
 	sprintf(combined, "%s", genericTitle);
 	strcat(combined, numVertices);
+	strcat(combined, "_");
+	strcat(combined, cycleSize);
 	strcat(combined, "_");
 	strcat(combined, numEdges);
 	strcat(combined, "_");
@@ -477,7 +487,7 @@ void print_graph(int v,
 	int i, j, index;
 	FILE *fp;
 
-	char dirAndFileName[55];
+	char dirAndFileName[60];
 	sprintf(dirAndFileName, "%s", directory);
 	strcat(dirAndFileName, "/");
 	strcat(dirAndFileName, out_file);
