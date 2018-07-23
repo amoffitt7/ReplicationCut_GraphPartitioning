@@ -27,7 +27,10 @@ public class InfoCollector {
 
         String[] folderNameParts = folderEntry.getName().split("_");
 		numberOfVertices = Integer.parseInt(folderNameParts[1]);
-		nChooseTwo = numberOfVertices * (numberOfVertices - 1) / 2;
+        nChooseTwo = numberOfVertices * (numberOfVertices - 1) / 2;
+        
+        newSSizes = new HashMap<Integer, HashMap<File, HashMap<Integer, Integer>>>();
+        newRSizes = new HashMap<Integer, HashMap<File, HashMap<Integer, Integer>>>();
     }
 
     public void collectInfo() {
