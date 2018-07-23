@@ -1,6 +1,9 @@
 %clear worskspace variables, close all graphs, clear command window
 clc
 
+% Files are in the current directory. Change this folder!
+folder = cd;
+
 % number of vertices. Change this number!
 n = 20;
 % the number of edges. Change this number!
