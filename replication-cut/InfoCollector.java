@@ -14,6 +14,8 @@ public class InfoCollector {
     private HashMap<Integer, HashMap<Integer,Integer>> distributionOfSSizes; 
     private HashMap<Integer, HashMap<Integer,Integer>> distributionOfRSizes; 
         // keys: # of min cuts, values: maps (keys: S size, values: # of instances of cuts)
+    private HashMap<Integer, HashMap<File, HashMap<Integer,Integer>>> newSSizes;
+    private HashMap<Integer, HashMap<File, HashMap<Integer,Integer>>> newRSizes;
 
     public InfoCollector(File folderEntry) {
         this.folderEntry = folderEntry;
@@ -93,7 +95,95 @@ public class InfoCollector {
                 }
                 distributionOfRSizes.put(minCutNumber, newMap);
             }
+
+            if (!newSSizes.containsKey(minCutNumber)) {
+                HashMap<File, HashMap<Integer,Integer>> listToPut = new HashMap<File, HashMap<Integer,Integer>>();
+                listToPut.put(fileEntry, sSizeMap);
+                newSSizes.put(minCutNumber, listToPut);
+            }
+            else {
+                HashMap<File, HashMap<Integer,Integer>> listToPut = newSSizes.get(minCutNumber);
+                listToPut.put(fileEntry, sSizeMap);
+                newSSizes.put(minCutNumber, listToPut);
+            }
+
+            if (!newRSizes.containsKey(minCutNumber)) {
+                HashMap<File, HashMap<Integer,Integer>> listToPut = new HashMap<File, HashMap<Integer,Integer>>();
+                listToPut.put(fileEntry, rSizeMap);
+                newRSizes.put(minCutNumber, listToPut);
+            }
+            else {
+                HashMap<File, HashMap<Integer,Integer>> listToPut = newRSizes.get(minCutNumber);
+                listToPut.put(fileEntry, rSizeMap);
+                newRrSizes.put(minCutNumber, listToPut);
+            }
         }
+    }
+
+    public File getNewSFile() {
+        File newSFile = new File(mainFolder.getAbsolutePath() + "/new_s_" + folderEntry.getName() + ".txt");
+        try {
+            PrintWriter spw = new PrintWriter(new FileWriter(newSFile, true)); // appends to S file
+
+            for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nPermTwo; minCutNumber++) {
+                if (newSSizes.containsKey(minCutNumber)) {
+                    for (File fileEntry : newSSizes.get(minCutNumber).keySet()) {
+                        HashMap<Integer,Integer> sSizeMap = newSSizes.get(minCutNumber).get(fileEntry);
+                        String graphFileName = fileEntry.getName();
+                        spw.format("%s: \r\n", graphFileName);
+                        spw.format("Min Cuts: %d \r\n", minCutNumber);
+                        spw.format("S Size | Number of Cuts\r\n");
+                        for (int sSize = 1; sSize <= numberOfVertices - 1; sSize++) {
+                            int numberOfCuts = 0;
+                            if (sSizeMap.containsKey(sSize)) {
+                                numberOfCuts = sSizeMap.get(sSize);
+                            }
+                            spw.format("%6d | %13d\r\n", sSize, numberOfCuts);
+                        }
+                        spw.format("\r\n");
+                    }
+                }
+            }
+            
+            spw.close();
+        } catch (IOException e) {
+			System.err.println("Error");
+        }
+
+        return newSFile;
+    }
+
+    public File getNewRFile() {
+        File newRFile = new File(mainFolder.getAbsolutePath() + "/new_s_" + folderEntry.getName() + ".txt");
+        try {
+            PrintWriter rpw = new PrintWriter(new FileWriter(newRFile, true)); // appends to S file
+
+            for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nPermTwo; minCutNumber++) {
+                if (newRSizes.containsKey(minCutNumber)) {
+                    for (File fileEntry : newRSizes.get(minCutNumber).keySet()) {
+                        HashMap<Integer,Integer> rSizeMap = newRSizes.get(minCutNumber).get(fileEntry);
+                        String graphFileName = fileEntry.getName();
+                        rpw.format("%s: \r\n", graphFileName);
+                        rpw.format("Min Cuts: %d \r\n", minCutNumber);
+                        rpw.format("R Size | Number of Cuts\r\n");
+                        for (int rSize = 1; rSize <= numberOfVertices - 1; rSize++) {
+                            int numberOfCuts = 0;
+                            if (rSizeMap.containsKey(rSize)) {
+                                numberOfCuts = rSizeMap.get(rSize);
+                            }
+                            rpw.format("%6d | %13d\r\n", rSize, numberOfCuts);
+                        }
+                        rpw.format("\r\n");
+                    }
+                }
+            }
+            
+            rpw.close();
+        } catch (IOException e) {
+			System.err.println("Error");
+        }
+
+        return newRFile;
     }
 
     // creates and returns a distribution file

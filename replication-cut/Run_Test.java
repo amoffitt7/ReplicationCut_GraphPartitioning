@@ -40,9 +40,13 @@ public class Run_Test {
 			File distributionFile = folderCollector.getDistributionFile();
 			File distributionSFile = folderCollector.getSSizeDistributionFile();
 			File distributionRFile = folderCollector.getRSizeDistributionFile();
+			File newSFile = folderCollector.getNewSFile();
+			File newRFile = folderCollector.getNewRFile();
 			moveDistributionFile(mainFolder, distributionFile);
 			moveDistributionFile(mainFolder, distributionSFile);
-			moveDistributionFile(mainFolder, distributionRFile);
+			moveDistributionFile(mainFolder, distributionRFile
+			moveDistributionFile(mainFolder, newSFile);
+			moveDistributionFile(mainFolder, newRFile);
 		}
 
 	}	
