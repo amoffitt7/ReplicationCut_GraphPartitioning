@@ -9,6 +9,7 @@ public class InfoCollector {
 
     private int numberOfVertices; // the number of vertices for this folder of graphs
     private int nChooseTwo; 
+    private File mainFolder; // the outer folder (kept here for naming purposes)
     private File folderEntry; // the folder containing all graph files
     private HashMap<Integer, Integer> distributionOfMinCuts; // keys: # of min cuts, values: # of instances of directed graphs
     private HashMap<Integer, HashMap<Integer,Integer>> distributionOfSSizes; 
@@ -17,7 +18,8 @@ public class InfoCollector {
     private HashMap<Integer, HashMap<File, HashMap<Integer,Integer>>> newSSizes;
     private HashMap<Integer, HashMap<File, HashMap<Integer,Integer>>> newRSizes;
 
-    public InfoCollector(File folderEntry) {
+    public InfoCollector(File mainFolder, File folderEntry) {
+        this.mainFolder = mainFolder;
         this.folderEntry = folderEntry;
         distributionOfMinCuts = new HashMap<Integer, Integer>();
         distributionOfSSizes = new HashMap<Integer, HashMap<Integer,Integer>>();
@@ -115,7 +117,7 @@ public class InfoCollector {
             else {
                 HashMap<File, HashMap<Integer,Integer>> listToPut = newRSizes.get(minCutNumber);
                 listToPut.put(fileEntry, rSizeMap);
-                newRrSizes.put(minCutNumber, listToPut);
+                newRSizes.put(minCutNumber, listToPut);
             }
         }
     }
@@ -125,7 +127,7 @@ public class InfoCollector {
         try {
             PrintWriter spw = new PrintWriter(new FileWriter(newSFile, true)); // appends to S file
 
-            for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nPermTwo; minCutNumber++) {
+            for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nChooseTwo; minCutNumber++) {
                 if (newSSizes.containsKey(minCutNumber)) {
                     for (File fileEntry : newSSizes.get(minCutNumber).keySet()) {
                         HashMap<Integer,Integer> sSizeMap = newSSizes.get(minCutNumber).get(fileEntry);
@@ -158,7 +160,7 @@ public class InfoCollector {
         try {
             PrintWriter rpw = new PrintWriter(new FileWriter(newRFile, true)); // appends to S file
 
-            for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nPermTwo; minCutNumber++) {
+            for (int minCutNumber = numberOfVertices - 1; minCutNumber <= nChooseTwo; minCutNumber++) {
                 if (newRSizes.containsKey(minCutNumber)) {
                     for (File fileEntry : newRSizes.get(minCutNumber).keySet()) {
                         HashMap<Integer,Integer> rSizeMap = newRSizes.get(minCutNumber).get(fileEntry);

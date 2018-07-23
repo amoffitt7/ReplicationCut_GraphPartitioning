@@ -35,7 +35,7 @@ public class Run_Test {
 			}
 			
 			// create an info collector object for it
-			InfoCollector folderCollector = new InfoCollector(folderEntry);
+			InfoCollector folderCollector = new InfoCollector(mainFolder, folderEntry);
 			folderCollector.collectInfo();
 			File distributionFile = folderCollector.getDistributionFile();
 			File distributionSFile = folderCollector.getSSizeDistributionFile();
