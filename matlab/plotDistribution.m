@@ -1,7 +1,7 @@
 %clear worskspace variables, close all graphs, clear command window
 clear; clc
 
-% Files are in the current directory.
+% Files are in the current directory. Change this folder!
 folder = cd;
 
 % the number of vertices. Change this number!
@@ -92,4 +92,12 @@ plotTitle = sprintf('%d vertices, %d edges', n, edges);
 title(plotTitle);
     
 hold off;
-        
+  
+min(flowCounts)
+mean(flowCounts)
+max(flowCounts)
+min(counts)
+mean(counts)
+max(counts)
+
+
