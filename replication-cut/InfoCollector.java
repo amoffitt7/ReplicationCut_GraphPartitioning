@@ -159,7 +159,7 @@ public class InfoCollector {
     }
 
     public File getNewRFile() {
-        File newRFile = new File(mainFolder.getAbsolutePath() + "/new_s_" + folderEntry.getName() + ".txt");
+        File newRFile = new File(mainFolder.getAbsolutePath() + "/new_r_" + folderEntry.getName() + ".txt");
         try {
             PrintWriter rpw = new PrintWriter(new FileWriter(newRFile, true)); // appends to S file
 
