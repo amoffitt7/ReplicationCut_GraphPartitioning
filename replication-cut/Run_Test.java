@@ -44,7 +44,7 @@ public class Run_Test {
 			File newRFile = folderCollector.getNewRFile();
 			moveDistributionFile(mainFolder, distributionFile);
 			moveDistributionFile(mainFolder, distributionSFile);
-			moveDistributionFile(mainFolder, distributionRFile
+			moveDistributionFile(mainFolder, distributionRFile);
 			moveDistributionFile(mainFolder, newSFile);
 			moveDistributionFile(mainFolder, newRFile);
 		}
