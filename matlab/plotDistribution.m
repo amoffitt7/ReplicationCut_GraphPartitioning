@@ -14,7 +14,7 @@ textFilename = sprintf('distribution_GraphFolder_%d_%d_1000.txt', n, edges);
 flowTextFilename = sprintf('distribution_flowcut_GraphFolder_%d_%d_1000.txt', n, edges);
     
 fileID = fopen(fullfile(folder, textFilename), 'rt');
-flowFileID = fopen(fullfile('flowcut', flowTextFilename), 'rt');
+flowFileID = fopen(fullfile(folder, flowTextFilename), 'rt');
 
 T_text = textscan(fileID,'%s',2,'Delimiter','|');
 T = textscan(fileID,'%d %d', 'Delimiter', '|');
