@@ -14,13 +14,11 @@ textFilename = sprintf('distribution_GraphFolder_%d_%d_1000.txt', n, edges);
 flowTextFilename = sprintf('distribution_flowcut_GraphFolder_%d_%d_1000.txt', n, edges);
     
 fileID = fopen(fullfile(folder, textFilename), 'rt');
-flowFileID = fopen(fullfile(folder, flowTextFilename), 'rt');
-   
-formatSpec = '%s';
-N = 2;
-T_text = textscan(fileID,formatSpec,N,'Delimiter','|');
+flowFileID = fopen(fullfile('flowcut', flowTextFilename), 'rt');
+
+T_text = textscan(fileID,'%s',2,'Delimiter','|');
 T = textscan(fileID,'%d %d', 'Delimiter', '|');
-flow_text = textscan(flowFileID,formatSpec,N,'Delimiter','|');
+flow_text = textscan(flowFileID,'%s',2,'Delimiter','|');
 flowT = textscan(flowFileID,'%d %d','Delimiter','|');
     
 fclose(fileID);
@@ -42,52 +40,41 @@ for i = 1:size(MinCutNumber, 1)
         flowCounts = [flowCounts; i + n - 2];
     end
 end
-    
-%fit a distribution to it
+
 figure;
 hold on;
  
-flowfit = fitdist(flowCounts, 'Logistic');
-%poissonfit = fitdist(counts, 'Poisson');
-%normalfit = fitdist(counts, 'Normal');
-logisticfit = fitdist(counts, 'Logistic');
+% the fit
+repfit = fitdist(counts, 'GeneralizedExtremeValue');
+flowfit = fitdist(flowCounts, 'GeneralizedExtremeValue');
+
+% the maximum likelihood estimate
+repmle = mle(counts, 'distribution','GeneralizedExtremeValue');
+flowmle = mle(flowCounts, 'distribution', 'GeneralizedExtremeValue');
     
-realmean = mean(counts);
-realstd = std(counts);
-%poissonmle = mle(counts,'distribution','Poisson');
-normalmle = mle(counts);
-normalflowmle = mle(flowCounts);
-logisticmle = mle(counts, 'distribution','Logistic');
-flowmle = mle(flowCounts, 'distribution', 'Logistic');
-    
-%allMle = [];
-%allMle = [[realmean realstd]; allMle; [poissonmle 0]; normalmle; logisticmle];
-    
-%get pdf
-nChooseTwo = n * (n-1) / 2;
-x_values = n-2:1:nChooseTwo+1;
+% get pdf
+nPermTwo = n * (n-1);
+x_values = n-2:1:nPermTwo+1;
+pdfRep = pdf(repfit,x_values);
 pdfFlow = pdf(flowfit,x_values);
-%pdfPoisson = pdf(poissonfit,x_values);
-%pdfNorm = pdf(normalfit,x_values);
-pdfLog = pdf(logisticfit,x_values);
-    
-line_width = 2;
+
+% histograms
 nbins = size(NumberOfGraphs,1);
 nbins = 30;
 histogram(counts,nbins,'Normalization','pdf','EdgeColor', 'none');
 histogram(flowCounts,nbins,'Normalization','pdf','EdgeColor', 'none', 'FaceColor', [1 1 0]);
-    
-%line(x_values,pdfPoisson,'LineStyle','-','Color','r','LineWidth',line_width)
-%line(x_values,pdfNorm,'LineStyle','-.','Color','b','LineWidth',line_width)
-line(x_values,pdfFlow,'LineStyle','-.','Color','k','LineWidth',line_width)
-line(x_values,pdfLog,'LineStyle','--','Color','k','LineWidth',line_width)
+
+% pdf lines
+line_width = 2;
+line(x_values,pdfRep,'LineStyle','--','Color','k','LineWidth',line_width)
+line(x_values,pdfFlow,'LineStyle','-.','Color','r','LineWidth',line_width)
       
 maxX = max(counts);
 maxX = max([max(counts) max(flowCounts)]);
 xlim([n-1, maxX])
 xlabel('Number of distinct min cuts');
 ylabel('NOT percent of directed graphs');
-legend('Replication Cut','Flow Cut','Logistic');
+legend('Replication Cut','Flow Cut','GEV','GEV Flow');
 plotTitle = sprintf('%d vertices, %d edges', n, edges);
 title(plotTitle);
     
@@ -99,5 +86,10 @@ max(flowCounts)
 min(counts)
 mean(counts)
 max(counts)
+
+fprintf('Printing GEV parameters of rep cut:\n');
+repmle
+fprintf('Printing GEV parameters of flow cut:\n');
+flowmle
 
 
