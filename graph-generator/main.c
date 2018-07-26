@@ -44,6 +44,7 @@ void permute(int* a, int n);                                  /* gives a random 
 void swap(int* a, int *b);									  /* swap two ints */
 void init_array(int* a, int end);                             /* initialize array a so that a[ i ] = i */
 int get_int(char* indent);                                    /* get user input & check for valid input */
+int getWeight();
 
 
 /*** Miscellany ***/
@@ -59,6 +60,7 @@ int get_int(char* indent);                                    /* get user input 
 /*** Prompts ***/
 static char  *numVertices_prompt =        " Number of Vertices: ";
 static char  *numEdges_prompt =           " Number of edges: ";
+static char  *unitWeight_prompt =         " Unit weights ( Enter 1 for YES, 0 for NO ): ";
 static char  *maxEdgeWeight_prompt =      " Maximum edge weight: ";
 static char  *cycleSize_prompt =          " Cycle size: ";
 static char  *numGraphs_prompt =	      " How many graphs would you like generated: ";
@@ -74,6 +76,7 @@ static int maxNumberOfVertices;
 static int numberOfGraphs = 1;                  /*User entry that tells how many graphs we will make with current settings*/
 static int graphCount = 1;                      /*Number graphs generated so far with provided settings*/
 static int build_more_graphs;
+static int edgeWeightScheme;
 
 
 /*** graphs ***/
@@ -207,6 +210,15 @@ void display_dimensions_menu()
 		menu->parms.edge_count = get_int("\n\t\t");
 	}
 
+	/*** Get unit weight response ***/
+	printf("\n\t\t%s", unitWeight_prompt);
+	edgeWeightScheme = get_int("\n\t\t");
+	while (edgeWeightScheme != 0 && edgeWeightScheme != 1) {
+		printf("\n\t\t%s", unitWeight_prompt);
+		edgeWeightScheme = get_int("\n\t\t");
+	}
+	
+
 	/*** Get Maximum edge weight value ***/
 	/*
 		printf("\n\t\t%s", maxEdgeWeight_prompt);
@@ -315,11 +327,11 @@ void random_connected_graph(int v,
 
 	//printf("CYCLE ENTRIES \n \n");
 	for (i = 0; i < cycleLength - 1; i++) {
-		adj_matrix[tree[i] * v + tree[i + 1]] = ran(max_wgt) + 1;
+		adj_matrix[tree[i] * v + tree[i + 1]] = getWeight();
 
 		//printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
 	}
-	adj_matrix[tree[cycleLength - 1] * v + tree[0]] = ran(max_wgt) + 1;
+	adj_matrix[tree[cycleLength - 1] * v + tree[0]] = getWeight();
 	//printf("AM entry for edge from %d to %d \n", tree[cycleLength - 1], tree[0]);
 
 
@@ -345,18 +357,18 @@ void random_connected_graph(int v,
 		int startFrom = ran(cycleLength);
 		//printf("randomStartFrom = %d \n", tree[startFrom]);
 
-		adj_matrix[tree[startFrom] * v + tree[cycleLength]] = ran(max_wgt) + 1;
+		adj_matrix[tree[startFrom] * v + tree[cycleLength]] = getWeight();
 		//printf("AM entry for edge from %d to %d \n", tree[startFrom], tree[cycleLength]);
 
 		for (i = cycleLength; i < v - 1; i++) {
-			adj_matrix[tree[i] * v + tree[i + 1]] = ran(max_wgt) + 1;
+			adj_matrix[tree[i] * v + tree[i + 1]] = getWeight();
 			//printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
 		}
 
 		int endTo = ran(cycleLength);
 		//printf("randomEndTo = %d \n", tree[endTo]);
 
-		adj_matrix[tree[v - 1] * v + tree[endTo]] = ran(max_wgt) + 1;
+		adj_matrix[tree[v - 1] * v + tree[endTo]] = getWeight();
 		//printf("AM entry for edge from %d to %d \n", tree[v - 1], tree[endTo]);
 		numEdgesNotAdded -= numDisconnected + 1;
 	}	
@@ -370,7 +382,7 @@ void random_connected_graph(int v,
 			randomFrom = tree[ran(cycleLength)];
 			//printf("randomFrom = %d \n", randomFrom);
 
-			adj_matrix[randomFrom * v + tree[i]] = ran(max_wgt) + 1;
+			adj_matrix[randomFrom * v + tree[i]] = getWeight();
 			//printf("AM entry for edge from %d to %d (FROM)\n", randomFrom, tree[i]);
 			numEdgesNotAdded--;
 			numDisconnected--;
@@ -396,7 +408,7 @@ void random_connected_graph(int v,
 				//printf("randomTo = %d \n", randomTo);
 
 				if (adj_matrix[tree[i] * v + randomTo] == 0) {
-					adj_matrix[tree[i] * v + randomTo] = ran(max_wgt) + 1;
+					adj_matrix[tree[i] * v + randomTo] = getWeight();
 					//printf("AM entry for edge from %d to %d (TO)\n", tree[i], randomTo);
 					numEdgesNotAdded--;
 				}
@@ -422,18 +434,18 @@ void random_connected_graph(int v,
 		int startFrom = ran(cycleLength);
 		//printf("randomStartFrom = %d \n", tree[startFrom]);
 
-		adj_matrix[tree[startFrom] * v + tree[cycleLength]] = ran(max_wgt) + 1;
+		adj_matrix[tree[startFrom] * v + tree[cycleLength]] = getWeight();
 		//printf("AM entry for edge from %d to %d \n", tree[startFrom], tree[cycleLength]);
 
 		for (i = cycleLength; i < v - 1; i++) {
-			adj_matrix[tree[i] * v + tree[i + 1]] = ran(max_wgt) + 1;
+			adj_matrix[tree[i] * v + tree[i + 1]] = getWeight();
 			//printf("AM entry for edge from %d to %d \n", tree[i], tree[i+1]);
 		}
 
 		int endTo = ran(baseCycleLength);
 		//printf("randomEndTo = %d \n", tree[endTo]);
 
-		adj_matrix[tree[v - 1] * v + tree[endTo]] = ran(max_wgt) + 1;
+		adj_matrix[tree[v - 1] * v + tree[endTo]] = getWeight();
 		//printf("AM entry for edge from %d to %d \n", tree[v - 1], tree[endTo]);
 		numEdgesNotAdded -= numDisconnected + 1;
 	}
@@ -450,7 +462,7 @@ void random_connected_graph(int v,
 		//printf("randomTo = %d \n", randomTo);
 
 		if (randomTo != randomFrom && adj_matrix[randomFrom * v + randomTo] == 0) {
-			adj_matrix[randomFrom * v + randomTo] = ran(max_wgt);
+			adj_matrix[randomFrom * v + randomTo] = getWeight();
 			//printf("AM entry for edge from %d to %d (FROM)\n", randomFrom, randomTo);
 			numEdgesNotAdded--;
 		}
@@ -569,4 +581,16 @@ int get_int(char* indent)
 		else
 			return val;
 	}
+}
+
+
+
+/* Return either 1 or a value between 0 and MaxWeight
+*/
+int getWeight()
+{
+	if (edgeWeightScheme) {
+		return 1;
+	}
+	return ran(MaxWeight) + 1;
 }
