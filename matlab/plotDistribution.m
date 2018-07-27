@@ -53,10 +53,14 @@ repmle = mle(counts, 'distribution','GeneralizedExtremeValue');
 flowmle = mle(flowCounts, 'distribution', 'GeneralizedExtremeValue');
     
 % get pdf
-nPermTwo = n * (n-1);
-x_values = n-2:1:nPermTwo+1;
+nChooseTwo = n * (n-1) / 2;
+x_values = n-1:1:nChooseTwo;
 pdfRep = pdf(repfit,x_values);
-pdfFlow = pdf(flowfit,x_values);
+
+nPermTwo = n * (n-1);
+flow_x_values = n-1:1:nPermTwo;
+pdfFlow = pdf(flowfit,flow_x_values);
+pdfNorm = pdf(fitdist(flowCounts, 'Normal'), flow_x_values);
 
 % histograms
 nbins = size(NumberOfGraphs,1);
@@ -67,7 +71,7 @@ histogram(flowCounts,nbins,'Normalization','pdf','EdgeColor', 'none', 'FaceColor
 % pdf lines
 line_width = 2;
 line(x_values,pdfRep,'LineStyle','--','Color','k','LineWidth',line_width)
-line(x_values,pdfFlow,'LineStyle','-.','Color','r','LineWidth',line_width)
+line(flow_x_values,pdfFlow,'LineStyle','-.','Color','r','LineWidth',line_width)
       
 maxX = max(counts);
 maxX = max([max(counts) max(flowCounts)]);
@@ -92,4 +96,21 @@ repmle
 fprintf('Printing GEV parameters of flow cut:\n');
 flowmle
 
+% error values
+repNorm = NumberOfGraphs / sum(NumberOfGraphs);
+flowNorm = flowNumberOfGraphs / sum(flowNumberOfGraphs);
+
+fprintf('Printing l norm values of rep cut');
+l1norm = sum(abs(pdfRep' - repNorm))
+l2norm = sqrt(sum((pdfRep' - repNorm).^2))
+linfinitynorm = max(abs(pdfRep' - repNorm))
+
+fprintf('Printing l norm values of flow cut');
+l1norm_flow = sum(abs(pdfFlow' - flowNorm))
+l2norm_flow = sqrt(sum((pdfFlow' - flowNorm).^2))
+linfinitynorm_flow = max(abs(pdfFlow' - flowNorm))
+
+normnorm1 = sum(abs(pdfNorm' - flowNorm));
+normnorm2 = sqrt(sum((pdfNorm' - flowNorm).^2));
+normnorminf = max(abs(pdfNorm' - flowNorm));
 
