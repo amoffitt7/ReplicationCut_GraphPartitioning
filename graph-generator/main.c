@@ -148,7 +148,7 @@ void build_graphs(void)
 
 	strcat(directory, "_");
 
-	char numGraphs[5];
+	char numGraphs[8];
 	sprintf(numGraphs, "%d", numberOfGraphs);
 	strcat(directory, numGraphs);
 
@@ -160,6 +160,7 @@ void build_graphs(void)
 
 	/*** Create graphs ***/
 	while (graphCount <= numberOfGraphs) {
+		menu->parms.base_cycle_size = ran(menu->parms.vertex_count - 3) + 3;
 		process_choice(directory);
 		graphCount++;
 	}
@@ -178,6 +179,7 @@ void display_dimensions_menu()
 	} 
 
 	/*** Get base cycle size ***/
+	/*
 	printf("\n\t\t%s", cycleSize_prompt);
 	menu->parms.base_cycle_size = get_int("\n\t\t");
 
@@ -185,9 +187,10 @@ void display_dimensions_menu()
 	menu->parms.base_cycle_size > menu->parms.vertex_count) {
 	printf("\n\t\t%s and less than %d", invalidCycleLength_prompt, menu->parms.vertex_count + 1);
 	menu->parms.base_cycle_size = get_int("\n\t\t");
-	}
+	}*/
+	
 
-	//menu->parms.base_cycle_size = menu->parms.vertex_count;
+	menu->parms.base_cycle_size = 2;  //Hard coded
 
 
 	/*** Get # edges ***/
