@@ -13,7 +13,7 @@ n = 20;
 % the increment is 10. If you are plotting for 3, 4, 5 ... edges then the
 % increment is 1.
 lowestEdgeWeight = 20;
-highestEdgeWeight = 30;
+highestEdgeWeight = 70;
 increment = 1;
 
 % --------------------------Code below-------------------------- %
@@ -31,6 +31,10 @@ for i = firstIndex:lastIndex
     %Extract the data.
     %textFilename = sprintf('distribution_GraphFolder_%d_%d_1000.txt', n, edges);
     flowTextFilename = sprintf('distribution_flowcut_GraphFolder_%d_%d_1000.txt', n, edges);
+    
+    if ~exist(fullfile(folder, flowTextFilename), 'file')
+        continue;
+    end
 
     %fileID = fopen(fullfile(folder, textFilename), 'rt');
     flowFileID = fopen(fullfile(folder, flowTextFilename), 'rt');
