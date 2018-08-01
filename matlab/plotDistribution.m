@@ -1,5 +1,5 @@
 %clear worskspace variables, close all graphs, clear command window
-clear; clc
+close all; clear; clc
 
 % Files are in the current directory. Change this folder!
 folder = cd;
@@ -7,7 +7,7 @@ folder = cd;
 % the number of vertices. Change this number!
 n = 20;
 % the number of edges. Change this number!
-edges = 70;
+edges = 20;
 
 %Extract the data.
 textFilename = sprintf('distribution_GraphFolder_%d_%d_1000.txt', n, edges);
@@ -61,6 +61,7 @@ nPermTwo = n * (n-1);
 flow_x_values = n-1:1:nPermTwo;
 pdfFlow = pdf(flowfit,flow_x_values);
 pdfNorm = pdf(fitdist(flowCounts, 'Normal'), flow_x_values);
+pdfLog = pdf(fitdist(flowCounts, 'Logistic'), flow_x_values);
 
 % histograms
 nbins = size(NumberOfGraphs,1);
@@ -113,4 +114,8 @@ linfinitynorm_flow = max(abs(pdfFlow' - flowNorm))
 normnorm1 = sum(abs(pdfNorm' - flowNorm));
 normnorm2 = sqrt(sum((pdfNorm' - flowNorm).^2));
 normnorminf = max(abs(pdfNorm' - flowNorm));
+
+lognorm1 = sum(abs(pdfLog' - flowNorm));
+lognorm2 = sqrt(sum((pdfLog' - flowNorm).^2));
+lognorminf = max(abs(pdfLog' - flowNorm));
 
