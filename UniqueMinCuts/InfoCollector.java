@@ -21,12 +21,12 @@ public class InfoCollector {
         this.mainFolder = mainFolder;
         this.folderEntry = folderEntry;
         distributionOfMinCuts = new HashMap<Integer, Integer>();
-        distributionOfSSizes = new HashMap<Integer, HashMap<Integer,Integer>>();
+        //distributionOfSSizes = new HashMap<Integer, HashMap<Integer,Integer>>();
 
         String[] folderNameParts = folderEntry.getName().split("_");
 		numberOfVertices = Integer.parseInt(folderNameParts[1]);
         nPermTwo = numberOfVertices * (numberOfVertices - 1);
-        newSSizes = new HashMap<Integer, HashMap<File, HashMap<Integer, Integer>>>();
+        //newSSizes = new HashMap<Integer, HashMap<File, HashMap<Integer, Integer>>>();
     }
 
     public void collectInfo() {

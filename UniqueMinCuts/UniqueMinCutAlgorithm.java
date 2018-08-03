@@ -26,7 +26,7 @@ public class UniqueMinCutAlgorithm {
             reportFileName = "." + fileNameParts[1] + "_report.txt";
         }
 
-        sSizeMap = new HashMap<Integer, Integer>();
+        //sSizeMap = new HashMap<Integer, Integer>();
     }
 
     public int getDistinctNumberOfMinCuts() {
