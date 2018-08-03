@@ -21,7 +21,8 @@ increment = 10;
 % matrix with all the data
 Z = [];
 
-maxY = 1;
+% Holds parameter data
+allmle = [];
 
 firstIndex = lowestEdgeWeight / increment;
 lastIndex = highestEdgeWeight / increment;
@@ -66,23 +67,13 @@ for i = firstIndex:lastIndex
         end
     end
 
-    edgestemp = ones(size(flowCounts,1),1) * edges;
-    temp = [edgestemp, flowCounts];
-    Z = [Z; temp];
+    gevfit = fitdist(flowCounts, 'GeneralizedExtremeValue');
+    gevmle = mle(flowCounts, 'distribution', 'GeneralizedExtremeValue');
+    row = [n, edges, gevmle];
+    allmle = [allmle;row];
     
-    maxY = max([maxY, max(flowCounts)]);
-
 end
 
-edgesBins = lastIndex - firstIndex + 1;
-minCutBins = 60;
-
-hist3(Z,'Nbins',[edgesBins,minCutBins]);
-
-xlabel('Edges');
-ylabel('# of distinct min cuts');
-ylim([-inf,maxY])
-zlabel('# of instances');
-plotTitle = sprintf('%d vertices distributions', n);
-title(plotTitle);
-
+% create spreadsheet from GEV parameters
+sheetName = sprintf('%d_vertices_GEV.xlsx', n);
+xlswrite(fullfile(cd, sheetName), allmle);
