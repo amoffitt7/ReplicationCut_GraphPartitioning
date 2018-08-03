@@ -47,6 +47,7 @@ public class InfoCollector {
 				distributionOfMinCuts.put(minCutNumber, distributionOfMinCuts.get(minCutNumber) + 1);
             }
             
+            /*
             // get the corresponding hash map of S sizes
             HashMap<Integer, Integer> sSizeMap = minCutAlgorithm.getSSizeMap();
 
@@ -83,6 +84,7 @@ public class InfoCollector {
                 newSSizes.put(minCutNumber, listToPut);
             }
             //writeToSFile(fileEntry, minCutNumber, sSizeMap);
+            */
         }
     }
 

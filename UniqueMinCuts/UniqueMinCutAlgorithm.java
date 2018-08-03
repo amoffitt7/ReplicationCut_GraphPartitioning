@@ -71,7 +71,7 @@ public class UniqueMinCutAlgorithm {
                 }
             }
             
-            recordResults();
+            //recordResults();
             br.close();
             
     	} catch (IOException e) {
@@ -87,14 +87,14 @@ public class UniqueMinCutAlgorithm {
  
         graph = adjMatrix;
         
-        try {
+        /*try {
             reportpw = new PrintWriter(new FileWriter(reportFileName, true));
             //System.out.println("In single pair. Finding the cut between " + s + " and " + t + ":");
             reportpw.println("Finding the cut between " + source + " and " + sink + ":");
             reportpw.close();
         } catch (IOException e) {
             System.err.println("Error");
-        }
+        }*/
  
         MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfVertices);
         minCut = maxFlowMinCut.maxFlowMinCut(graph, source, sink);
@@ -105,6 +105,7 @@ public class UniqueMinCutAlgorithm {
         }
         if (newCut && minCuts.add(minCut)) {
             //reportpw.println("*** New distinct mincut found! ***");
+            /*
             Integer sSize = new Integer(minCut.S.size()); // key is the size of s
             if (!sSizeMap.containsKey(sSize)) {
                 sSizeMap.put(sSize, new Integer(1)); // if key doesn't exist yet, set its value to 1
@@ -112,16 +113,17 @@ public class UniqueMinCutAlgorithm {
             else {
                 sSizeMap.put(sSize, sSizeMap.get(sSize) + 1); // if key already exists, increment its value
             }
+            */
         }
         
-        try {
+        /*try {
             reportpw = new PrintWriter(new FileWriter(reportFileName, true));
             //System.out.println(minCut + "\n");    
             reportpw.println(minCut + "\n"); 
             reportpw.close();
         } catch (IOException e) {
             System.err.println("Error");
-        }
+        }*/
         
     }
     
@@ -144,6 +146,7 @@ public class UniqueMinCutAlgorithm {
             System.out.println("Note: The actual number may be lower due to equivalent cuts.");
             System.out.println("Check the report file for more information.\n");*/
 
+            /*
             reportpw.println("****************");
             reportpw.println("FINAL REPORT:");
             reportpw.println("****************");
@@ -153,7 +156,7 @@ public class UniqueMinCutAlgorithm {
             reportpw.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
             reportpw.println("Note: The actual number may be lower due to equivalent cuts.\n");
 
-            reportpw.close();
+            reportpw.close();*/
         }
         catch (IOException e) {
             System.err.println("ERROR");
