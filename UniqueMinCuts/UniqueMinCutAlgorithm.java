@@ -71,7 +71,7 @@ public class UniqueMinCutAlgorithm {
                 }
             }
             
-            //recordResults();
+            recordResults();
             br.close();
             
     	} catch (IOException e) {
@@ -131,12 +131,14 @@ public class UniqueMinCutAlgorithm {
     
     public void recordResults() {
         //ANALYZE RESULTS FOR EACH GRAPH
-        try {
+        numberOfDistinctMinCuts = minCuts.size(); 
+
+        /*try {
             reportpw = new PrintWriter(new FileWriter(reportFileName, true));
 
-            numberOfDistinctMinCuts = minCuts.size(); 
+            
 
-            /*System.out.println("****************");
+            System.out.println("****************");
             System.out.println("FINAL REPORT:");
             System.out.println("****************");
 
@@ -144,9 +146,9 @@ public class UniqueMinCutAlgorithm {
             System.out.println("The graph had " + numberOfVertices + " vertices.");
             System.out.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
             System.out.println("Note: The actual number may be lower due to equivalent cuts.");
-            System.out.println("Check the report file for more information.\n");*/
+            System.out.println("Check the report file for more information.\n");
 
-            /*
+            
             reportpw.println("****************");
             reportpw.println("FINAL REPORT:");
             reportpw.println("****************");
@@ -156,11 +158,11 @@ public class UniqueMinCutAlgorithm {
             reportpw.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
             reportpw.println("Note: The actual number may be lower due to equivalent cuts.\n");
 
-            reportpw.close();*/
+            reportpw.close();
         }
         catch (IOException e) {
             System.err.println("ERROR");
-        }
+        }*/
 
         /*//mark if it's n choose 2
         int nChooseTwo = numberOfVertices * (numberOfVertices - 1) / 2;
