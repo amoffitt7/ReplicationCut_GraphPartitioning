@@ -69,7 +69,18 @@ for i = firstIndex:lastIndex
 
     gevfit = fitdist(flowCounts, 'GeneralizedExtremeValue');
     gevmle = mle(flowCounts, 'distribution', 'GeneralizedExtremeValue');
-    row = [n, edges, gevmle];
+    
+    nPermTwo = n * (n-1);
+    flow_x_values = n-1:1:nPermTwo;
+    pdfGev = pdf(gevfit,flow_x_values);
+    flowNorm = flowNumberOfGraphs / sum(flowNumberOfGraphs);
+    
+    % error values
+    l1norm = sum(abs(pdfGev' - flowNorm));
+    l2norm = sqrt(sum((pdfGev' - flowNorm).^2));
+    linfinitynorm = max(abs(pdfGev' - flowNorm));
+    
+    row = [n, edges, gevmle, l1norm, l2norm, linfinitynorm];
     allmle = [allmle;row];
     
 end
