@@ -26,7 +26,7 @@ public class UniqueMinCutAlgorithm {
             reportFileName = "." + fileNameParts[1] + "_report.txt";
         }
 
-        sSizeMap = new HashMap<Integer, Integer>();
+        //sSizeMap = new HashMap<Integer, Integer>();
     }
 
     public int getDistinctNumberOfMinCuts() {
@@ -87,14 +87,14 @@ public class UniqueMinCutAlgorithm {
  
         graph = adjMatrix;
         
-        try {
+        /*try {
             reportpw = new PrintWriter(new FileWriter(reportFileName, true));
             //System.out.println("In single pair. Finding the cut between " + s + " and " + t + ":");
             reportpw.println("Finding the cut between " + source + " and " + sink + ":");
             reportpw.close();
         } catch (IOException e) {
             System.err.println("Error");
-        }
+        }*/
  
         MaxFlowMinCut maxFlowMinCut = new MaxFlowMinCut(numberOfVertices);
         minCut = maxFlowMinCut.maxFlowMinCut(graph, source, sink);
@@ -105,6 +105,7 @@ public class UniqueMinCutAlgorithm {
         }
         if (newCut && minCuts.add(minCut)) {
             //reportpw.println("*** New distinct mincut found! ***");
+            /*
             Integer sSize = new Integer(minCut.S.size()); // key is the size of s
             if (!sSizeMap.containsKey(sSize)) {
                 sSizeMap.put(sSize, new Integer(1)); // if key doesn't exist yet, set its value to 1
@@ -112,16 +113,17 @@ public class UniqueMinCutAlgorithm {
             else {
                 sSizeMap.put(sSize, sSizeMap.get(sSize) + 1); // if key already exists, increment its value
             }
+            */
         }
         
-        try {
+        /*try {
             reportpw = new PrintWriter(new FileWriter(reportFileName, true));
             //System.out.println(minCut + "\n");    
             reportpw.println(minCut + "\n"); 
             reportpw.close();
         } catch (IOException e) {
             System.err.println("Error");
-        }
+        }*/
         
     }
     
@@ -129,12 +131,14 @@ public class UniqueMinCutAlgorithm {
     
     public void recordResults() {
         //ANALYZE RESULTS FOR EACH GRAPH
-        try {
+        numberOfDistinctMinCuts = minCuts.size(); 
+
+        /*try {
             reportpw = new PrintWriter(new FileWriter(reportFileName, true));
 
-            numberOfDistinctMinCuts = minCuts.size(); 
+            
 
-            /*System.out.println("****************");
+            System.out.println("****************");
             System.out.println("FINAL REPORT:");
             System.out.println("****************");
 
@@ -142,8 +146,9 @@ public class UniqueMinCutAlgorithm {
             System.out.println("The graph had " + numberOfVertices + " vertices.");
             System.out.println("The number of distinct min cuts is " + numberOfDistinctMinCuts + ".");
             System.out.println("Note: The actual number may be lower due to equivalent cuts.");
-            System.out.println("Check the report file for more information.\n");*/
+            System.out.println("Check the report file for more information.\n");
 
+            
             reportpw.println("****************");
             reportpw.println("FINAL REPORT:");
             reportpw.println("****************");
@@ -157,7 +162,7 @@ public class UniqueMinCutAlgorithm {
         }
         catch (IOException e) {
             System.err.println("ERROR");
-        }
+        }*/
 
         /*//mark if it's n choose 2
         int nChooseTwo = numberOfVertices * (numberOfVertices - 1) / 2;

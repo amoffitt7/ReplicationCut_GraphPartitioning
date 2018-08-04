@@ -69,20 +69,31 @@ for i = firstIndex:lastIndex
     edgestemp = ones(size(flowCounts,1),1) * edges;
     temp = [edgestemp, flowCounts];
     Z = [Z; temp];
+
+    if edges < 230
+        % plotting GEV overlay
+        gevfit = fitdist(flowCounts, 'GeneralizedExtremeValue');
+        nPermTwo = n * (n-1);
+        flow_x_values = n-1:1:nPermTwo;
+        pdfGev = (pdf(gevfit,flow_x_values))';
+        x = ones(size(pdfGev)) * edges;
+        y = MinCutNumber;
+        plot3(x,y,pdfGev,'Color','r'); 
+    end
+    hold on;
     
     maxY = max([maxY, max(flowCounts)]);
 
 end
 
-edgesBins = lastIndex - firstIndex + 1;
-minCutBins = 60;
+%edgesBins = lastIndex - firstIndex + 1;
+%minCutBins = 60;
 
-hist3(Z,'Nbins',[edgesBins,minCutBins]);
+%hist3(Z,'Nbins',[edgesBins,minCutBins]);
 
 xlabel('Edges');
 ylabel('# of distinct min cuts');
-ylim([-inf,maxY])
+ylim([0,maxY])
 zlabel('# of instances');
 plotTitle = sprintf('%d vertices distributions', n);
 title(plotTitle);
-

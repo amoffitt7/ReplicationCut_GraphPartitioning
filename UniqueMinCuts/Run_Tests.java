@@ -38,11 +38,11 @@ public class Run_Tests {
 			InfoCollector folderCollector = new InfoCollector(mainFolder, folderEntry);
 			folderCollector.collectInfo();
 			File distributionFile = folderCollector.getDistributionFile();
-			File distributionSFile = folderCollector.getSSizeDistributionFile();
-			File newSFile = folderCollector.getNewSFile();
+			//File distributionSFile = folderCollector.getSSizeDistributionFile();
+			//File newSFile = folderCollector.getNewSFile();
 			moveDistributionFile(mainFolder, distributionFile);
-			moveDistributionFile(mainFolder, distributionSFile);
-			moveDistributionFile(mainFolder, newSFile);
+			//moveDistributionFile(mainFolder, distributionSFile);
+			//moveDistributionFile(mainFolder, newSFile);
 		}
 
 	}

@@ -60,6 +60,9 @@ int getWeight();
 /*** Prompts ***/
 static char  *numVertices_prompt =        " Number of Vertices: ";
 static char  *numEdges_prompt =           " Number of edges: ";
+static char  *edge_range_prompt1 =        " Enter a starting edge value: ";
+static char  *edge_range_prompt2 =        " Enter a ending edge value: ";
+static char  *edge_range_prompt3 =        " Enter an increment size: ";
 static char  *unitWeight_prompt =         " Unit weights ( Enter 1 for YES, 0 for NO ): ";
 static char  *maxEdgeWeight_prompt =      " Maximum edge weight: ";
 static char  *cycleSize_prompt =          " Cycle size: ";
@@ -67,6 +70,7 @@ static char  *numGraphs_prompt =	      " How many graphs would you like generate
 
 static char  *invalidVertices_prompt =    " Invalid Entry! \n\t\t Enter a number greater than 3: ";
 static char  *invalidEdges_prompt =       " Invalid Entry! \n\t\t Enter a number greater than ";
+static char  *invalidIncrement_prompt =   " Invalid Entry! \n\t\t Enter a number greater than ";
 static char  *invalidEdgeWeight_prompt =  " Invalid Entry! \n\t\t Enter a weight greater than 0: ";
 static char  *invalidCycleLength_prompt = " Invalid Entry! \n\t\t Enter a length greater than 1 ";
 
@@ -77,6 +81,10 @@ static int numberOfGraphs = 1;                  /*User entry that tells how many
 static int graphCount = 1;                      /*Number graphs generated so far with provided settings*/
 static int build_more_graphs;
 static int edgeWeightScheme;
+static int rangeStart;
+static int rangeEnd;
+static int increment;
+
 
 
 /*** graphs ***/
@@ -111,7 +119,14 @@ int main()
 
 	for (int i = 0; i < 10; i++) {
 		build_more_graphs = True;
-		build_graphs();
+
+		display_dimensions_menu();
+
+		for (int i = rangeStart; i <= rangeEnd; i = i + increment) {
+			menu->parms.edge_count = i;
+			build_graphs();
+			graphCount = 1;
+		}
 
 		graphCount = 1;
 	}
@@ -130,8 +145,6 @@ void seed_ran(void)
 
 void build_graphs(void)
 {
-	display_dimensions_menu();
-
 	/*** Make new Folder to store all generated graphs ***/
 	char directory[40];
 	sprintf(directory, "%s", "GraphFolder_");
@@ -160,7 +173,6 @@ void build_graphs(void)
 
 	/*** Create graphs ***/
 	while (graphCount <= numberOfGraphs) {
-		menu->parms.base_cycle_size = ran(menu->parms.vertex_count - 3) + 3;
 		process_choice(directory);
 		graphCount++;
 	}
@@ -190,7 +202,7 @@ void display_dimensions_menu()
 	}*/
 	
 
-	menu->parms.base_cycle_size = 2;  //Hard coded
+	menu->parms.base_cycle_size = menu->parms.vertex_count;  //Hard coded
 
 
 	/*** Get # edges ***/
@@ -201,9 +213,36 @@ void display_dimensions_menu()
 
 	int numPossibleEdges = menu->parms.vertex_count * (menu->parms.vertex_count - 1);
 
-	printf("\n\t\t Enter a number greater than or equal to %d, and less than %d", 
+	printf("\n\t\t Enter a number greater than or equal to %d, and less than %d",
 		numEdgesRequired + menu->parms.base_cycle_size, numPossibleEdges + 1);
 
+	printf("\n\t\t%s", edge_range_prompt1);
+	rangeStart = get_int("\n\t\t");
+	while (rangeStart < numEdgesRequired + menu->parms.base_cycle_size ||
+		rangeStart > numPossibleEdges) {
+		printf("\n\t\t%s%d and less than %d", invalidEdges_prompt,
+			numEdgesRequired + menu->parms.base_cycle_size, numPossibleEdges + 1);
+		rangeStart = get_int("\n\t\t");
+	}
+
+	printf("\n\t\t%s", edge_range_prompt2);
+	rangeEnd = get_int("\n\t\t");
+	while (rangeEnd < numEdgesRequired + menu->parms.base_cycle_size ||
+		rangeEnd > numPossibleEdges || rangeEnd < rangeStart) {
+		printf("\n\t\t%s%d and less than %d", invalidEdges_prompt,
+			numEdgesRequired + menu->parms.base_cycle_size, numPossibleEdges + 1);
+		rangeEnd = get_int("\n\t\t");
+	}
+
+
+	printf("\n\t\t%s", edge_range_prompt3);
+	increment = get_int("\n\t\t");
+	while (increment < 0 || increment >= rangeEnd - rangeStart + 1) {
+		printf("\n\t\t%s 1 and less than %d", invalidIncrement_prompt, rangeEnd - rangeStart + 1);
+		increment = get_int("\n\t\t");
+	}
+
+	/*
 	printf("\n\t\t%s", numEdges_prompt);
 	menu->parms.edge_count = get_int("\n\t\t");
 	while(menu->parms.edge_count < numEdgesRequired + menu->parms.base_cycle_size ||
@@ -211,7 +250,9 @@ void display_dimensions_menu()
 		printf("\n\t\t%s%d and less than %d", invalidEdges_prompt, 
 			numEdgesRequired + menu->parms.base_cycle_size, numPossibleEdges + 1);
 		menu->parms.edge_count = get_int("\n\t\t");
-	}
+	}*/
+
+
 
 	/*** Get unit weight response ***/
 	printf("\n\t\t%s", unitWeight_prompt);
