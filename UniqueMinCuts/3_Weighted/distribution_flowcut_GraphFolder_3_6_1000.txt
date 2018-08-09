@@ -1,0 +1,6 @@
+MinCut number | Number of graphs
+            2 |               0
+            3 |               0
+            4 |             511
+            5 |             489
+            6 |               0
